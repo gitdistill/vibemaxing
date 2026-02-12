@@ -81,6 +81,11 @@ Do not `cat` or read these files preemptively. You will be instructed on when to
 *   **Use Surgical Tools:** Use `grep` or `read` with `limit`/`offset` to extract specific syntax/answers. Reading >50KB of documentation destabilizes context and causes loops.
 *   **Stop Condition:** If you find yourself repeating output or looping, **STOP IMMEDIATELY** and ask for clarification.
 
+**Data Analysis Safety:**
+*   **Avoid Bulk Ingestion:** Do not `read` or `ls -R` entire directories or large files (e.g., raw HTML, large datasets).
+*   **Schema Inference Only:** When analyzing data, focus on inferring its structure (e.g., column names, data types, file paths) rather than ingesting its content. Use tools like `head`, `tail`, `ls`, or `find` with appropriate filters.
+*   **User Confirmation:** If full content analysis is absolutely necessary, explicitly ask the user for permission and guidance on how to proceed safely.
+
 **Operational Philosophy: Execution over Simulation**
 *   **Do Not Simulate:** Do not attempt to mentally simulate complex decision trees (e.g., skill logic) to their conclusion.
 *   **Step-by-Step Execution:** Execute the first step, report the result, and *then* ask for the next step.
