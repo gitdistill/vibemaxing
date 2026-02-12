@@ -26,7 +26,7 @@
 
 **With these layers and harness we create max devices each in their own dedicated directory**
 
-For now we are only focused on getting the agentic layer up and running. After that (and only with explicit human direction) we will develop each app inidiviually, and the finally we will implement our first max device.
+For now we are only focused on developing the supporting apps inidiviually, and the finally we will implement our first max device.
 
 ---
 

@@ -13,8 +13,7 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **Role:** Context management, workflow enforcement, and user interface.
 *   **Components:**
     *   **Pi:** The runtime environment (Coding Agent Harness).
-    *   **Beads:** (Global) The persistent memory store and task manager.
-    *   **Skills/Prompts:** The procedural knowledge base (e.g., how to run a `/dis` session).
+    *   **Extensions/Skills/Prompts:** TBD
 
 ### Layer 2: The Hands (apps/)
 *   **Role:** Domain-specific execution.
@@ -28,7 +27,6 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 
 ## 2. Data Flow
 *   **Status:** Pending Definition
-*   **Note:** The specific data flow interactions between Pi, Beads, and the apps need to be formally defined in a future `/dis` session.
 
 ## 3. Tech Stack & Constraints
 
@@ -41,7 +39,6 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **App Stacks:** To be determined during individual app planning sessions.
 *   **IPC:** CLI/STDIO (No long-running servers required for V1).
 *   **Vector DB:** Placeholder (e.g., ChromaDB).
-*   **Memory:** `SQLite` (Managed externally by Beads).
 
 ## 4. Directory Structure
 ```
