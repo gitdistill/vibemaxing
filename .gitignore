@@ -4,3 +4,4 @@ node_modules/
 .notes/
 ._legacy_v1/
 ._legacy_v2/
+*.pdf
