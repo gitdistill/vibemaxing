@@ -1,0 +1,11 @@
+{                                                                                                    
+  "packages": [                                                                                      
+    {                                                                                                
+      "source": "npm:mitsupi",                                                            
+      "skills": [],                     
+      "extensions": ["answer.ts", "context.ts", "whimsical.ts"],                                                    
+      "prompts": [],                         
+      "themes": ["nightowl.json"]                             
+    }                                                                                                
+  ]                                                                                                  
+}   
