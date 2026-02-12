@@ -20,26 +20,27 @@
 | **`maxpatcher`** | **Builder** | Python (fork + wrapper) |
 | **`maxprober`** | **Debugger** | Node.js (inside Max) |
 
-**In addition to these 2 layers there are the following global components**
+**In addition to these 2 layers we have the following global component**
 
-1. **Beads:** Long-term memory system and task management made up of a local SQLite/JSON DB, daemon for syncing and integration with git.
+**Pi:** a minimal terminal based agentic coding harness, with only basic defaults in place.
 
-2. **Pi:** a minimal terminal based agentic coding harness, with only basic defaults in place.
+**With these layers and harness we create max devices each in their own dedicated directory**
 
-_NOTE: both are installed globally for the user and thus are not visible from within the monorepo. if for some reason you need access to either's files, you **MUST** prompt the user before continueing._
+For now we are only focused on getting the agentic layer up and running. After that (and only with explicit human direction) we will develop each app inidiviually, and the finally we will implement our first max device.
 
 ---
 
 ## 2. Core Workflow Pattern 
 
-For both platform and app development we adhere to a strict sequential process (with the ability to loop when needed): 
+For both platform and app development we leverage the pi-superpowers extension which provides the user a set of skills for each stage of the development process: 
 
-1. define through discussion | Command: `/dis`.
-2. document decisions and/or specs | Command: `/doc`
-3. create workplan | Command: `/plan`
-4. prioritize work and convert into actionable tasks | Command: `/ready`
-5. implement and validate | Command: `/engage`
-6. reflect and determine where to jump back to | Command: `/reflect`
+1. **Brainstorm** `/skill:brainstorming` refines your idea into a design document
+2. **Isolate** `/skill:using-git-worktrees` creates a clean workspace
+3. **Plan** `/skill:writing-plans` breaks work into bite-sized TDD tasks
+4. **Execute** `/skill:executing-plans` or `/skill:subagent-driven-development` works through the plan
+5. **Verify** `/skill:verification-before-completion` proves it works
+6. **Review** `/skill:requesting-code-review` catches issues
+7. **Finish** `/skill:finishing-a-development-branch` merges or creates a PR
 
 _!!IMPORTANT!!: moving from one stage the next is the responsibilty of the user NOT the agent._
 
@@ -85,9 +86,3 @@ Do not `cat` or read these files preemptively. You will be instructed on when to
 *   **Step-by-Step Execution:** Execute the first step, report the result, and *then* ask for the next step.
 *   **State Management:** Trust files and logs to hold state. Do not try to hold the entire "potential future" in your context window.
 *   **Bias for Action:** If a decision is ambiguous, ask the user or try the most reversible action. Do not loop trying to find the "perfect" path.
-
----
-
-_TODO: start with frontmatter_
-
-_TODO: add start and end session hygiene, includes handoff protocols_
