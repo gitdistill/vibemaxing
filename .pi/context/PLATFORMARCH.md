@@ -19,7 +19,7 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **Role:** Domain-specific execution.
 *   **Constraint:** These apps must not depend on Pi. They are invoked *by* Pi.
 *   **Modules:**
-    1.  **`cyclescraper`** (Input): Gathers external knowledge (Cycling '74 docs, forums).
+    1.  **`cyclescraper`** (Input): Gathers external knowledge (Cycling '74 docs).
     2.  **`maxdocsparser`** (Translation): Converts Max documentation/objects into LLM-friendly schemas.
     3.  **`maxrag`** (Memory): Vector store for documentation and past patches.
     4.  **`maxpatcher`** (Output): Generates/Modifies `.maxpat` JSON structures.

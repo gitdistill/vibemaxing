@@ -14,7 +14,7 @@
 
 | App | Role | Tech Stack (unvalidated) |
 | --- | --- | --- |
-| **`cyclescraper`** | **Web ETL** | Python, Exa |
+| **`cyclescraper`** | **Web ETL** | Python, beautifulsoup4, markdownify |
 | **`maxdocsparser`** | **Local Parser** | Python, MaxPyLang |
 | **`maxrag`** | **Memory/RAG** | ChromaDB, MCP |
 | **`maxpatcher`** | **Builder** | Python (fork + wrapper) |
