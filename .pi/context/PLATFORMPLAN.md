@@ -19,11 +19,10 @@ description: High-Level Platform Roadmap & Backlog
 *   [x] Integrate `pi-superpowers` workflow.
 *   [x] Update `PLATFORMDEV.md` with structured process.
 
-## Phase 2: Agentic Tooling & Custom Skills
-**Goal:** Identify and build additional Pi tools or custom skills needed for Vibemaxing-specific workflows (e.g. Max/MSP specific tools).
-*   [ ] Review workflow capabilities and gaps.
-*   [ ] Identify necessary custom Pi Tools/Extensions.
-*   [ ] Implement Agentic Tools.
+## Phase 2: Just-in-Time Tooling & Skills
+**Goal:** Develop custom Pi tools and skills as needed during App implementation. This phase is reactive to needs discovered in Phase 3.
+*   [ ] Monitor App development for recurring manual tasks or domain-specific needs (e.g., Max/MSP file manipulation).
+*   [ ] Implement custom Pi Skills or Extensions only when a clear requirement emerges.
 
 ## Phase 3: App Layer Definition & Implementation
 **Goal:** Define and build the specific application modules using the workflow established in Phase 1.
