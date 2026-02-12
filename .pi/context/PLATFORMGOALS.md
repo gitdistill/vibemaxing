@@ -19,8 +19,8 @@ The platform does not aim to replace the human artist but to empower them by han
 ## 2. Key Objectives
 
 ### A. The Agentic Layer (.pi)
-*   **Cognitive Continuity:** Leverage "Beads" (external global tool) to ensure the agent remembers context across sessions and tasks, eliminating the need to repeat "the plan".
-*   **Strict Process Adherence:** Enforce the 6-step workflow (`/dis` -> `/reflect`) to prevent drift and ensure alignment.
+*   **Cognitive Continuity:** Leverage "pi-superpowers" (a pi extension installed globally) to ensure the agent remembers context across sessions and tasks, eliminating the need to repeat "the plan".
+*   **Strict Process Adherence:** Enforce the 7-step workflow (Brainstorm -> Finish) to prevent drift and ensure alignment.
 *   **Tool Agency:** Give the agent robust CLI access to the `apps/` layer so it can actively participate in development.
 
 ### B. The Apps Layer (apps/)
