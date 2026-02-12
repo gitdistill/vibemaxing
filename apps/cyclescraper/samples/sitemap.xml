@@ -1,0 +1,6831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>https://docs.cycling74.com</loc>
+		</url>
+		<!-- User Guide -->
+		<url>
+	<loc>https://docs.cycling74.com/userguide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/new_in_max9/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/glossary_common_terms/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/abl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/frequency_domain/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_gen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_wrapper/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/audio_channels/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/non_realtime/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/plugins/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/polyphony/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/recording/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/rnbo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/sample_accurate_messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/color_palette/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/color_themes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/dynamic_colors/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/format_palette/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/styles/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/syntax_coloring/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/arrays/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/dictionaries/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/integers_vs_floats/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/strings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/debugging_and_probing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/error_messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/illustration_mode/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/max_console/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/file_browser/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/filetypes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/search_path/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/gen/_gen_overview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/gen/gen_common_operators/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/gen/gen_genexpr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/gen/gen~_operators/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/gen/gen_jitter_operators/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/depth_layer_blend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/geometry/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/graphics_engine/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/graphics_processing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/jitter_expr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/jxs_file_format/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/matrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/render_passes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/textures/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/video/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/jitter/video_engine/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/action_menu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/documentation_window/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/extras_menu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/inspector/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/object_reference/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/preferences_and_settings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/sidebar_search/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/patcher_window/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mapping/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/midi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/OSC/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/param_connect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/parameter_mode/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/presets_and_interpolation/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/pattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/snapshots/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/conversion/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/message_types/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/objects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/patcher_lifecycle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/patching/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/patch_cords/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/patching_mechanics/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/web_browser/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/abstractions/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/bpatchers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/custom_ui_objects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/externals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/packages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/package_manager/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/projects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/prototypes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/snippets/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/subpatchers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/templates/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/scripting_overview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/external_text_editor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/javascript/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/lua/jit_gl_lua_overview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/max_define/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/controlling_max_with_messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/repl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/sharing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/projects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/standalones_and_collectives/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/scheduler/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/time_value_syntax/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/transport/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/_m4l_overview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_api_overview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_creatingdevices/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_userinterfaces/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_automation/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_sharing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_timing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_audiodevices/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_api/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_midieffects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_parameters/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_freezing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_limitations/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_miditools/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_presets/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_preview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_resolveconflicts/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_parameterswindow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_unfreezing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_pattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_symbols/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/m4l/live_files/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_gen_newfeatures/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_generated_messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_maxforlive_interface/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_channel_topology/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_dynamic_routing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_events_newobjects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_function_generators/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_gen_instances/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_gen_newobjects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_poly_without_polytilde/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_mixing_panning/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_patchcords/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_polyphony/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_multichannel_sources/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_signals_newobjects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_spatialization/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_visualization/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_mcvsmcs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_messages_to_wrapper/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_audio_delays/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_poly_newfeatures/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_poly_multiple_patchers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_events_newfunctions/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_gen_event_wrapper/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/mc/mc_plugins/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/lua/jit_gl_lua_color_bindings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/lua/jit_gl_lua_opengl_bindings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/lua/jit_gl_lua_opengl_glu_bindings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/userguide/lua/jit_gl_lua_vector_math/</loc>
+</url>
+		<!-- API Reference -->
+		<url>
+			<loc>https://docs.cycling74.com/apiref/</loc>
+		</url>
+		<url>
+	<loc>https://docs.cycling74.com/apiref/lom/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/application/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/application_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/chain/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/chainmixerdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/clip/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/clip_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/clipslot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/compressordevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/controlsurface/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/cuepoint/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/device/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/device_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/deviceio/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/deviceparameter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/driftdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/drumcelldevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/drumchain/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/drumpad/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/eq8device/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/eq8device_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/groove/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/groovepool/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/hybridreverbdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/looperdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/maxdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/melddevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/mixerdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/plugindevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/rackdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/rackdevice_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/roardevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/sample/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/scene/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/shifterdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/simplerdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/simplerdevice_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/song/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/song_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/spectralresonatordevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/takelane/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/this_device/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/track/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/track_view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/tuningsystem/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/lom/wavetabledevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/basic2dstrokestyleparameternames/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/buffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/cpost/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/dict/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/drawingprimitivetype/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/error/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/file/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/filetypes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/folder/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/global/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/image/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jitter3dutilsinterface/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jitter3dutilstypes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jitterevent/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jittereventtypes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jitterlistener/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jittermatrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jitterobject/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/jsthis/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/linestrokestyleparameternames/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/liveapi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/max/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/maxobj/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/maxobjconnection/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/maxobjlistener/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/maxobjlistenerdata/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/maxstring/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/messnamed/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/mgraphics/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/mgraphicsmatrixhandle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/mgraphicspathhandle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/mgraphicssvg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/parameterinfoprovider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/parameterinfoproviderdata/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/parameterlistener/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/parameterlistenerdata/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/patcher/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/pattern/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/pointerevent/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/polybuffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/post/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/progressevent/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/sketch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/snapshotapi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/sqlite/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/sqlresult/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/task/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/wind/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/js/xmlhttprequest/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/addhandler/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/addhandlers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/anything/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/getdict/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/jsonarray/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/jsonobject/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/jsonprimitive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/jsonvalue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/max_env/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/maxfunctionhandler/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/maxfunctionselector/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/message_types/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/outlet/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/outletbang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/post/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/post_levels/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/removehandler/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/removehandlers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/setdict/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/apiref/nodeformax/updatedict/</loc>
+</url>
+		<!-- Learn -->
+		<url>
+			<loc>https://docs.cycling74.com/learn/</loc>
+		</url>
+		<!-- Articles Series -->
+		<url>
+	<loc>https://docs.cycling74.com/learn/series/javascript-custom-drawing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/series/jitter-tutorials/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/series/jitter_geometry/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/series/max-tutorials/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/series/msp-tutorials/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/series/polish-your-pixels/</loc>
+</url>
+		<!-- Articles -->
+		<url>
+	<loc>https://docs.cycling74.com/learn/articles/01-quickstart/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/02-working-with-transforms/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/03-hit-testing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/04-working-with-patterns/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/01-color-management/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/02-antialiasing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/03-light-rendering/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/04-scale-and-distance/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05-object-motion/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06-pass-effects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-contours/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-differential.growth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-fractals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-open.mesh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-point-cloud/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-thickness/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/geom-twisting/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00a_whatisamatrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00b_whatareattributes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00c_display-a-video/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00d_live-capture/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00e_control-jitter-with-messages/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00f_adding-3d-objects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00g_jitter-matrix-1/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00h_jitter-matrix-2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00i_generating-geometry/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00j_audio-into-a-matrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00k_building-live-video-effects/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter00l_composing-the-screen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/01_mspintro/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/02_mspdigitalaudio/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/03_msphowmspworks/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/04_mspaudioio/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05_mspbasicchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05_mspbasicchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05_mspbasicchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05_mspbasicchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/05_mspbasicchapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06_synthesischapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06_synthesischapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06_synthesischapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06_synthesischapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/06_synthesischapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter06/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/07_samplingchapter07/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/08_filterchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/08_filterchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/08_filterchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/08_filterchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/08_filterchapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/09_dynamicschapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/09_dynamicschapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/09_dynamicschapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/10_midichapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/10_midichapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/10_midichapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/11_polychapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/11_polychapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/11_polychapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/12_sequencingchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/13_panningchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/13_panningchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/13_panningchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/14_analysischapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/14_analysischapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/14_analysischapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/14_analysischapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/15_delaychapter06/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/16_pluginchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/16_pluginchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/16_pluginchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_00/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_06/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_07/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_08/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_09/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/17_msp_compress_10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter06/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter07/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter08/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter09/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter11/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter12/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter13/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter14/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter15/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter16/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter17/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter18/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter19/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter20/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter21/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/basicchapter22/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/communicationschapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/communicationschapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/communicationschapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/datachapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/datachapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/datachapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/datachapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/datachapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/interfacechapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/interfacechapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/javascriptchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/javascriptchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/javascriptchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/javascriptchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter06/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter07/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter08/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter09/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter11/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter12/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter13/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter14/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter15/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter16/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter17/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter18/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter19/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter20/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter21/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter22/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter23/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter24/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter25/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter26/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter27/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter28/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter29/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter30/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter31/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter32/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter33/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter34/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter35/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter36/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter37/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter38/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter39/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter40/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter41/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter42/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter43/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter44/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter45/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter46/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter47/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter48/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter49/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter50/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter51/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter52/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter99_appendixa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter99_appendixb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter99_appendixc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter99_appendixd/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/jitterchapter99_bibliography/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/midichapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/midichapter02/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/midichapter03/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/midichapter04/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/midichapter05/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/pattrchapter01/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/learn/articles/pattrchapter02/</loc>
+</url>
+		<!-- Object Reference -->
+		<url>
+			<loc>https://docs.cycling74.com/reference/</loc>
+		</url>
+		<url>
+	<loc>https://docs.cycling74.com/reference/!-/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/!%2F/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/!%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%25/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%26/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%26%26/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/*/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%2B/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/-/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%2F/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/2d.wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3C%3C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3C%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3D%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3E/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3E%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%3E%3E/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.autofilter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.channeleq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.compressor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.delay~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.drift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.drumbuss~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.drumsampler~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.echo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.limiter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.redux~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.reverb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.roar~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.spectralresonator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.spectraltime~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.device.utility~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.alternate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.basicshapes~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.bitgrunge~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.bubble~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.chip~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.chorus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.compander~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.crackle~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.darkhall~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.dfm~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.distortion~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.doubler~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.dualbasicshapes~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.ensemble~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.envfollower~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.euclid~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.expshaper~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.extratone~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.filterednoise~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.filther~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.flanger~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.fmbass~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.foldfm~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.fuzz~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.harmonicfm~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.meldfilter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.meldosc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.modalresonator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.modulator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.noiseloop~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.noisyshapes~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.overdrive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.phaser~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.pitchestimator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.pitchshifter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.prism~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.pulsate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.quartz~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.rain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.ramp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.ringmod~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.saturator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.shepard~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.shimmer~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.simplefm~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.squarefifth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.squaresync~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.stereolfo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.subosc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.swarm~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.tarp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.tides~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.transform~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.transientdesign~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.velvetnoise~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.vibrato~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.vowel~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.wander~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abl.dsp.waveshaper~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_abs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_absdiff/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/absolutepath/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/abs~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/accum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_accum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/acos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_acos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/acosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_acosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/acosh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/acos~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/active/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/adc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_add/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/adoutput~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/adsr~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/adstatus/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/allpass~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/amxd~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/anal/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_and/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/append/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.at/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.compare/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.concat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.deserialize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.every/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.expr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.fill/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.filter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.flatten/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.foreach/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.frombuffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.index/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.indexmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.indexof/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.insert/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.length/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.map/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.max/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.mean/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.median/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.min/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.mode/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.pop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.push/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.random/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.reduce/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.regexp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.remove/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.replace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.reverse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.rotate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.routepass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.scramble/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.sect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.shift/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.shuffle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.slice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.some/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.sort/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.split/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.stddev/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.stream/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.subarray/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.thin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.tobuffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.tolist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.tostring/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.tosymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.tuplewise/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.union/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.unique/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.unshift/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/array.wrap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/asin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_asin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/asinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_asinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/asinh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/asin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_atan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atan2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_atan2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atan2~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_atanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atanh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atodb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_atodb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atodb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/atoi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/attrui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/audiounit~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/autopattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/average~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/avg~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/b/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bag/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bangbang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/begin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bendin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bendout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bgcolor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/biquad~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitand/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitand~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitnot~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitsafe~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bitxor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bline/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bondo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_bool/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/borax/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bpatcher/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/bucket/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/buddy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_buffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/buffer~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/buffir~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/button/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/capture/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/capture~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cartopol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_cartopol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cartopol~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cascade~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ceil/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_cell/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/change~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_channels/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/chooser/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/chucker~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_circle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_clamp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/click~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/clip/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_clip/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/clip~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/clocker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/closebang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/coll/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/coll.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/colorpicker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/combine/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/comb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/comment/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_concat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_cone/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/conformpath/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/console/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_constant/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_cos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_cosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cosh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cosx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cos~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/counter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_counter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/count~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cpuclock/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_cross/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/crosspatch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cross~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ctlin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ctlout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/curve~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cverb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cycle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_cycle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/cycle~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_cylinder/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dac~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_data/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/date/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dbtoa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_dbtoa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dbtoa~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_dcblock/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ddg.mono/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/decide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/decode/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/defer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/deferlow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/degrade~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_degrees/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_degtorad/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/del/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/delay/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_delay/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/delay~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_delta/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/deltaclip~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/delta~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/detonate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dial/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dialog/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.compare/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.deserialize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.pack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.print/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.route/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.serialize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.slice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.strip/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.unpack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dict.view/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_dim/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_dim/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/div/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_div/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/div~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_dot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/downsamp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dropfile/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/drunk/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dspstate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/dsptime~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_e/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/edge~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_elapsed/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_eq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_eqp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/equals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/equals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/error/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_exp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_exp2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/expr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_expr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ezadc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ezdac~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/f/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_faceforward/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fastcos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fastexp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fastpow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fastsin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fasttan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fbinshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fffb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fftfullspect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_ffthop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fftinfo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fftinfo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fftin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fftoffset/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fftout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fftsize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filedate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filein/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filepath/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filewatch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filtercoeff~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filterdesign/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filterdetail/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/filtergraph~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fixdenorm/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_fixnan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/float/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_float/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/flonum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_floor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/flush/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fold/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/folder/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/follow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fontlist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/forward/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fpic/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_fract/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/frameaccum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/frameaverage~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/framedelta~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/framesmooth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/framesnap~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/frame~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/freebang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/freqshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fromsymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fswap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ftom/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_ftom/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ftom~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/funbuff/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/function/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/funnel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/fzero~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gamepad/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen.codebox~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_mc_channel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_mc_channelcount/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_read/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_voicecount/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_write/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gestalt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/getattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ggate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gizmo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/grab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/greaterthan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/greaterthaneq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/greaterthaneq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/greaterthan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gridmeter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/groove~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gswitch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gswitch2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gte/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gtep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_gtp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_halfpi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hid/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hilbert~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hint/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/histo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_history/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hover/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_hsl2rgb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/hslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_hypot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/i/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/if/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ifft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/imovie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_in/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/in/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/incdec/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/index~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/info~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/inlet/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_int/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/int/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_interp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_invpi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/in~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ioscbank~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_isdenorm/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_isnan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/itable/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/itoa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!%25/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!-/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!%2F/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!%3Dp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.!pass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%25/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%26/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%26%26/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.*/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%2B/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%2Bm/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.-/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.-m/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%2F/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.3m/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3C%3C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3C%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3C%3Dp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3Cp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3D%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3D%3Dp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3E/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3E%3D/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3E%3Dp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3E%3E/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%3Ep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%5E/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.abs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.absdiff/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.acos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.acosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.add/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.addmod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.alphablend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.altern/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ameba/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.and/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.anim.drive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.anim.node/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.anim.path/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.argb2ayuv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.argb2grgb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.argb2uyvy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.asin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.asinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.atan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.atan2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.atanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.avc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.avg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.avg4/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.axis2quat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ayuv2argb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ayuv2luma/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ayuv2uyvy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bfg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bitand/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bitnot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bitor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bitxor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.brass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.brcosa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.bsort/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.buffer~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.catch~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ceil/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.cellblock/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.charmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.chromakey/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.clip/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.coerce/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.colorspace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.concat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.convolve/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.conway/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.cos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.cosh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.cycle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.demultiplex/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.desktop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.dimmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.dimop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.displays/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.div/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.dx.grab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.dx.videoout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.eclipse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.eq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.eqp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.euler2quat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.exp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.exp2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.expr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fastblur/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fft/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fill/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.findbounds/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.flipdiv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.flipmod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.flippass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.flipsub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.floor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fluoride/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fold/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fprint/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fpsgui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.framecount/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.freeframe/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.alphaglue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.altern/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.ameba/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.an.max/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.an.mean/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.an.min/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.bitcrush/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.blur/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.brass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.brcosa/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.bsort/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.camera/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.bilateral/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.directional/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.gaussian/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.kuwahara/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.radial/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.sharpen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.cf.tiltshift/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.accum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.additive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.alphablend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.average/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.brightlight/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.burn/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.chromakey/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.darken/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.difference/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.dodge/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.exclude/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.freeze/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.glow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.hardlight/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.heat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.inverse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.lighten/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.lumakey/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.multiply/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.negate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.normal/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.overlay/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.reflect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.screen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.softlight/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.stamp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.co.subtractive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.concat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.conway/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.crt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.delay/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.dimmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.eclipse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.ge.flowfield/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.ge.lineinterp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.ge.pattern/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.ge.randlines/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.grain/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.hue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.lin2srgb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.multiplex/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.pixelsorting/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.repos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.rgb2luma/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.rota/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.slide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.sobel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.srgb2lin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.subtexture/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.threshold/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tp.delay/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tp.filter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tp.warp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.dissolve/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.gridwipe/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.huefade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.rotfade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.shrinkwipe/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.slide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.vignettes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.xfade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.tr.zoomfade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.vhs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.fx.wake/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gen.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gencoord/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom-group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.close/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.crop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.decimate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.dimples/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.displace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.distribute/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.multiple/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.normalize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.normgen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.prop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.remesh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.shape/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.smooth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.subdivide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.texgen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.thru/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.todict/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.togeom/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.tomatrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.tomesh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.topoints/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.twist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.waves/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geom.xform/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.geometry/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.asyncread/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.bfg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.buffer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.camera/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.cornerpin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.cubemap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.environment/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.graph/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.gridshape/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.handle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.isosurf/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.layer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.light/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.lua/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.material/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.mesh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.meshwarp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.model/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.multiple/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.node/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.nurbs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.pass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.path/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.pbr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.physdraw/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.picker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.pix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.pix.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.plato/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.render/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.shader/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.sketch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.skybox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.slab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.text/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.text2d/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.text3d/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.textmult/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.texture/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.textureinfo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.textureset/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.tf/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.videoplane/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gl.volume/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.glop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.glue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.grab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gradient/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gradient.ui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.graph/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.grgb2argb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gte/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gtep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.gtp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.hatch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.hello/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.histogram/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.hsl2rgb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.hue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.hypot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.keyscreen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.determinant/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.diagproduct/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.inverse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.mult/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.trace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.la.uppertri/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.lcd/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.linden/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ln/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.log/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.log10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.log2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.lshift/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.lt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.lte/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ltep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ltp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.luma2ayuv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.luma2uyvy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.lumakey/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.map/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.matrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.matrixinfo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.matrixset/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.max/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mgraphics/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.min/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.field/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.fieldmask/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.func/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.perlin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.saw/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.sin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.time/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mo.tri/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.movie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.movie~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mult/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.multiplex/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.mxform2d/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.neq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.neqp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.net.recv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.net.send/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.noise/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.normalize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.not/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.obref/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.op/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.openexr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.or/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.p.bounds/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.p.shiva/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.p.vishnu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.path/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.peek~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.6dof/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.barslide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.body/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.conetwist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.ghost/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.hinge/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.multiple/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.picker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.point2point/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.phys.world/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pix.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.planeop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.playlist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.plot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.plume/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.plur/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.poke~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.polymovie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.print/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.proxy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pwindow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.pworld/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qball/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qfaker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qt.grab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qt.movie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qt.record/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.qt.videoout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.quat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.quat2axis/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.quat2euler/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.record/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.release~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.repos/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.resamp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.reverse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.rgb2hsl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.rgb2luma/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.robcross/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.rota/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.round/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.roy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.rshift/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.rubix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scalebias/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scanoffset/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scanslide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scanwrap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scissors/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.scope/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.shade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.slide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sobel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.spill/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.split/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sprinkle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sqrt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.str.fromsymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.str.op/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.str.regexp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.str.tosymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.streak/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.submatrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.submod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.tan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.tanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.textfile/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.thin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.tiffany/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.delta/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.perlin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.saw/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.sin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.time.tri/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.traffic/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.transpose/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.trunc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.turtle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.button/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.canvas/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.number/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.slider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.ui.toggle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.uldl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.unpack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.uyvy2argb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.uyvy2ayuv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.uyvy2luma/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.vcr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.viddll.movie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.viddll.record/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.wake/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.window/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.world/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.wrap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.xfade/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%7C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.%7C%7C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jit.~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/js/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jstrigger/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jsui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jweb/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/jweb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/key/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/keyup/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/kink~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/kslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_latch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lcd/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/led/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_length/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lessthan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lessthaneq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lessthaneq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lessthan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/levelmeter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/limi~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/linedrive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/line~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.compare/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.delace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.ecils/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.filter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.indexmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.lace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.len/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.lookup/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.median/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.mth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.nth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.queue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.reg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.rev/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.rot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.scramble/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.sect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.slice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.sort/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.stack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.stream/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.sum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.swap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.thin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.union/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/list.unique/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/listbox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/listfunnel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.adsrui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.adsr~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.arrows/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.banks/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.button/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.colors/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.comment/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.dial/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.drop/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.gain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.grid/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.map/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.menu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.meter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.miditool.in/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.miditool.out/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.modulate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.numbox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.object/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.observer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.param~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.path/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.push/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.remote~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.routing/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.scope~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.slider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.step/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.tab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.text/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.thisdevice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/live.toggle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ln/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ln10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ln2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/loadbang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/loadmess/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_log/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_log10/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_log10e/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_log2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_log2e/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/logand/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/logor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/log~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_lookup/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lookup~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/lores~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/loudness~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_lt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_lte/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ltep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_ltp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/makenote/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mappings/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/match/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/matrix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/matrixctrl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/matrix~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_max/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_maximum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/maximum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/maximum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/maxurl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.!-~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.!%2F~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.!%3D~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%25~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.*~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%2B%3D~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%2B~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.-~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%2F~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.2d.wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%3C%3D~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%3C~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%3D%3D~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%3E%3D~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.%3E~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.abs~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.acosh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.acos~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.adc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.adsr~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.allpass~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.amxd~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.apply~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.asinh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.asin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.assign/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.atan2~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.atanh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.atan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.atodb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.audiounit~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.average~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.avg~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bands~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.biquad~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitand~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitnot~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitsafe~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.bitxor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.buffir~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.capture~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cartopol~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cascade~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cell/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.change~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.channelcount~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.chord~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.click~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.clip~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.combine~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.comb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cosh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cosx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cos~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.count~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cross~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.curve~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.cycle~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.dac~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.dbtoa~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.degrade~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.deinterleave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.delay~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.deltaclip~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.delta~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.div~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.downsamp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.dup~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.edge~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.equals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.evolve~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.ezadc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.ezdac~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.fffb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.fft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.filtercoeff~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.frameaccum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.frameaverage~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.framedelta~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.framesmooth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.freqshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.ftom~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.function/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.fzero~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.gain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.gate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.gen/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.generate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.gen~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.getattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.gradient~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.greaterthaneq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.greaterthan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.groove~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.hilbert~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.ifft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.index~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.input/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.interleave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.in~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.jit.catch~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.jit.movie~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.jit.peek~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.jit.release~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.kink~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.lessthaneq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.lessthan~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.levelmeter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.limi~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.line/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.line~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.list~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.live.gain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.log~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.lookup~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.lores~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.loudness~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.makelist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.matrix~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.maximum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.meter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.midiplayer~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.miditarget/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.minimum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.minmax~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.minus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.mixdown~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.modulo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.mstosamps~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.mtof~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.multigain~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.noise~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.normalize~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.noteallocator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.notequals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.number~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.omx.4band~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.omx.5band~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.omx.comp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.omx.peaklim~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.onepole~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.op~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.out~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.overdrive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pack~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pattern~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.peakamp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.peek~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pfft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.phasegroove~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.phaseshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.phasewrap~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.phasor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pink~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pitchshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.playlist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.play~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.plugin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.plugout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.plugphasor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.plusequals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.plus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.poltocar~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.poly~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pong~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.pow~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rampsmooth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.ramp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rand~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.range~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.receive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.record~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rect~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.resize~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.reson~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.retune~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.rminus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.round~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.route/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.r~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sah~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sampstoms~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sash~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.saw~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.scale~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.scope~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.selector~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.send~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.separate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.seq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sfizz~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sflist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sfplay~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sfrecord~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.shape~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sig~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sinh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sinx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.slide~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.snapshot~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.snowfall~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.snowphasor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.spectroscope~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.spike~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sqrt~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.stash~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.stepdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.stepfun~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.stereo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.stutter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.subdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.svf~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.swing~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.sync~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.s~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.table~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.tanh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.tanx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.tapin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.tapout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.target/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.targetlist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.teeth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.thresh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.times~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.train~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.transpose~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.trapezoid~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.triangle~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.tri~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.trunc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.twist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.unpack~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.updown~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.vectral~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.voiceallocator~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.vst~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.what~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.where~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.zerox~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mc.zigzag~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.2d.wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.amxd~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.fffb~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.gate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.gen~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.groove~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.limi~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.matrix~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.play~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.poly~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.selector~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.sig~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.tapout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.vst~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcs.wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mcwrapper-group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mean/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/menubar/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/message/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/messageview/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/meter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/metro/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiflush/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiformat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiinfo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiparse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/midiselect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_min/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_minimum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/minimum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/minimum~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/minmax~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/minus/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/minus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mira.frame/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mira.motion/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mira.multitouch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_mix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_mod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/modifiers/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/modulo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/modulo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mousefilter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mousestate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/movie/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mpeconfig/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mpeformat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mpeparse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_mstosamps/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mstosamps~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_mtof/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mtof/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mtof~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mtr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_mul/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_mulequals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/multirange/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/multislider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mute~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mxj/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/mxj~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_nearest/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_nearest/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_nearestpix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_neg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_neq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_neqp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/next/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/node.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/node.script/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/nodes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_noise/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/noise~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_norm/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_normalize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/normalize~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_not/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/notein/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/noteout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/notequals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/notequals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/nrpnin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/nrpnout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/nslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/number/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/number~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/numkey/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/offer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/omsinfo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/omx.4band~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/omx.5band~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/omx.comp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/omx.peaklim~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/onebang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/onecopy/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/onepole~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/opendialog/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_or/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/osc.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/osc.packet/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/oscbank~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_out/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/out/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/outlet/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/out~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/overdrive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/p/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pak/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/panel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_param/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/param/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/param.osc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_pass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pass~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/past/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/patcher/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/patcherargs/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pattr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pattrforward/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pattrhub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pattrmarker/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pattrstorage/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pcontrol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/peak/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/peakamp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_peek/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/peek~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pfft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pgmin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pgmout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/phasegroove~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/phaseshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_phasewrap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/phasewrap~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_phasor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/phasor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_phi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_pi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pictctrl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pictslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pink~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pipe/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pitchshift~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_plane/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/playbar/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/playlist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/play~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plot~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugphasor~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugreceive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugsend~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plugsync~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plus/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_plusequals/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plusequals~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/plus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_poke/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/poke~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_poltocar/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/poltocar/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/poltocar~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/poly/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/polybuffer~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/polyin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/polymidiin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/polyout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/poly~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pong/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pong~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_pow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pow/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pow~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/prepend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/preset/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/print/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/prob/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/project/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/pvar/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_qconj/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/qlim/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/qlist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/qmetro/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_qmul/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_qrot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/quickthresh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/r/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_radians/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/radiogroup/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_radtodeg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rampsmooth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ramp~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/random/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rand~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_rate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rate~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_rdiv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rdiv/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_receive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/receive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/receive~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/record~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rect~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_reflect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_refract/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/regexp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/relativepath/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/repl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/reson~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/retune~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_rgb2hsl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rminus/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rminus~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_rmod/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_rotor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_round/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/round/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/round~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/route/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/routepass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/router/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rpnin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rpnout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_rsub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/rtin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/r~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/s/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_sah/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sah~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_sample/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_sample/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_samplepix/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_samplerate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_sampstoms/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sampstoms~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sash~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/savebang/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/savedialog/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/saw~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_scale/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/scale/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/scale~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/schedule/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/scope~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/screensize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sel/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/select/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_selector/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/selector~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_send/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/send/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/send~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/seq/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/seq~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/serial/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/setclock/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_setparam/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sfinfo~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sfizz~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sflist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sfplay~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sfrecord~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/shape~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/shiftleft/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/shiftright/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sign/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sig~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sinh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sinh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sinx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_slide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/slide/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/slider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/slide~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_smoothstep/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/snapshot-group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/snapshot~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_snorm/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/snowfall~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/spectroscope~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/speedlim/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/spell/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_sphere/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/spike~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_splat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/split/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/spray/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sprintf/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sqrt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sqrt/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sqrt1_2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sqrt2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sqrt~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/standalone/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stash~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_step/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stepcounter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stepcounter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stepdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stepfun~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stretch~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.append/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.at/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.bytes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.chars/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.compare/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.concat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.contains/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.endswith/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.frombytes/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.fromchars/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.fromsymlist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.fromutf8/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.index/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.indexof/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.length/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.passcmp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.prepend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.regexp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.remove/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.replace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.replaceall/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.reverse/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.rotate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.slice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.split/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.sprintf/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.startswith/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.substring/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.toarray/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.tolist/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.tolower/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.tosymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.toupper/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.trim/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.trimend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.trimstart/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.utf8/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/string.withpass/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stripnote/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/strippath/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/stutter~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/subdiv~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/substitute/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/suckah/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/suspend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sustain/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/svf~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/swap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/swatch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/swing~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_switch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/switch/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_swiz/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sxformat/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sync~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/sysexin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/s~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/t/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_t60/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_t60time/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tab/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tabcontroller/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/table/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/table~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_tan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_tanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tanh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tanh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tanx~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tapin~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tapout~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/techno~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/teeth~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tempo/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/text/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/text.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/textbox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/textbutton/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/textedit/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/themecolor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/thisobject/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/thispatcher/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/thispoly~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/threadcheck/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/thresh/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/thresh~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/timepoint/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/timer/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/times/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/times~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/togedge/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/toggle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_torus/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tosymbol/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/touchin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/touchout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_train/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/train~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/translate/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/transport/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/trapezoid~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_triangle/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/triangle~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/trigger/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/tri~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/trough/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_trunc/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/trunc~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/twist~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_twopi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/typeroute~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ubumenu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/ubutton/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/udpreceive/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/udpsend/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/umenu/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/universal/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/unjoin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/unpack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/updown~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/urn/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/uslider/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/uzi/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/v/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/v8/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/v8.codebox/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/v8ui/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/value/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/vdp/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_jit_vec/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_vectorsize/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/vectral~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/vexpr/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_voice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/vstscan/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/vst~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_dsp_wave/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/waveform~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/wave~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/what~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/when/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/where~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/windowed-fft~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_wrap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xbendin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xbendin2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xbendout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xbendout2/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xctlin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xctlout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xmidiin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xnotein/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/xnoteout/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/gen_common_xor/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zerox~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zigzag~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.change/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.compare/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.delace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.ecils/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.filter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.group/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.indexmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.iter/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.join/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.lace/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.len/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.lookup/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.median/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.mth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.nth/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.queue/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.reg/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.rev/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.rot/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.scramble/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.sect/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.slice/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.sort/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.stack/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.stream/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.sub/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.sum/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.swap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.thin/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.union/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zl.unique/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zmap/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/zplane~/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%7C/</loc>
+</url>
+<url>
+	<loc>https://docs.cycling74.com/reference/%7C%7C/</loc>
+</url>
+	</urlset>
