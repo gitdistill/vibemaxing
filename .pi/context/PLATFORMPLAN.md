@@ -26,10 +26,10 @@ description: High-Level Platform Roadmap & Backlog
 
 ## Phase 3: App Layer Definition & Implementation
 **Goal:** Define and build the specific application modules using the workflow established in Phase 1.
-*   [ ] Brainstorming session for `cyclescraper` Goals & Spec.
-*   [ ] Brainstorming session for `maxpatcher` Goals & Spec.
-*   [ ] Brainstorming session for `maxrag` Goals & Spec.
+*   [x] Brainstorming session for `cyclescraper` Goals & Spec.
 *   [ ] Brainstorming session for `maxdocsparser` Goals & Spec.
+*   [ ] Brainstorming session for `maxrag` Goals & Spec.
 *   [ ] Brainstorming session for `maxprober` Goals & Spec.
+*   [ ] Brainstorming session for `maxpatcher` Goals & Spec.
 
 ## Backlog / Discussion Queue
