@@ -24,13 +24,14 @@ The platform does not aim to replace the human artist but to empower them by han
 *   **Tool Agency:** Give the agent robust CLI access to the `apps/` layer so it can actively participate in development.
 
 ### B. The Apps Layer (apps/)
-*   **Modularity:** The 5 core apps (`cyclescraper`, `maxdocsparser`, `maxrag`, `maxpatcher`, `maxprober`) constitute the complete V1 toolset. Each must function as a standalone CLI tool first.
+*   **Context7 Integration:** Use the Context7 MCP bridge to provide the agent with real-time, high-fidelity Max/MSP and Cycling '74 documentation.
+*   **Patcher Interaction:** Focus development on `maxpatcher` and `maxprober` to allow the agent to read, write, and debug Max patches directly.
 *   **Format Transparency:** Solve the "Opaque Binary" problem of `.maxpat` files by robustly parsing them into readable formats (XML/JSON/Text).
 
 ## 3. Success Metrics
 
 | Metric | Definition | Target |
 | :--- | :--- | :--- |
-| **Context Retention** | Ability of the agent to recall a decision made in `/dis` during the `/engage` phase without re-reading chat history (relying on Beads/Docs). | 100% |
+| **Documentation Precision** | Ability to retrieve correct Max object attributes and JavaScript API methods via Context7. | 100% |
 | **Patch Validity** | % of generated Max patches that open without corruption errors. | > 90% |
 | **M4L Delivery** | Successful completion and functional validation of the planned Max for Live device. | 1 shipped device |

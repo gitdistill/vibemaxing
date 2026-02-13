@@ -11,25 +11,23 @@ description: High-Level Platform Roadmap & Backlog
 *   [x] Draft `.pi/context/PLATFORMARCH.md`.
 *   [x] Finalize `.pi/context/PLATFORMDEV.md` (Based on `pi-superpowers`).
 
-## Phase 1: Agentic Workflow Implementation (Complete)
-**Goal:** Leverage the `pi-superpowers` extension to unlock the core workflow pattern defined in `AGENTS.md`.
+## Phase 1: Knowledge Infrastructure (Complete)
+**Goal:** Establish high-fidelity documentation retrieval without local RAG overhead.
+*   [x] Research Context7 MCP integration.
+*   [x] Implement Context7 TypeScript extension bridge.
+*   [x] Verify retrieval of Cycling '74 documentation.
+*   [x] Update Platform Architecture to reflect the removal of `cyclescraper`, `maxdocsparser`, and `maxrag`.
 
-**Workflow Skills:** `/skill:brainstorming`, `/skill:using-git-worktrees`, `/skill:writing-plans`, `/skill:executing-plans`, `/skill:verification-before-completion`, `/skill:requesting-code-review`, `/skill:finishing-a-development-branch`
+## Phase 2: Core Development Apps (In Progress)
+**Goal:** Build the essential "Hands" for patch manipulation and debugging.
+*   [ ] Brainstorming & Spec for `maxpatcher` (JSON-based patch generation).
+*   [ ] Brainstorming & Spec for `maxprober` (Runtime debugging/Node for Max).
 
-*   [x] Integrate `pi-superpowers` workflow.
-*   [x] Update `PLATFORMDEV.md` with structured process.
-
-## Phase 2: Just-in-Time Tooling & Skills
-**Goal:** Develop custom Pi tools and skills as needed during App implementation. This phase is reactive to needs discovered in Phase 3.
-*   [ ] Monitor App development for recurring manual tasks or domain-specific needs (e.g., Max/MSP file manipulation).
-*   [ ] Implement custom Pi Skills or Extensions only when a clear requirement emerges.
-
-## Phase 3: App Layer Definition & Implementation
-**Goal:** Define and build the specific application modules using the workflow established in Phase 1.
-*   [x] Brainstorming session for `cyclescraper` Goals & Spec.
-*   [ ] Brainstorming session for `maxdocsparser` Goals & Spec.
-*   [ ] Brainstorming session for `maxrag` Goals & Spec.
-*   [ ] Brainstorming session for `maxprober` Goals & Spec.
-*   [ ] Brainstorming session for `maxpatcher` Goals & Spec.
+## Phase 3: First Device Implementation (Pending)
+**Goal:** Deploy the full workflow (Brainstorm -> Finish) to create a functional Max for Live device.
+*   [ ] Brainstorming for "Vibemaxing V1" Device.
+*   [ ] Execute implementation using `maxpatcher` and Context7 intelligence.
 
 ## Backlog / Discussion Queue
+- [ ] Investigate automatic `.maxpat` to JSON conversion for existing patches.
+- [ ] Explore M4L specific API limitations in Context7.
