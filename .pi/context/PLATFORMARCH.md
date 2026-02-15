@@ -20,8 +20,12 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **Role:** Domain-specific execution for Max/MSP.
 *   **Constraint:** These apps must not depend on Pi. They are invoked *by* Pi.
 *   **Modules:**
-    1.  **`maxpatcher`** (Output): Generates/Modifies `.maxpat` JSON structures.
-    2.  **`maxprober`** (Feedback): Runtime debugging via Node for Max.
+    1.  **`maxpatcher`** (Output): A Python-based Builder. Owns a flattened fork of the `MaxPyLang` engine and upgrades it directly with metadata synced from Context7.
+    2.  **`maxprober`** (Feedback): Runtime debugging via Node for Max. (DEFERRED for future iteration)
+
+### Layer 3: User Land (projects/)
+*   **Role:** Isolated development environments for specific Max devices or patches.
+*   **Structure:** Contains `src/` (Python source) and `dist/` (Generated .maxpat). Configuration via `.vibe.json`.
 
 ## 2. Documentation Retrieval Stack
 Instead of a custom scraping stack, we utilize **Context7 MCP**:
@@ -35,6 +39,7 @@ Instead of a custom scraping stack, we utilize **Context7 MCP**:
 
 ### Global Constraints
 *   **Local-First Development:** Development of Max patches and M4L devices happens locally.
+*   **Lazy Intelligence:** Agents must prioritize local metadata (in `apps/maxpatcher` or `projects/`) and only query Context7 when encountering "Unknown Objects" or high-risk logical operations.
 *   **Agentic Intelligence:** Rely on Context7 for high-fidelity technical specs instead of local scraping.
 
 ### Technology Decisions

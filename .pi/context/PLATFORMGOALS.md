@@ -26,7 +26,6 @@ The platform does not aim to replace the human artist but to empower them by han
 ### B. The Apps Layer (apps/)
 *   **Context7 Integration:** Use the Context7 MCP bridge to provide the agent with real-time, high-fidelity Max/MSP and Cycling '74 documentation.
 *   **Patcher Interaction:** Focus development on `maxpatcher` and `maxprober` to allow the agent to read, write, and debug Max patches directly.
-*   **Format Transparency:** Solve the "Opaque Binary" problem of `.maxpat` files by robustly parsing them into readable formats (XML/JSON/Text).
 
 ## 3. Success Metrics
 

@@ -22,6 +22,7 @@ description: High-Level Platform Roadmap & Backlog
 **Goal:** Build the essential "Hands" for patch manipulation and debugging.
 *   [ ] Brainstorming & Spec for `maxpatcher` (JSON-based patch generation).
 *   [ ] Brainstorming & Spec for `maxprober` (Runtime debugging/Node for Max).
+*   [ ] draft max pi skill
 
 ## Phase 3: First Device Implementation (Pending)
 **Goal:** Deploy the full workflow (Brainstorm -> Finish) to create a functional Max for Live device.
@@ -30,4 +31,10 @@ description: High-Level Platform Roadmap & Backlog
 
 ## Backlog / Discussion Queue
 - [ ] Investigate automatic `.maxpat` to JSON conversion for existing patches.
-- [ ] Explore M4L specific API limitations in Context7.
+- [x] Explore M4L specific API limitations in Context7.
+- [ ] install websearch pi extension
+- [x] migrate to pi superpowers plus
+
+- [ ] go through legacy folders and prune, context7 and better maxpatcher / maxprober definition
+- [ ] add context7 agentic api request logging 
+- [ ] spec max building skills

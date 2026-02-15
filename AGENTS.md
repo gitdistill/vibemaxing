@@ -2,6 +2,10 @@
 
 **Goal:** Build a semi-autonomous development platform for Max/MSP patches and Max for Live devices using Context7 for technical intelligence.
 
+**⚠️ CURRENT PHASE: DESIGN & BRAINSTORMING ONLY ⚠️**
+*   **Status:** Architectural Design Refinement.
+*   **Directive:** We are **NOT** ready to move to implementation. Do not write code. Do not start builds. Focus solely on refining design documents and verifying assumptions.
+
 ---
 
 ## 1. Architectural Framework
@@ -16,8 +20,8 @@
 
 | App | Role | Tech Stack |
 | --- | --- | --- |
-| **`maxpatcher`** | **Builder** | Python (MaxPyLang wrapper) |
-| **`maxprober`** | **Debugger** | Node.js (inside Max) |
+| **`maxpatcher`** | **Builder** | Python (Internal MaxPyLang Fork) |
+| **`maxprober`** | **Analyzer** | MCP Server + Bash |
 
 **Global Harness:** **Pi** (Terminal-based agentic harness).
 
