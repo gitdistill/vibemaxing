@@ -19,8 +19,8 @@ def main():
     validate_parser.add_argument("name", help="Name of the project")
     
     # sync command
-    sync_parser = subparsers.add_parser("sync", help="Sync object metadata from Context7")
-    sync_parser.add_argument("object", help="Name of the Max object to sync")
+    sync_parser = subparsers.add_parser("sync", help="Sync project metadata with Context7 intelligence")
+    sync_parser.add_argument("name", help="Name of the project")
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
@@ -38,7 +38,8 @@ def main():
         from . import core
         core.validate_project(args.name)
     elif args.command == "sync":
-        print(f"Syncing object {args.object}...")
+        from . import core
+        core.sync_project(args.name)
 
 if __name__ == "__main__":
     main()

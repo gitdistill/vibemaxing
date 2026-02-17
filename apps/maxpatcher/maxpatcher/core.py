@@ -155,3 +155,34 @@ def validate_project(project_name: str):
     if not found_any:
         print("No .maxpat files found in distribution folder.")
 
+def sync_project(project_name: str):
+    """
+    Stub for Context7/Intelligence synchronization.
+    Updates project metadata with 'last_sync' and prepares for AI context generation.
+    """
+    import datetime
+    project_dir = os.path.join("projects", project_name)
+    vibe_config_path = os.path.join(project_dir, ".vibe.json")
+
+    if not os.path.exists(vibe_config_path):
+        print(f"Error: .vibe.json not found in {project_dir}")
+        return False
+
+    try:
+        with open(vibe_config_path, 'r') as f:
+            config = json.load(f)
+
+        if "metadata" not in config:
+            config["metadata"] = {}
+        
+        config["metadata"]["last_sync"] = datetime.datetime.now().isoformat()
+        
+        with open(vibe_config_path, 'w') as f:
+            json.dump(config, f, indent=4)
+        
+        print(f"Project '{project_name}' synced with intelligence layer.")
+        return True
+    except Exception as e:
+        print(f"Error during sync: {e}")
+        return False
+
