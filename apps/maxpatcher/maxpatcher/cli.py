@@ -28,9 +28,9 @@ def main():
 
     args = parser.parse_args()
     
-    # Placeholder logic for now
     if args.command == "new":
-        print(f"Creating project {args.name}...")
+        from . import core
+        core.create_project(args.name)
     elif args.command == "build":
         print(f"Building project {args.name}...")
     elif args.command == "validate":
