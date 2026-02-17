@@ -102,3 +102,56 @@ def build_project(project_name: str):
         print(f"Build Failed:\nSTDOUT: {e.stdout}\nSTDERR: {e.stderr}")
         raise
 
+def validate_patch(patch_path: str):
+    """
+    Validates a Max/MSP patch file (checks for valid JSON and necessary root key).
+    """
+    if not os.path.exists(patch_path):
+        return False, f"Error: File {patch_path} not found."
+
+    try:
+        with open(patch_path, 'r') as f:
+            data = json.load(f)
+            
+        if "patcher" not in data:
+            return False, "Error: Missing 'patcher' root key."
+            
+        return True, "Success: Valid Max JSON patch."
+    except json.JSONDecodeError as e:
+        return False, f"Error: Invalid JSON: {str(e)}"
+
+def validate_project(project_name: str):
+    """
+    Finds all .maxpat files in a project's dist folder and validates them.
+    """
+    project_dir = os.path.join("projects", project_name)
+    if not os.path.exists(project_dir):
+        print(f"Error: Project '{project_name}' not found.")
+        return
+
+    vibe_config_path = os.path.join(project_dir, ".vibe.json")
+    if not os.path.exists(vibe_config_path):
+        print(f"Error: .vibe.json not found in {project_dir}")
+        return
+
+    with open(vibe_config_path, 'r') as f:
+        config = json.load(f)
+
+    dist_dir = os.path.join(project_dir, config['paths']['dist'])
+    if not os.path.exists(dist_dir):
+        print(f"Error: Distribution directory {dist_dir} does not exist.")
+        return
+
+    print(f"Validating project '{project_name}'...")
+    found_any = False
+    for root, _, files in os.walk(dist_dir):
+        for file in files:
+            if file.endswith(".maxpat"):
+                found_any = True
+                full_path = os.path.join(root, file)
+                is_valid, msg = validate_patch(full_path)
+                print(f"  [{'PASS' if is_valid else 'FAIL'}] {file}: {msg}")
+    
+    if not found_any:
+        print("No .maxpat files found in distribution folder.")
+
