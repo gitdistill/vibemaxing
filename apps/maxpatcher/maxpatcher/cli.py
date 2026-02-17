@@ -32,7 +32,8 @@ def main():
         from . import core
         core.create_project(args.name)
     elif args.command == "build":
-        print(f"Building project {args.name}...")
+        from . import core
+        core.build_project(args.name)
     elif args.command == "validate":
         print(f"Validating project {args.name}...")
     elif args.command == "sync":
