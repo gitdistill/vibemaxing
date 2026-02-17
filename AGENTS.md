@@ -65,3 +65,12 @@ Leverage **pi-superpowers** skills:
 ### III. Operational Philosophy
 *   **STEP-BY-STEP:** Execute one step, report, then move to next.
 *   **TRUST THE DISK:** Files and git state are the source of truth.
+
+### IV. Version Control Hygiene (CRITICAL TOKEN SAFETY)
+* **SILENCE IS GOLDEN:** For any `git add` or `git commit` involving >5 files, YOU MUST use the quiet flag (`-q` or `--quiet`) or redirect stdout to `/dev/null`.
+    * *Bad:* `git add .` (Risks flooding context)
+    * *Good:* `git add .` (If you are sure it's small) OR `git commit -q -m "message"`
+* **NO COMPILER ARTIFACTS:** Before adding directories, check `.gitignore`. NEVER add `__pycache__`, `node_modules`, or `.DS_Store`.
+* **VERIFY COMPACTLY:** Do not rely on `git commit` output to verify success.
+    * After a quiet commit, verify with: `git log -1 --oneline` or `git status --short`.
+* **LARGE OPS:** If moving/refactoring libraries, use `git mv` (which is often cleaner) or pipe output: `git add . > /dev/null && git status --short`.
