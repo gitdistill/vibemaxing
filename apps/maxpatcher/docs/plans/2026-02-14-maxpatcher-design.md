@@ -73,9 +73,16 @@ The `maxpatcher` app serves as the **Builder** component of the Vibemaxing platf
     *   **Blocking Gates:** Fails build on JSON errors, unknown objects, or zero-connection orphans.
     *   **Collision Detection:** Reports specific coordinates of overlapping objects.
 
-4.  **Intelligence Manager (`intelligence.py`):**
-    *   **Context7 Bridge:** Manages API quotas and fetches documentation.
-    *   **Engine Patching:** Writes fetched object definitions directly into `apps/maxpatcher/engine/maxpylang/data/OBJ_INFO/`. This permanently makes the engine smarter.
+4.  **Vibe Coordinator (`vibe.py`):**
+    *   **High-Level API:** Provides the `vibe.Patcher` class which wraps `MaxPatch`.
+    *   **Auto-Layout:** Implements a stateful layout engine (defaulting to grid/flow) to prevent overlapping objects.
+    *   **Intelligent Linking:** Simplifies connections (e.g., `patch.link(a, b)` instead of `patch.connect((a.outs[0], b.ins[0]))`).
+
+5.  **Intelligence Manager (`intelligence.py`):**
+    *   **Context7 Bridge:** Manages API quotas and fetches documentation using the Context7 library ID `/websites/cycling74`.
+    *   **Global Cache Strategy:** Instead of patching the engine data directly (which can be fragile), `intelligence.py` maintains a persistent JSON cache in `apps/maxpatcher/cache/objects/`.
+    *   **Runtime Integration:** The `vibe.Patcher` API queries this cache during `add()` and `link()` calls to provide real-time validation of inlet/outlet indices and object existence.
+    *   **Sync Logic:** The `maxpatcher sync <project>` command performs static analysis on the project's source code to identify all Max objects used and ensures their metadata is present in the cache.
 
 ## 3. Workflow
 

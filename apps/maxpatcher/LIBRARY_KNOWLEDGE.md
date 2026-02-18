@@ -44,6 +44,7 @@ This document tracks technical findings, patterns, and constraints discovered wh
     - `delete(objs)`: Removes specified objects and their associated cords.
 - **Discovery:** `patch.get_unknowns()` identifies objects missing from the internal metadata database.
 - **Inspection:** `patch.inspect()` provides a way to read current object states, positions, and connections.
+- **Patcher Dictionary:** The full patcher dictionary is accessible via the `patch.dict` property. This dictionary mirrors the final `.maxpat` JSON structure. For example, the patcher's dimensions are at `patch.dict['patcher']['rect']`.
 
 ## Intelligence Integration (Context7)
 
@@ -67,6 +68,7 @@ To augment MaxPyLang's lack of object awareness, we use **Context7** to:
 - **UI/Presentation:** Documentation on Presentation Mode and advanced UI layout is currently skeleton-only (empty docs).
 - **Advanced Topics Gap:** Key documentation for "Unknown Objects", "Linked Files" (abstractions/JS), and "External Packages" is currently empty in the source docs, though functionality exists in the code.
 - **Silent Failures:** Incompatible connections (e.g., Signal to Message) are written to the file by MaxPyLang but ignored by Max, creating a silent failure mode that requires external validation.
+- **Unreliable Defaults:** Do not assume the default inlet/outlet count for objects. `gain~` and `*~` both default to a single inlet/outlet. Some objects, like `biquad~`, require creation arguments. Always consult the `OBJ_INFO` or `OBJ_IO` data, or use the `intelligence` module when built.
 
 ## Known Workflows
 

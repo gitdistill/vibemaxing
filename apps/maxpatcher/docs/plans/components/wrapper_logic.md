@@ -24,11 +24,22 @@ env = os.environ.copy()
 env["PYTHONPATH"] = f"{APP_ROOT}/engine:{APP_ROOT}/maxpatcher:{env.get('PYTHONPATH', '')}"
 ```
 
-## 4. Vibe Utils (The `vibe` module)
-Exposed as `import vibe`.
-- `vibe.connect_stereo(src, dest)`
-- `vibe.make_ui_row([objs])`
-- `vibe.setup_m4l_midi()`
+## 4. Vibe Patcher Coordinator (vibe.py)
+To bridge the gap between low-level engine operations and high-level agentic patch generation, `vibe.py` provides the `vibe.Patcher` class.
+
+### Key API Patterns:
+- **`vibe.Patcher()`**: Inherits from or wraps `MaxPatch`. Manages default template discovery and output paths.
+- **`Patcher.add(obj_spec, **kwargs)`**:
+    - Wraps `place_obj` or `place`.
+    - Automatically manages the internal `_curr_position` (cursor) using a configurable layout strategy (default: "flow" or "grid").
+    - Supports named parameters for common object attributes (e.g., `frequency=440` -> `cycle~ 440`).
+- **`Patcher.link(src, dest, out_idx=0, in_idx=0)`**:
+    - Simplifies `patch.connect((src.outs[out_idx], dest.ins[in_idx]))`.
+- **`Patcher.link_stereo(src, dest)`**:
+    - High-level helper for dual-mono/stereo connections.
+
+### Layout Implementation:
+- The `vibe.Patcher` will default to using `spacing_type="grid"` with `spacing=[80.0, 80.0]` if no coordinates are provided, ensuring no overlaps occur during automated builds.
 
 ## 5. Dependencies
 The internal engine requires:

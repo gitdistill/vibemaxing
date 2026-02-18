@@ -146,20 +146,65 @@
 **Step 4: Commit**
 - `git commit -m "feat(maxpatcher): implement validator"`
 
-### Task 7: Intelligence (Sync Stub)
+### Task 7: Intelligence (Sync Stub & Global Cache)
 
 **Files:**
 - Create: `apps/maxpatcher/maxpatcher/intelligence.py`
 - Modify: `apps/maxpatcher/maxpatcher/cli.py`
 
-**Step 1: Implement Stub**
-- `sync_object(name)`: Print "Searching Context7 for {name}..." (Mock implementation for MVP).
+**Step 1: Implement Cache Manager**
+- `IntelligenceCache`: Manages a JSON-based cache in `apps/maxpatcher/cache/objects/`.
+- `sync_object(name)`: A stub that fetches metadata (inlets/outlets) and saves to the local cache.
 
 **Step 2: Wire to CLI**
-- `maxpatcher sync <name>`.
+- `maxpatcher sync <project>`: Scans `src/main.py` for `p.add("object")` calls and ensures all used objects are in the global cache.
 
 **Step 3: Commit**
-- `git commit -m "feat(maxpatcher): implement intelligence sync stub"`
+- `git commit -m "feat(maxpatcher): implement intelligence sync and global caching strategy"`
+
+---
+
+## Phase 5: Refinement & Intelligence Integration (POST-MVP)
+
+### Task 8: Refactor `vibe` Helper (High-level API)
+
+**Goal:** Simplify object creation and connection to reduce boilerplate and errors, wrapping the `MaxPyLang` engine correctly.
+
+**Step 1: Implement `vibe.Patcher` Class**
+- Create `Patcher` class in `maxpatcher/vibe.py`.
+- **Constructor**: Initialize `maxpylang.maxpatch.MaxPatch`.
+- **Method `add(obj_text, **kwargs)`**:
+    - Call engine's `place_obj`.
+    - Handle coordinate management (initially just passing them through).
+- **Method `link(src, dest, out_idx=0, in_idx=0)`**:
+    - Validate `src` and `dest` are `MaxObject` instances.
+    - Call engine's `connect((src.outs[out_idx], dest.ins[in_idx]))`.
+- **Method `save(filename)`**: Wrapper for engine `save()`.
+
+**Step 2: Update Smoke Test**
+- Refactor `projects/smoke_test/src/main.py` to use the new `vibe.Patcher` API.
+
+### Task 9: Implement Auto-Layout Strategy
+
+**Goal:** Prevent overlapping objects by leveraging the engine's `place` logic or extending it in `vibe.Patcher`.
+
+**Step 1: Integrate Engine Layouts**
+- Update `Patcher.add()` to support a stateful layout cursor.
+- By default, use `patch.place(..., spacing_type="grid")` to ensure objects are automatically arranged left-to-right, top-to-bottom.
+
+**Step 2: Verify Layout**
+- Build a patch with 5-10 objects and verify in Max/MSP that they are not stacked on top of each other.
+
+### Task 10: Context7 Intelligence Integration
+
+**Goal:** Replace the `sync` stub with actual Context7 queries.
+
+**Step 1: Implement Context7 Tools**
+- Use `context7_resolve_library_id` for "cycling74".
+- Implement `context7_query_docs` to fetch object metadata (inlets, outlets, attributes).
+
+**Step 2: Cache results**
+- The `sync` command should write the fetched documentation somewhere to reduce the need for requerying via context7 api.
 
 ---
 
