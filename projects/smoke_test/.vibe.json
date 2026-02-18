@@ -1,0 +1,12 @@
+{
+    "name": "smoke_test",
+    "version": "0.0.1",
+    "type": "max-patch",
+    "paths": {
+        "src": "src/main.py",
+        "dist": "dist/"
+    },
+    "metadata": {
+        "last_sync": "2026-02-17T22:05:11.556058"
+    }
+}
