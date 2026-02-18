@@ -1,0 +1,19 @@
+{
+    "name": "cycle~",
+    "description": "Wavetable oscillator using a sine wave or a buffer",
+    "inlets": [
+        {"index": 0, "type": "signal/float", "description": "frequency/phase"},
+        {"index": 1, "type": "signal/float", "description": "phase offset"}
+    ],
+    "outlets": [
+        {"index": 0, "type": "signal", "description": "sine wave output"}
+    ],
+    "arguments": [
+        {"name": "frequency", "type": "float", "optional": true, "default": 0.0},
+        {"name": "buffer-name", "type": "symbol", "optional": true}
+    ],
+    "attributes": [
+        {"name": "frequency", "type": "float"},
+        {"name": "buffername", "type": "symbol"}
+    ]
+}

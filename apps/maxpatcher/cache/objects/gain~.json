@@ -1,0 +1,18 @@
+{
+    "name": "gain~",
+    "description": "Logarithmic audio gain control with UI",
+    "inlets": [
+        {"index": 0, "type": "signal", "description": "audio input"},
+        {"index": 1, "type": "int/float", "description": "gain (0-157)"}
+    ],
+    "outlets": [
+        {"index": 0, "type": "signal", "description": "scaled audio output"},
+        {"index": 1, "type": "int", "description": "current gain value"}
+    ],
+    "arguments": [
+        {"name": "gain-range", "type": "int", "optional": true, "default": 128}
+    ],
+    "attributes": [
+        {"name": "gain", "type": "int"}
+    ]
+}
