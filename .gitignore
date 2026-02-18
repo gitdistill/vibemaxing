@@ -55,4 +55,4 @@ htmlcov/
 .idea/
 *.swp
 *.swo
-*~
+*~\n# Vibemaxing Cache\napps/maxpatcher/cache/objects/*.json

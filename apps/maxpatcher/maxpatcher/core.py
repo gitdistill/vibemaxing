@@ -78,10 +78,11 @@ def build_project(project_name: str):
     # Prepare environment with MaxPyLang engine on PYTHONPATH
     # We assume we are running from root
     engine_path = os.path.abspath(os.path.join(os.getcwd(), "apps/maxpatcher/engine"))
+    maxpatcher_app_path = os.path.abspath(os.path.join(os.getcwd(), "apps/maxpatcher"))
     
     env = os.environ.copy()
     current_pythonpath = env.get("PYTHONPATH", "")
-    env["PYTHONPATH"] = f"{engine_path}{os.pathsep}{current_pythonpath}"
+    env["PYTHONPATH"] = f"{engine_path}{os.pathsep}{maxpatcher_app_path}{os.pathsep}{current_pythonpath}"
     
     print(f"Building {project_name} (Executing {src_path})...")
     
@@ -157,10 +158,11 @@ def validate_project(project_name: str):
 
 def sync_project(project_name: str):
     """
-    Stub for Context7/Intelligence synchronization.
-    Updates project metadata with 'last_sync' and prepares for AI context generation.
+    Synchronizes the project by checking for object documentation in the global cache.
+    Updates project metadata with 'last_sync'.
     """
     import datetime
+    from . import intelligence
     project_dir = os.path.join("projects", project_name)
     vibe_config_path = os.path.join(project_dir, ".vibe.json")
 
@@ -172,6 +174,24 @@ def sync_project(project_name: str):
         with open(vibe_config_path, 'r') as f:
             config = json.load(f)
 
+        src_path = os.path.join(project_dir, config['paths']['src'])
+        if os.path.exists(src_path):
+            with open(src_path, 'r') as f:
+                content = f.read()
+            
+            # Simple regex-less extraction for now (very naive)
+            # Find common object names in the script
+            common_objects = ["cycle~", "gain~", "ezdac~", "metro", "counter", "button", "bang"]
+            found_objects = [obj for obj in common_objects if obj in content]
+            
+            print(f"Synchronizing project '{project_name}'...")
+            for obj in found_objects:
+                doc = intelligence.get_object_doc(obj)
+                if doc:
+                    print(f"  [CACHED] {obj}")
+                else:
+                    print(f"  [MISSING] {obj} (Ask the agent to sync this object)")
+        
         if "metadata" not in config:
             config["metadata"] = {}
         
@@ -180,7 +200,7 @@ def sync_project(project_name: str):
         with open(vibe_config_path, 'w') as f:
             json.dump(config, f, indent=4)
         
-        print(f"Project '{project_name}' synced with intelligence layer.")
+        print(f"Project '{project_name}' metadata updated.")
         return True
     except Exception as e:
         print(f"Error during sync: {e}")
