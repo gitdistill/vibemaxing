@@ -9,14 +9,14 @@
 **Our monorepo is made up of 2 layers:**
 
 1. **Agentic Layer (.pi/):** Contains context, skills, and extensions.
-   *   **Context7 Extension:** Provides tools to query Cycling '74 documentation.
+   *   **Intelligence Extension:** (`.pi/extensions/vibemax-intelligence`) Provides tools to query Cycling '74 documentation and augment the `maxpylang` database.
    *   **Library ID:** `/websites/cycling74`
 
 2. **Apps Layer (apps/):** Discrete modules for patch manipulation.
 
 | App | Role | Tech Stack |
 | --- | --- | --- |
-| **`maxpatcher`** | **Builder** | Python (Internal MaxPyLang Fork) |
+| **`maxpatcher`** | **Builder** | Python (Internal MaxPyLang Fork) - *Local Data Only* |
 | **`maxprober`** | **Analyzer** | MCP Server + Bash |
 
 **Global Harness:** **Pi** (Terminal-based agentic harness).
@@ -25,11 +25,15 @@
 
 ## 2. Intelligence & Documentation (Context7)
 
-The agent uses the **Context7 MCP** bridge to research Max/MSP objects, JavaScript APIs, and Live Object Model (LOM) details.
+**Principle: Decoupled Intelligence**
+The agent uses the **Context7 MCP** bridge (via `vibemax-intelligence`) to research Max/MSP objects, JavaScript APIs, and Live Object Model (LOM) details *before* implementation.
 
-**Available Tools:**
-*   `context7_resolve_library_id`: Resolves library names (e.g., "cycling74").
-*   `context7_query_docs`: Retrieves documentation using the Library ID.
+*   **Builder Independence:** `maxpatcher` does **not** make network calls. It relies on its local `maxpylang/data/OBJ_INFO` database.
+*   **Research First:** If an object is unknown, use the intelligence tools to research and augment the database *before* attempting to build.
+
+**Available Tools (Target):**
+*   `research_max`: Queries documentation.
+*   `augment_max_db`: Fetches metadata and writes it to `apps/maxpatcher/engine/maxpylang/data/OBJ_INFO/`.
 
 ---
 

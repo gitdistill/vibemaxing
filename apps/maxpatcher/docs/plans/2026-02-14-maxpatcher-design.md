@@ -1,7 +1,11 @@
 # Design: MaxPatcher Build System
 
+> **⚠️ DEPRECATED: This design has been superseded by the "Decoupled Intelligence" architecture.**
+> **Please refer to `apps/maxpatcher/docs/plans/2026-02-17-maxpatcher-design.md` for the current canonical design.**
+> **For migration instructions, see `apps/maxpatcher/docs/plans/2026-02-17-maxpatcher-refactor.md`.**
+
 **Date:** 2026-02-14
-**Status:** In-Progress (Component Design Phase)
+**Status:** Deprecated (Historical Reference Only)
 
 > **IMPORTANT:** We are currently decomposing this high-level design into specific component architectures. Detailed specs and critical design questions for each module are located in:
 > `apps/maxpatcher/docs/plans/components/`

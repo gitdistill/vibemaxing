@@ -9,32 +9,29 @@ description: High-Level Platform Roadmap & Backlog
 *   [x] Scaffold `.pi/prompts/` (Workflow templates).
 *   [x] Draft `.pi/context/PLATFORMGOALS.md`.
 *   [x] Draft `.pi/context/PLATFORMARCH.md`.
-*   [x] Finalize `.pi/context/PLATFORMDEV.md` (Based on `pi-superpowers`).
 
-## Phase 1: Knowledge Infrastructure (Complete)
-**Goal:** Establish high-fidelity documentation retrieval without local RAG overhead.
-*   [x] Research Context7 MCP integration.
-*   [x] Implement Context7 TypeScript extension bridge.
-*   [x] Verify retrieval of Cycling '74 documentation.
-*   [x] Update Platform Architecture to reflect the removal of `cyclescraper`, `maxdocsparser`, and `maxrag`.
+## Phase 1: Decoupled Intelligence (Current Focus)
+**Goal:** Transition to the "Co-Architect" model with separated research and building tools.
+
+*   [x] **Design:** Architecture Evolution (`docs/plans/2026-02-17-architecture-evolution.md`).
+*   [x] **Design:** Intelligence Extension Spec (`docs/plans/2026-02-17-vibemax-intelligence-design.md`).
+*   [ ] **Implementation:** Scaffold and build `.pi/extensions/vibemax-intelligence/`.
+*   [ ] **Implementation:** Populate `SKILL.md` for the intelligence extension (User to provide content).
+*   [ ] **Implementation:** Refactor `maxpatcher` to remove `intelligence.py` (`docs/plans/2026-02-17-maxpatcher-refactor.md`).
 
 ## Phase 2: Core Development Apps (In Progress)
-**Goal:** Build the essential "Hands" for patch manipulation and debugging.
-*   [ ] Brainstorming & Spec for `maxpatcher` (JSON-based patch generation).
-*   [ ] Brainstorming & Spec for `maxprober` (Runtime debugging/Node for Max).
-*   [ ] draft max pi skill
+**Goal:** Finalize the "Hands" for patch manipulation and debugging.
+*   [x] MVP of `maxpatcher` (Builder).
+*   [ ] Refactor/Clean up `maxpatcher` according to the new decoupled spec.
+*   [ ] Finalize Spec for `maxprober` (Runtime debugging/Node for Max).
 
 ## Phase 3: First Device Implementation (Pending)
 **Goal:** Deploy the full workflow (Brainstorm -> Finish) to create a functional Max for Live device.
 *   [ ] Brainstorming for "Vibemaxing V1" Device.
-*   [ ] Execute implementation using `maxpatcher` and Context7 intelligence.
+*   [ ] Execute implementation using the new Co-Architect workflow.
 
 ## Backlog / Discussion Queue
 - [ ] Investigate automatic `.maxpat` to JSON conversion for existing patches.
 - [x] Explore M4L specific API limitations in Context7.
-- [ ] install websearch pi extension
-- [x] migrate to pi superpowers plus
-
-- [ ] go through legacy folders and prune, context7 and better maxpatcher / maxprober definition
 - [ ] add context7 agentic api request logging 
-- [ ] spec max building skills
+- [ ] migrate to pi superpowers plus
