@@ -9,14 +9,15 @@
 *   `new <name>`: Scaffolds a project folder structure.
 *   `build <name>`: Executes user source in isolated subprocess.
 *   `validate <name>`: JSON/integrity checks.
-*   **REMOVAL:** `sync` command is removed. Use `@pi/research:augment` instead.
+*   **REMOVAL:** The `sync` command is removed. Use the intelligence extension's `augment_max_db` instead.
 
 ### B. Vibe Coordinator (`vibe.py`)
 *   **Data Lookup:** Queries `maxpylang/data/OBJ_INFO` to validate object names and port counts.
-*   **Missing Object Warning:** If object is not found in local DB:
-    *   Emit warning: `[MISSING_OBJECT: {name}]`.
-    *   Proceed with build using a generic "box" definition (1 inlet, 1 outlet).
-    *   **Do NOT** call any external APIs.
+*   **The "FAIL-FAST" Rule:** If an object is not found in the local DB:
+    1.  **Stop Build:** Do **NOT** proceed with a generic box definition.
+    2.  **Emit Error:** Log a specific error: `[MISSING_OBJECT: {name}]`.
+    3.  **Instruction:** Provide a recovery hint: `Run '@pi/research:augment_max_db {name}' to add this object to the local database before rebuilding.`
+*   **Constraint:** Zero external network calls or `intelligence.py` calls.
 
 ### C. Validator (`validator.py`)
 *   **Static Analysis:** Parses `.maxpat` JSON without running Max.
@@ -28,6 +29,6 @@
 *   **Knowledge Base:** `engine/maxpylang/data/OBJ_INFO/`.
 
 ## 3. Workflow
-1.  **Research (Optional):** Agent uses `research_max` to verify logic.
-2.  **Augment (Optional):** Agent uses `augment_max_db` to update local knowledge.
+1.  **Research (Optional):** Agent uses `research_topic` or `research_object` to verify logic.
+2.  **Augment (Optional):** Agent uses `augment_max_db` to update local knowledge if `maxpatcher build` fails.
 3.  **Build:** `maxpatcher build`. Builder uses local knowledge only.
