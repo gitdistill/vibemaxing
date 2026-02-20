@@ -26,7 +26,7 @@
 ## 2. Intelligence & Documentation (Context7)
 
 **Principle: Decoupled Intelligence**
-The agent uses the **Context7 MCP** bridge (via `vibemax-intelligence`) to research Max/MSP objects, JavaScript APIs, and Live Object Model (LOM) details *before* implementation.
+The agent uses the **Context7** bridge (via `vibemax-intelligence`) to research Max/MSP objects, JavaScript APIs, and Live Object Model (LOM) details *before* implementation.
 
 *   **Builder Independence:** `maxpatcher` does **not** make network calls. It relies on its local `maxpylang/data/OBJ_INFO` database.
 *   **Research First:** If an object is unknown, use the intelligence tools to research and augment the database *before* attempting to build.

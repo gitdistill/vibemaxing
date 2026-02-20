@@ -9,6 +9,7 @@
 ## 1. Target Architecture
 
 ### A. The "Researcher" (Pi Extension)
+*   **Technical Spec:** `docs/plans/2026-02-17-vibemax-intelligence-spec.md`
 *   **Location:** `.pi/extensions/vibemax-intelligence/`
 *   **Tech:** **Pi Extension (TypeScript/JavaScript)**. 
     *   *Note: Do NOT build an MCP server. This must be a native Pi extension using the Pi SDK.*
@@ -19,6 +20,7 @@
 *   **Caching:** Mandatory "Cache-First" logic. Check `.pi/cache/vibemax-intelligence/` before hitting API.
 
 ### B. The "Builder" (MaxPatcher)
+*   **Technical Spec:** `docs/plans/2026-02-17-maxpatcher-spec.md`
 *   **Location:** `apps/maxpatcher/`
 *   **Role:** Deterministic Python builder.
 *   **Constraint:** **Zero Network Calls.** No Context7, no `intelligence.py`.
