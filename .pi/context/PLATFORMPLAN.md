@@ -5,24 +5,19 @@ description: High-Level Platform Roadmap & Backlog
 
 **Context Scope:** `PLATFORM` (Vibemaxing Monorepo Infrastructure)
 
-## Phase 0: Foundation (Complete)
-*   [x] Scaffold `.pi/prompts/` (Workflow templates).
-*   [x] Draft `.pi/context/PLATFORMGOALS.md`.
-*   [x] Draft `.pi/context/PLATFORMARCH.md`.
+## Current Epic: Decoupled Intelligence (Target Architecture)
+**Active Master Plan:** `docs/plans/2026-02-17-decoupled-architecture-master.md`
 
-## Phase 1: Decoupled Intelligence (Current Focus)
+## Phase 1: Knowledge Infrastructure (Current Focus)
 **Goal:** Transition to the "Co-Architect" model with separated research and building tools.
 
-*   [x] **Design:** Architecture Evolution (`docs/plans/2026-02-17-architecture-evolution.md`).
-*   [x] **Design:** Intelligence Extension Spec (`docs/plans/2026-02-17-vibemax-intelligence-design.md`).
-*   [ ] **Implementation:** Scaffold and build `.pi/extensions/vibemax-intelligence/`.
-*   [ ] **Implementation:** Populate `SKILL.md` for the intelligence extension (User to provide content).
-*   [ ] **Implementation:** Refactor `maxpatcher` to remove `intelligence.py` (`docs/plans/2026-02-17-maxpatcher-refactor.md`).
+*   [x] **Design:** Consolidated Master Plan (`docs/plans/2026-02-17-decoupled-architecture-master.md`).
+*   [ ] **Implementation (Part A):** Scaffold and build `.pi/extensions/vibemax-intelligence/` (TS Pi Extension).
+*   [ ] **Implementation (Part B):** Refactor `maxpatcher` to remove `intelligence.py` and enforce local-only builds.
 
 ## Phase 2: Core Development Apps (In Progress)
 **Goal:** Finalize the "Hands" for patch manipulation and debugging.
 *   [x] MVP of `maxpatcher` (Builder).
-*   [ ] Refactor/Clean up `maxpatcher` according to the new decoupled spec.
 *   [ ] Finalize Spec for `maxprober` (Runtime debugging/Node for Max).
 
 ## Phase 3: First Device Implementation (Pending)

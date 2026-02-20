@@ -31,9 +31,9 @@ The agent uses the **Context7 MCP** bridge (via `vibemax-intelligence`) to resea
 *   **Builder Independence:** `maxpatcher` does **not** make network calls. It relies on its local `maxpylang/data/OBJ_INFO` database.
 *   **Research First:** If an object is unknown, use the intelligence tools to research and augment the database *before* attempting to build.
 
-**Available Tools (Target):**
-*   `research_max`: Queries documentation.
-*   `augment_max_db`: Fetches metadata and writes it to `apps/maxpatcher/engine/maxpylang/data/OBJ_INFO/`.
+**Available Tools (via .pi/extensions/vibemax-intelligence):**
+*   `research_max(query, section)`: Queries documentation for objects, guides, JS API, or LOM and returns **raw JSON**.
+*   `augment_max_db(object_name, category)`: Fetches object metadata and writes it directly to `apps/maxpatcher/engine/maxpylang/data/OBJ_INFO/`.
 
 ---
 
