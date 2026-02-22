@@ -1,34 +1,34 @@
 # Technical Spec: MaxPatcher (Decoupled Builder)
 
-**Status:** Active Reference (See Master Plan for Sequence)
-**Goal:** Pure Python builder with zero network dependencies.
+**Status:** Active Reference (Target Architecture: 2026-02-17)
+**Goal:** A fast, deterministic Max/MSP patch builder (Python) with zero network dependencies.
 
-## 1. Components
+## 1. Core Logic
 
-### A. CLI (`maxpatcher`)
+### A. Vibe Coordinator (`vibe.py`)
+*   **Data Lookup:** Queries the local `maxpylang/data/OBJ_INFO` database to validate object definitions and port counts.
+*   **Missing Object Handling:** If an object is not found in the local database:
+    1.  **Stop Build:** Immediately halt the build process.
+    2.  **Error Code:** Emit a specific error: `[MISSING_OBJECT: {name}]`.
+    3.  **Instruction:** Provide a recovery hint: `Run '@pi/research:augment_max_db {name}' to add this object to the local database.`
+*   **Constraint:** No network requests. All `intelligence.py` and Context7 logic must be removed.
+
+### B. CLI (`maxpatcher`)
 *   `new <name>`: Scaffolds a project folder structure.
-*   `build <name>`: Executes user source in isolated subprocess.
-*   `validate <name>`: JSON/integrity checks.
-*   **REMOVAL:** The `sync` command is removed. Use the intelligence extension's `augment_max_db` instead.
-
-### B. Vibe Coordinator (`vibe.py`)
-*   **Data Lookup:** Queries `maxpylang/data/OBJ_INFO` to validate object names and port counts.
-*   **The "FAIL-FAST" Rule:** If an object is not found in the local DB:
-    1.  **Stop Build:** Do **NOT** proceed with a generic box definition.
-    2.  **Emit Error:** Log a specific error: `[MISSING_OBJECT: {name}]`.
-    3.  **Instruction:** Provide a recovery hint: `Run '@pi/research:augment_max_db {name}' to add this object to the local database before rebuilding.`
-*   **Constraint:** Zero external network calls or `intelligence.py` calls.
+*   `build <name>`: Executes Python source scripts into Max patches (`.maxpat`).
+*   `validate <name>`: Static analysis for JSON integrity, connection orphans, and object collisions.
+*   **REMOVAL:** The `sync` command is deprecated and must be removed. Use the `vibemax-intelligence` extension for database augmentation.
 
 ### C. Validator (`validator.py`)
-*   **Static Analysis:** Parses `.maxpat` JSON without running Max.
-*   **Blocking Gates:** Fails build on JSON corruption or zero-connection orphans.
-*   **Collision Detection:** Reports specific coordinates of overlapping objects.
+*   **Static Analysis:** Parses generated `.maxpat` files without running the Max environment.
+*   **Failure Gates:** Fails builds on JSON corruption or disconnected inlets/outlets.
+*   **Collision Detection:** Identifies overlapping objects in the patch UI layout.
 
-## 2. Dependencies
-*   **Engine:** `apps/maxpatcher/engine/maxpylang/`.
-*   **Knowledge Base:** `engine/maxpylang/data/OBJ_INFO/`.
+## 2. Directories
+*   **Core Engine:** `apps/maxpatcher/engine/maxpylang/`.
+*   **Knowledge Base:** `engine/maxpylang/data/OBJ_INFO/` (organized by: `max`, `msp`, `jitter`).
 
-## 3. Workflow
-1.  **Research (Optional):** Agent uses `research_topic` or `research_object` to verify logic.
-2.  **Augment (Optional):** Agent uses `augment_max_db` to update local knowledge if `maxpatcher build` fails.
-3.  **Build:** `maxpatcher build`. Builder uses local knowledge only.
+## 3. Standard Workflow
+1.  **Research:** Use `research_topic` or `research_object` via the Intelligence Extension to verify designs.
+2.  **Build:** `maxpatcher build`.
+3.  **Error Recovery:** If a `[MISSING_OBJECT]` error occurs, run `augment_max_db` and rebuild.

@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-17
 **Status:** Canonical (Supersedes all previous Feb 17 documents)
-**Primary Goal:** Move Context7 logic out of `maxpatcher` into a dedicated Pi Extension to enable a "Research First, Build Second" workflow.
+**Primary Goal:** Transition the Vibemaxing monorepo to a "Co-Architect" model by decoupling documentation research and database augmentation from the patch builder.
 
 ---
 
@@ -11,47 +11,33 @@
 ### A. The "Researcher" (Pi Extension)
 *   **Technical Spec:** `docs/plans/2026-02-17-vibemax-intelligence-spec.md`
 *   **Location:** `.pi/extensions/vibemax-intelligence/`
-*   **Tech:** **Pi Extension (TypeScript/JavaScript)**. 
-    *   *Note: Do NOT build an MCP server. This must be a native Pi extension using the Pi SDK.*
-*   **Role:** Agent-facing data pipe. Returns **Raw JSON** for the agent to reason about.
-*   **Key Tools:**
-    *   `research_max(query, section)`: Fetches raw JSON from Context7 (Objects, Guides, JS, LOM).
-    *   `augment_max_db(object_name, category)`: Fetches object metadata and writes it to `apps/maxpatcher/engine/maxpylang/data/OBJ_INFO/`.
-*   **Caching:** Mandatory "Cache-First" logic. Check `.pi/cache/vibemax-intelligence/` before hitting API.
+*   **Tech:** **Pi Extension (TypeScript/JavaScript)**.
+*   **Role:** Agent-facing data interface for Cycling '74 documentation (Objects, Guides, JS, LOM). Returns **Raw JSON** for agent reasoning.
+*   **Key Capabilities:** Documentation lookup (Cache-First) and `maxpylang` database augmentation.
 
 ### B. The "Builder" (MaxPatcher)
 *   **Technical Spec:** `docs/plans/2026-02-17-maxpatcher-spec.md`
 *   **Location:** `apps/maxpatcher/`
-*   **Role:** Deterministic Python builder.
-*   **Constraint:** **Zero Network Calls.** No Context7, no `intelligence.py`.
-*   **Data:** Strictly consumes local `maxpylang/data/OBJ_INFO`.
-*   **Behavior:** Missing objects trigger a warning: `[MISSING_OBJECT: {name}]`. Agent should then call `augment_max_db` via the extension.
+*   **Role:** Deterministic Python builder for `.maxpat` generation.
+*   **Constraint:** **Zero Network Connectivity.** Must rely exclusively on the local `maxpylang` object database.
 
 ---
 
-## 2. Sequence of Operations (MANDATORY ORDER)
+## 2. Execution Sequence (MANDATORY)
 
-### Phase 1: The Intelligence Extension (Migration)
-*Do NOT delete MaxPatcher logic yet.*
-1.  **Scaffold:** Create `.pi/extensions/vibemax-intelligence/`.
-2.  **Extract:** Copy the Context7 API logic from `apps/maxpatcher/maxpatcher/intelligence.py` into the extension's TS source.
-3.  **Implement:** Build the tools (`research_max`, `augment_max_db`) with the Cache-First logic.
-4.  **Verify:** Ensure the extension can query docs and successfully write a JSON file to the `maxpylang` data directory.
+### Phase 1: Intelligence Extension (Migration)
+1.  **Scaffold:** Create `.pi/extensions/vibemax-intelligence/` and load the extending pi skill.
+2.  **Migrate Logic:** Extract the Context7 API client logic from the existing `apps/maxpatcher/maxpatcher/intelligence.py`.
+3.  **Implement Tools:** Build `research_topic`, `research_object`, and `augment_max_db` as defined in the Technical Spec.
+4.  **Verification:** Confirm the extension successfully writes a valid object JSON to the `maxpylang` data directory.
 
-### Phase 2: MaxPatcher Refactor (Cleanup)
-*Only start after Phase 1 is verified.*
-1.  **Delete:** Remove `apps/maxpatcher/maxpatcher/intelligence.py`.
-2.  **Prune CLI:** Remove the `sync` command from `cli.py`.
-3.  **Update Vibe:** Refactor `vibe.py` to use the local DB only and emit the `[MISSING_OBJECT]` warning.
-4.  **Cleanup:** Remove any Context7 dependencies from `pyproject.toml`.
-
-### Phase 3: Platform Integration
-1.  **Skill:** Populate the `SKILL.md` (content provided by user) in the extension.
-2.  **Handoff:** Update `AGENTS.md` to point to the new tools.
+### Phase 2: MaxPatcher Refactor (Decoupling)
+1.  **Cleanup:** Delete `apps/maxpatcher/maxpatcher/intelligence.py` and remove Context7-related dependencies from `pyproject.toml`.
+2.  **CLI Update:** Remove the `sync` command from `maxpatcher/cli.py`.
+3.  **Validation Logic:** Refactor `vibe.py` to stop builds and emit `[MISSING_OBJECT: {name}]` when an unknown object is encountered.
 
 ---
 
-## 3. Technology Guardrails (FOR AGENTS)
-*   **NO MCP SERVERS:** This platform uses Pi Extensions.
-*   **JSON ONLY:** Research tools return Raw JSON for agent reasoning.
-*   **LOCAL ENGINE:** `maxpylang` is the local source of truth for objects.
+## 3. Core Guardrails
+*   **No MCP Servers:** Use the native Pi Extension API only.
+*   **Strict Local Database:** MaxPatcher must never perform documentation lookups; it only consumes what is in the local `OBJ_INFO` directories.
