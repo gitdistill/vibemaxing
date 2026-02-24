@@ -1,0 +1,1420 @@
+{
+	"urlset": {
+		"url": [
+			{
+				"loc": "https://docs.cycling74.com"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/new_in_max9/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/glossary_common_terms/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/abl/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/frequency_domain/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_gen/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_wrapper/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/audio_channels/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/non_realtime/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/plugins/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/polyphony/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/recording/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/rnbo/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/sample_accurate_messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/color_palette/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/color_themes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/dynamic_colors/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/format_palette/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/styles/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/syntax_coloring/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/arrays/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/dictionaries/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/integers_vs_floats/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/strings/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/debugging_and_probing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/error_messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/illustration_mode/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/max_console/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/file_browser/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/filetypes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/search_path/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/gen/_gen_overview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/gen/gen_common_operators/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/gen/gen_genexpr/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/gen/gen~_operators/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/gen/gen_jitter_operators/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/depth_layer_blend/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/geometry/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/graphics_engine/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/graphics_processing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/jitter_expr/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/jxs_file_format/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/matrix/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/render_passes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/textures/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/video/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/jitter/video_engine/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/action_menu/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/documentation_window/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/extras_menu/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/inspector/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/object_reference/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/preferences_and_settings/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/sidebar_search/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/patcher_window/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mapping/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/midi/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/OSC/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/param_connect/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/parameter_mode/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/presets_and_interpolation/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/pattr/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/snapshots/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/conversion/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/message_types/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/objects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/patcher_lifecycle/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/patching/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/patch_cords/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/patching_mechanics/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/web_browser/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/abstractions/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/bpatchers/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/custom_ui_objects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/externals/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/packages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/package_manager/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/projects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/prototypes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/snippets/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/subpatchers/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/templates/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/scripting_overview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/external_text_editor/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/javascript/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_overview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/max_define/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/controlling_max_with_messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/repl/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/sharing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/projects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/standalones_and_collectives/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/scheduler/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/time_value_syntax/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/transport/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/_m4l_overview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_api_overview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_creatingdevices/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_userinterfaces/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_automation/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_sharing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_timing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_audiodevices/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_api/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_midieffects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_parameters/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_freezing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_limitations/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_miditools/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_presets/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_preview/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_resolveconflicts/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_parameterswindow/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_unfreezing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_pattr/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_symbols/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/m4l/live_files/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_gen_newfeatures/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_generated_messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_maxforlive_interface/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_channel_topology/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_dynamic_routing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_events_newobjects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_function_generators/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_gen_instances/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_gen_newobjects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_poly_without_polytilde/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_mixing_panning/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_patchcords/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_polyphony/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_multichannel_sources/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_signals_newobjects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_spatialization/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_visualization/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_mcvsmcs/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_messages_to_wrapper/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_audio_delays/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_poly_newfeatures/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_poly_multiple_patchers/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_events_newfunctions/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_gen_event_wrapper/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/mc/mc_plugins/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_color_bindings/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_opengl_bindings/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_opengl_glu_bindings/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_vector_math/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/application/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/application_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/chain/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/chainmixerdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/clip/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/clip_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/clipslot/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/compressordevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/controlsurface/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/cuepoint/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/device/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/device_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/deviceio/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/deviceparameter/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/driftdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/drumcelldevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/drumchain/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/drumpad/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/eq8device/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/eq8device_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/groove/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/groovepool/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/hybridreverbdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/looperdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/maxdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/melddevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/mixerdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/plugindevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/rackdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/rackdevice_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/roardevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/sample/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/scene/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/shifterdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/simplerdevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/simplerdevice_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/song/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/song_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/spectralresonatordevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/takelane/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/this_device/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/track/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/track_view/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/tuningsystem/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/lom/wavetabledevice/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/basic2dstrokestyleparameternames/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/buffer/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/cpost/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/dict/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/drawingprimitivetype/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/error/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/file/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/filetypes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/folder/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/global/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/image/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jitter3dutilsinterface/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jitter3dutilstypes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jitterevent/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jittereventtypes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jitterlistener/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jittermatrix/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jitterobject/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/jsthis/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/linestrokestyleparameternames/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/liveapi/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/max/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/maxobj/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/maxobjconnection/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/maxobjlistener/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/maxobjlistenerdata/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/maxstring/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/messnamed/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/mgraphics/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/mgraphicsmatrixhandle/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/mgraphicspathhandle/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/mgraphicssvg/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/parameterinfoprovider/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/parameterinfoproviderdata/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/parameterlistener/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/parameterlistenerdata/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/patcher/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/pattern/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/pointerevent/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/polybuffer/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/post/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/progressevent/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/sketch/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/snapshotapi/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/sqlite/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/sqlresult/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/task/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/wind/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/js/xmlhttprequest/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/addhandler/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/addhandlers/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/anything/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/getdict/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/jsonarray/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/jsonobject/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/jsonprimitive/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/jsonvalue/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/max_env/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionhandler/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionselector/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/message_types/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/outlet/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/outletbang/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/post/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/post_levels/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/removehandler/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/removehandlers/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/setdict/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/apiref/nodeformax/updatedict/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/javascript-custom-drawing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/jitter-tutorials/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/jitter_geometry/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/max-tutorials/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/msp-tutorials/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/series/polish-your-pixels/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/01-quickstart/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/02-working-with-transforms/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/03-hit-testing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/04-working-with-patterns/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/01-color-management/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/02-antialiasing/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/03-light-rendering/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/04-scale-and-distance/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05-object-motion/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06-pass-effects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-contours/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-differential.growth/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-fractals/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-open.mesh/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-point-cloud/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-thickness/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/geom-twisting/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00a_whatisamatrix/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00b_whatareattributes/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00c_display-a-video/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00d_live-capture/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00e_control-jitter-with-messages/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00f_adding-3d-objects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00g_jitter-matrix-1/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00h_jitter-matrix-2/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00i_generating-geometry/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00j_audio-into-a-matrix/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00k_building-live-video-effects/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter00l_composing-the-screen/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/01_mspintro/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/02_mspdigitalaudio/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/03_msphowmspworks/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/04_mspaudioio/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06_synthesischapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06_synthesischapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06_synthesischapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06_synthesischapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/06_synthesischapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter06/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/07_samplingchapter07/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/08_filterchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/08_filterchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/08_filterchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/08_filterchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/08_filterchapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/09_dynamicschapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/09_dynamicschapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/09_dynamicschapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/10_midichapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/10_midichapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/10_midichapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/11_polychapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/11_polychapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/11_polychapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/12_sequencingchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/13_panningchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/13_panningchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/13_panningchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/14_analysischapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/14_analysischapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/14_analysischapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/14_analysischapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/15_delaychapter06/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/16_pluginchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/16_pluginchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/16_pluginchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_00/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_06/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_07/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_08/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_09/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/17_msp_compress_10/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter06/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter07/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter08/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter09/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter10/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter11/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter12/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter13/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter14/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter15/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter16/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter17/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter18/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter19/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter20/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter21/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/basicchapter22/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/communicationschapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/communicationschapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/communicationschapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/datachapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/datachapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/datachapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/datachapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/datachapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/interfacechapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/interfacechapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/javascriptchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/javascriptchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/javascriptchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/javascriptchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter06/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter07/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter08/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter09/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter10/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter11/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter12/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter13/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter14/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter15/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter16/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter17/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter18/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter19/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter20/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter21/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter22/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter23/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter24/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter25/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter26/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter27/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter28/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter29/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter30/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter31/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter32/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter33/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter34/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter35/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter36/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter37/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter38/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter39/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter40/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter41/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter42/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter43/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter44/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter45/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter46/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter47/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter48/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter49/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter50/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter51/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter52/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixa/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixb/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixc/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixd/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/jitterchapter99_bibliography/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/midichapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/midichapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/midichapter03/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/midichapter04/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/midichapter05/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/pattrchapter01/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/learn/articles/pattrchapter02/"
+			},
+			{
+				"loc": "https://docs.cycling74.com/reference/"
+			}
+		],
+		"_xmlns": "http://www.sitemaps.org/schemas/sitemap/0.9"
+	}
+}
