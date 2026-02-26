@@ -6,7 +6,6 @@
 *   Extract an **Ordered List of Articles**, including:
     *   Category Name (if articles are grouped).
     *   Article Title.
-    *   Article Description.
     *   Article Link.
 
 ## 2. Target URLs
@@ -23,37 +22,11 @@ This file will contain a Markdown representation of the series overview and its 
 [Series Overview Content - if present]
 
 ## [Category Name 1 - if present]
-- [Article Title 1](local/path/to/article1.md) - Article Description 1
-- [Article Title 2](local/path/to/article2.md) - Article Description 2
+- [Article Title 1](https://docs.cycling74.com/learn/articles/article1/)
+- [Article Title 2](https://docs.cycling74.com/learn/articles/article2/)
 
 ## [Category Name 2 - if present]
-- [Article Title 3](local/path/to/article3.md) - Article Description 3
-```
-
-### `data/content/learn/series/<series-slug>/metadata.json`
-This file will contain a structured JSON representation of the series and its articles for programmatic access.
-```json
-{
-  "title": "[Series Title]",
-  "overview": "[Series Overview Content]",
-  "url": "https://docs.cycling74.com/learn/series/<series-slug>/",
-  "articles": [
-    {
-      "category": "[Category Name 1]", // Null if no category
-      "title": "Article Title 1",
-      "description": "Article Description 1",
-      "url": "https://docs.cycling74.com/learn/articles/article1/",
-      "path": "learn/articles/article1.md" // Local path
-    },
-    {
-      "category": "[Category Name 1]",
-      "title": "Article Title 2",
-      "description": "Article Description 2",
-      "url": "https://docs.cycling74.com/learn/articles/article2/",
-      "path": "learn/articles/article2.md"
-    }
-  ]
-}
+- [Article Title 3](https://docs.cycling74.com/learn/articles/article3/)
 ```
 
 ## 4. DOM Selectors & Strategy (Dynamic Class Strategy)
@@ -74,12 +47,8 @@ This file will contain a structured JSON representation of the series and its ar
 *   **Article List Items:** `ul > li > a`
     *   These `ul` elements will either be direct siblings of the `h1` (for flat lists) or immediately follow an `h2` (for categorized lists).
     *   **URL:** `href` attribute of the `<a>` tag.
-    *   **Full Text:** Text content of the `<a>` tag (e.g., "Basics — Getting MIDI input and output").
-    *   **Parsing `Full Text`:**
-        *   Split the `Full Text` by the first occurrence of "—".
-        *   The part before "—" is the **Article Title**.
-        *   The part after "—" is the **Article Description**.
-        *   If "—" is not present, the entire `Full Text` is the **Article Title**, and the **Article Description** is empty.
+    *   **Title**: The text content of the `<a>` tag.
+    *   **Description**: **DEPRECATED**. Article descriptions must be extracted from the article page's `<meta name="description">` instead of splitting the link text.
 
 ## 5. Execution Logic
 
@@ -95,11 +64,10 @@ This file will contain a structured JSON representation of the series and its ar
     *   If a `ul` element is encountered:
         *   For each `li > a` within this `ul`:
             *   Extract the `href` attribute (Article URL).
-            *   Parse the `<a>` tag's text content into Article Title and Article Description using the "—" delimiter logic.
-            *   Add an article object `{ category, title, description, url, path }` to the list. The `path` will be generated during the link rewriting phase.
+            *   Extract the `<a>` tag's text content as the Article Title.
+            *   Add an article object `{ category, title, url }` to the list.
 4.  **Output Generation:**
     *   **`index.md`**: Assemble using Markdown formatting: Series Title, Overview, and then categorized lists of articles.
-    *   **`metadata.json`**: Populate the JSON structure with the extracted Series Title, Overview, URL, and the list of articles. The `articles` array in JSON will include the `category` for each entry.
 
 ## 6. Edge Cases
 *   **No Series Overview:** If no `<p>` tags are found meeting the criteria, the `overview` field will be an empty string/null.

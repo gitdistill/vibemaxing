@@ -26,10 +26,8 @@ User Guide pages provide conceptual documentation for Max. While structurally si
    - **Math (KaTeX)**: If possible, extract the raw TeX from `<annotation encoding="application/x-tex">` to ensure math remains readable for agents.
    - **Images/Figures**: Preserve `<figure>` and `<figcaption>` blocks. Keep `src` as absolute URLs.
 
-### 2.3. Link Rewriting
-- **Rule**: All internal links must be relative to the file's location in the local content store.
-- **User Guide Links**: Rewrite to point to the local `.md` file in its respective group folder.
-- **Reference Links**: Keep as absolute URLs to `docs.cycling74.com/reference/*`.
+### 2.3. Link Rewriting (Out of Scope)
+- **Rule**: All internal links will remain as absolute URLs (e.g., `https://docs.cycling74.com/...`) for this initial scraping pass. Converting them to relative markdown paths is handled in a separate step outside this scope.
 
 ## 3. Data Output
 

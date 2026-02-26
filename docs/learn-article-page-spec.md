@@ -21,10 +21,7 @@ The **Article Page** is the terminal node of the Learn section. It contains the 
      - Anchor links next to headings (`.blocks_anchorLink__kJCjR`).
      - The metadata footer (`.article_metaWrapper__ARyDO`).
    - **Images**: Keep `src` as absolute URLs to `https://docs.cycling74.com`.
-   - **Links**: 
-     - Rewrite `/learn/articles/[slug]` to `./[slug].md`.
-     - Rewrite `/learn/series/[slug]` to `../series/[slug]/index.md`.
-     - Keep `/reference/*` as absolute URLs.
+   - **Links**: Do not rewrite links. Maintain absolute URLs to `https://docs.cycling74.com`.
 
 ### 2.3. Relationship Extraction ("See Also")
 - **Target**: Find any `<h2>` with ID `see-also` or `explore-further`.
@@ -37,12 +34,13 @@ The **Article Page** is the terminal node of the Learn section. It contains the 
 - **Logic**: Iterate over `<dl>` elements.
   - `dt` -> Key (lowercase, e.g., "kind", "author").
   - `dd` -> Value.
+- **Note**: This extraction can be configured using `Crawl4AI`'s `JsonCssExtractionStrategy`.
 
 ## 3. Data Output
 
 ### 3.1. File System
 - **Path**: `learn/articles/[slug].md`
-- **Format**: Clean Markdown with code fences.
+- **Format**: Clean Markdown with code fences. (Generated via `Crawl4AI` with `excluded_tags` for the sidebar and metadata footer).
 
 ### 3.2. Knowledge Map (`knowledge-map.json`)
 ```json

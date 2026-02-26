@@ -42,22 +42,14 @@ Isolated environments for specific devices or patches.
     *   `research_max(query)`: Fetches raw JSON documentation for objects, guides, or LOM.
     *   `augment_max_db(object, category)`: Fetches object metadata and writes it to `maxpatcher`'s local database.
 
+### `cyclescraper` (Script)
+WIP
+
 ### `maxpatcher` (App)
 *   **Location:** `apps/maxpatcher/`
 *   **Purpose:** The "Builder." Converts Python logic into Max patches.
 *   **Constraint:** **Zero Network Connectivity.** It halts if an object is unknown.
 *   **Recovery:** If `maxpatcher` fails with `[MISSING_OBJECT]`, the agent uses `augment_max_db` to teach it the new object, then rebuilds.
-
----
-
-## 🔄 Workflow
-
-1.  **Brainstorm:** Use `/skill:brainstorming` to explore ideas.
-2.  **Research:** Use `research_max` to validate object behavior and LOM paths against official docs.
-3.  **Plan:** Create a spec in `docs/plans/`.
-4.  **Augment:** If the plan uses new objects, run `augment_max_db` to prep the builder.
-5.  **Build:** Run `maxpatcher build <project>` to generate the patch.
-6.  **Verify:** Check the output in `projects/<project>/dist/`.
 
 ---
 
@@ -77,7 +69,7 @@ Isolated environments for specific devices or patches.
 │   └── my-device/
 │       ├── src/             # Python logic
 │       └── dist/            # Compiled .maxpat
-├── docs/
-│   └── plans/               # Architectural Specs
+├── docs/                    # Specs & Implementation Plans
+│                
 └── AGENTS.md                # Meta-instructions for the Agent
 ```

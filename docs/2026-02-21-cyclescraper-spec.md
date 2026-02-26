@@ -20,7 +20,8 @@ The scraper targets specific sections of `docs.cycling74.com` while explicitly e
     *   Target: `https://docs.cycling74.com/learn/*`
 
 ### Out of Scope
-*   **Object Reference** (`/reference/`): The 1800+ individual object pages (e.g., `cycle~`, `jit.world`) are handled by the `maxpylang` internal database tool and the context7 pi extension.
+*   **Object Reference** (`/reference/`): The 1800+ individual object pages (e.g., `cycle~`, `jit.world`) are handled by the `maxpylang` internal database tool and the vibemax intelligence pi extension using context7.
+*   **Link Rewriting**: Converting internal documentation links to relative Markdown paths will be handled as a separate step outside the initial scope of this scraper. All links should remain absolute.
 
 ## 3. Data Model
 
@@ -41,87 +42,11 @@ A hierarchical JSON tree representing the **logical structure** of the documenta
     *   `slug`: URL-friendly identifier.
     *   `filePath`: Relative path to the `.md` file (only for `page` type).
     *   `sourceUrl`: Original web URL.
-    *   `description`: **Required**. Short summary for agent context. The source of this description depends on the domain:
+    *   `description`: **Required**. Short summary for agent context. The source of this description is standardized:
+        *   **Pages/Articles/API Pages**: Always extracted from the page's `<meta name="description">`.
         *   **User Guide Groups**: Provided statically in `docs/seeds.json`.
-        *   **API Reference (LOM, JS, Node)**: Extracted from the descriptive text in the Index Tables on the root API pages.
         *   **Learn Series**: Extracted from the text beneath each series card on the `/learn/` landing page.
-        *   **Pages/Articles**: Extracted from the page's `<meta name="description">`.
     *   `children`: Array of child nodes.
-
-**Example Structure:**
-```json
-{
-  "title": "Cycling '74 Documentation",
-  "type": "root",
-  "children": [
-    {
-      "title": "User Guide",
-      "type": "section",
-      "children": [
-        {
-          "title": "Audio",
-          "type": "group",
-          "children": [
-             { 
-               "title": "MSP Basics",
-               "type": "page",
-               "kind": "guide",
-               "filePath": "userguide/audio/msp-basics.md",
-               "sourceUrl": "https://docs.cycling74.com/userguide/msp_basics",
-               "description": "Introduction to digital audio concepts in MSP."
-             }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "API Reference",
-      "type": "section",
-      "children": [
-        {
-          "title": "Live Object Model",
-          "type": "group",
-          "kind": "api-index",
-          "sourceUrl": "https://docs.cycling74.com/apiref/lom/",
-          "description": "Index of Live Object Model classes.",
-          "children": [
-             { 
-               "title": "Song", 
-               "type": "page",
-               "kind": "lom-object",
-               "description": "Represents a Live Set.",
-               "filePath": "apiref/lom/song.md" 
-             }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Learn",
-      "type": "section",
-      "children": [
-        {
-          "title": "Max Data Tutorials",
-          "type": "series",
-          "sourceUrl": "https://docs.cycling74.com/learn/max-data-tutorials/",
-          "description": "Tutorials for working with data dictionaries in Max.",
-          "children": [
-            {
-              "title": "01: Hello Data",
-              "type": "page",
-              "kind": "article",
-              "filePath": "learn/max-data-tutorials/01-hello-data.md",
-              "description": "Getting started with the dict object."
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-<comment feedback="concerned about learn page desc vs meta tag"></comment>
 
 ### 3.2. Content Store (`data/content/`)
 A directory structure containing clean, readable **Markdown** files.
@@ -188,52 +113,34 @@ The scraper uses this file to orchestrate its workflow, minimizing the need to "
 ### 4.4. Common Transformation Rules
 These rules apply globally across all processors unless overridden by a specific spec.
 
-1.  **HTML Cleaning (Cheerio)**
-    *   **Remove Elements**: `nav`, `footer`, `.sidebar`, `.cookie-banner`, `script`, `style`, `iframe`, `.blocks_anchorLink__kJCjR` (heading anchors), `.article_metaWrapper__ARyDO` (footer meta).
-    *   **Unwrap**: Remove wrapping `div`s that add no semantic value if they break Markdown flow.
+1.  **HTML Cleaning & Markdown Generation (Crawl4AI)**
+    *   **Engine**: Use `Crawl4AI` with `DefaultMarkdownGenerator`.
+    *   **Excluded Tags**: Exclude `nav`, `footer`, `aside`, `.sidebar`, `.cookie-banner`, `script`, `style`, `iframe`, `.blocks_anchorLink__kJCjR` (heading anchors), `.article_metaWrapper__ARyDO` (footer meta) via `CrawlerRunConfig(excluded_tags=[...])`.
+    *   **Content Focus**: Target the `.c74-article-content` selector where applicable to ensure high-fidelity GFM markdown generation.
+    *   **Metadata**: Extract `<meta name="description">` using `JsonCssExtractionStrategy` or standard metadata attributes within the crawl result.
 
-2.  **Link Rewriting**
-    *   **Internal Links**: Convert `href` starting with `/` (e.g., `/learn/series/foo`) to relative file paths (e.g., `../series/foo.md`).
-    *   **External/Reference**: Keep absolute URLs for domains other than `docs.cycling74.com` OR for paths under `/reference/` (Max Object Reference).
-    *   **Anchors**: Preserve fragment identifiers (`#foo`) when rewriting.
+2.  **Link Rewriting (Out of Scope for Initial Pass)**
+    *   *Note: Converting internal links to relative markdown paths will be handled in a separate, subsequent phase. For this implementation, allow Crawl4AI to generate absolute URLs (e.g., `https://docs.cycling74.com/...`) for all links.*
 
 3.  **Image Handling**
-    *   **Logic**: Convert relative paths to absolute URLs to ensure validity without local hosting.
-    *   **Pattern**: `src="/images/hash.webp"` -> `src="https://docs.cycling74.com/images/hash.webp"`.
-    *   **Query Params**: Strip strictly unnecessary query params if they don't affect the asset (e.g., tracking), but preserve signatures/versions if part of the filename.
+    *   **Logic**: Handle via Crawl4AI markdown options (e.g. `absolute_urls=True`) or a quick post-process pass to ensure relative paths point to `https://docs.cycling74.com`.
 
-4.  **Markdown Conversion (Turndown)**
-    *   **Code Blocks**: Use `turndown-plugin-gfm` to preserve fenced code blocks with language detection (`javascript`, `json`).
-    *   **Tables**: Ensure GFM table support is enabled.
-    *   **Math**: Preserve `<annotation encoding="application/x-tex">` content as `$$ ... $$` blocks for KaTeX compatibility.
+4.  **Math & Code Blocks**
+    *   **Code Blocks**: Handled natively by Crawl4AI.
+    *   **Math**: Post-process generated markdown if necessary to ensure `<annotation encoding="application/x-tex">` is preserved as `$$ ... $$` blocks for KaTeX compatibility.
 
 ### 4.5. Tech Stack
-*   **Runtime**: Node.js / TypeScript.
+*   **Project Location**: `apps/cyclescraper/`
+*   **Runtime**: Python 3.11+
 *   **Libraries**:
-    *   `cheerio`: HTML parsing / DOM manipulation.
-    *   `turndown`: HTML to Markdown conversion (with GFM plugin).
-    *   `axios`: HTTP client with rate limiting/retry logic.
-    *   `p-limit`: Concurrency control for polite scraping.
+    *   `crawl4ai`: Core engine for async crawling, HTML parsing, metadata extraction, and high-quality Markdown conversion.
+    *   `beautifulsoup4`: HTML parsing specifically for traversing the DOM to extract structured hierarchy for the `knowledge-map.json` (e.g., finding `<h2>` tags and sibling tables on API indices).
+    *   `asyncio`: Concurrency control and batch URL processing (`arun_many` limited to `max_concurrent=10`).
+    *   `PyYAML`: Frontmatter generation for Markdown files.
 
 ## 5. Execution Strategy
-1.  **Initialize**: `npm install` dependencies.
+1.  **Initialize**: `pip install -r requirements.txt` (including `crawl4ai` and running `crawl4ai-setup`).
 2.  **Configure**: Load the user-provided `docs/seeds.json` file as the unified entry point.
-3.  **Run**: `npm start`.
+3.  **Run**: Execute the Python orchestration script (e.g., `python main.py`).
 4.  **Verify**: Inspect `knowledge-map.json` and generated Markdown.
 5.  **Deploy**: Move `data/content` and `knowledge-map.json` to the `vibemax-intelligence` extension.
-
-## 6. Next Steps - Implementation Phase
-1.  **Repository Setup**: 
-    *   Initialize `cyclescraper` in a dedicated directory.
-    *   Install dependencies (`axios`, `cheerio`, `turndown`, `p-limit`).
-2.  **Configuration**:
-    *   Load and validate the `docs/seeds.json` structure.
-3.  **Core Processors**:
-    *   Scaffold `src/processors/BaseProcessor.ts`.
-    *   Implement `UserGuideProcessor`, `ApiRefProcessor`, `LearnProcessor` using the specific Selectors defined in 4.2.
-4.  **Integration**:
-    *   Write `src/main.ts` to orchestrate the pipeline.
-    *   Run test scrapes on sample pages (using cached files or live requests with politeness).
-5.  **Output**:
-    *   Generate `knowledge-map.json` and Markdown files.
-    *   Package for `vibemax-intelligence`.

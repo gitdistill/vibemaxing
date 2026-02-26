@@ -1,14 +1,14 @@
 {
   "workflow": {
     "phases": {
-      "brainstorm": "active",
-      "plan": "pending",
+      "brainstorm": "pending",
+      "plan": "active",
       "execute": "pending",
       "verify": "pending",
       "review": "pending",
       "finish": "pending"
     },
-    "currentPhase": "brainstorm",
+    "currentPhase": "plan",
     "artifacts": {
       "brainstorm": null,
       "plan": null,
@@ -29,15 +29,12 @@
   "tdd": {
     "phase": "idle",
     "testFiles": [],
-    "sourceFiles": [
-      "/Users/amadeodesouza/.bun/install/global/node_modules/@mariozechner/pi-ai/dist/providers/google-shared.js",
-      "check_urls.py"
-    ],
+    "sourceFiles": [],
     "redVerificationPending": false
   },
   "debug": {
     "active": false,
-    "investigated": true,
+    "investigated": false,
     "fixAttempts": 0
   },
   "verification": {
