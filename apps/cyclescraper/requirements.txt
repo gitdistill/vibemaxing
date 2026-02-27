@@ -1,0 +1,8 @@
+crawl4ai
+beautifulsoup4
+pyyaml
+pydantic
+aiohttp
+asyncio
+pytest
+pytest-asyncio

@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "title": "User Guide",
+      "type": "section",
+      "slug": "userguide",
+      "sourceUrl": "https://docs.cycling74.com/userguide/",
+      "description": "Conceptual guides and overviews",
+      "children": [
+        {
+          "title": "Colors",
+          "type": "group",
+          "slug": "colors",
+          "sourceUrl": "",
+          "description": "Guides on managing the visual appearance of your patches with palettes, themes, and styles.",
+          "children": [
+            {
+              "title": "Color Palette",
+              "type": "page",
+              "kind": "guide",
+              "slug": "color_palette",
+              "filePath": "data/content/userguide/colors/color_palette.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/color_palette/",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Live Object Model",
+      "type": "section",
+      "kind": "api-index",
+      "slug": "lom",
+      "filePath": "apiref/lom/index.md",
+      "sourceUrl": "https://docs.cycling74.com/apiref/lom/",
+      "description": "Use Max objects like live.object and live.path to read and modify the state of Ableton Live from within a Max for Live device. Also accessible from the JavaScript API.",
+      "children": [
+        {
+          "title": "API Objects",
+          "type": "group",
+          "slug": "api_objects",
+          "sourceUrl": "",
+          "description": "API Objects for Live Object Model",
+          "children": [
+            {
+              "title": "Clip",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "clip",
+              "filePath": "data/content/apiref/lom/clip.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/lom/clip/",
+              "description": "This class represents a clip in Live. It can be either an audio clip or a MIDI clip in the Arr..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Learn",
+      "type": "section",
+      "kind": "index",
+      "slug": "learn",
+      "filePath": "learn/index.md",
+      "sourceUrl": "https://docs.cycling74.com/learn/",
+      "description": "Tutorial series and articles for learning Max, MSP, Jitter, and more.",
+      "children": [
+        {
+          "title": "Jitter Geometry",
+          "type": "series",
+          "slug": "jitter_geometry",
+          "sourceUrl": "https://docs.cycling74.com/learn/series/jitter_geometry/",
+          "description": "Thejit.geomfamily of objects, likejit.geom.shape, are a specialized group of Jitter objects designed to work withHalf-edge Geometry Structures. These make certain transformations and operations much easier and more efficient.",
+          "children": [
+            {
+              "title": "Jitter Geometry Tutorials",
+              "type": "group",
+              "slug": "jitter_geometry_tutorials",
+              "sourceUrl": "",
+              "description": "Jitter Geometry Tutorials in Jitter Geometry",
+              "children": [
+                {
+                  "title": "Geometry Basics",
+                  "type": "page",
+                  "kind": "article",
+                  "slug": "geom-01",
+                  "filePath": "data/content/learn/articles/geom-01.md",
+                  "sourceUrl": "https://docs.cycling74.com/learn/articles/geom-01/",
+                  "description": "Introduction to Jitter Geometry objects"
+                },
+                {
+                  "title": "Contours",
+                  "type": "page",
+                  "kind": "article",
+                  "slug": "geom-01",
+                  "filePath": "data/content/learn/articles/geom-01.md",
+                  "sourceUrl": "https://docs.cycling74.com/learn/articles/geom-01/",
+                  "description": "Example of how to make a Jitter geometry look hand-drawn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

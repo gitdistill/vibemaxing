@@ -1,572 +1,1927 @@
 {
-	"urlset": {
-		"sections": {
-			"User Guide": {
-				"Audio": {
-					"description": "Concepts and workflows for digital audio processing, including multi-channel setups, frequency domain tools, and plugin integration.",
-					"pages": {
-						"Ableton DSP": "https://docs.cycling74.com/userguide/abl/",
-						"Frequency Domain": "https://docs.cycling74.com/userguide/frequency_domain/",
-						"MC Overview": "https://docs.cycling74.com/userguide/mc/",
-						"MC and Gen": "https://docs.cycling74.com/userguide/mc/mc_gen/",
-						"MC Wrapper": "https://docs.cycling74.com/userguide/mc/mc_wrapper/",
-						"MC Audio Delays": "https://docs.cycling74.com/userguide/mc/mc_audio_delays/",
-						"MC Channel Topology": "https://docs.cycling74.com/userguide/mc/mc_channel_topology/",
-						"MC Dynamic Routing": "https://docs.cycling74.com/userguide/mc/mc_dynamic_routing/",
-						"MC Events New Functions": "https://docs.cycling74.com/userguide/mc/mc_events_newfunctions/",
-						"MC Events New Objects": "https://docs.cycling74.com/userguide/mc/mc_events_newobjects/",
-						"MC Function Generators": "https://docs.cycling74.com/userguide/mc/mc_function_generators/",
-						"MC Gen Event Wrapper": "https://docs.cycling74.com/userguide/mc/mc_gen_event_wrapper/",
-						"MC Gen Instances": "https://docs.cycling74.com/userguide/mc/mc_gen_instances/",
-						"MC Gen New Features": "https://docs.cycling74.com/userguide/mc/mc_gen_newfeatures/",
-						"MC Gen New Objects": "https://docs.cycling74.com/userguide/mc/mc_gen_newobjects/",
-						"MC Generated Messages": "https://docs.cycling74.com/userguide/mc/mc_generated_messages/",
-						"MC Max for Live Interface": "https://docs.cycling74.com/userguide/mc/mc_maxforlive_interface/",
-						"MC MC vs MCS": "https://docs.cycling74.com/userguide/mc/mc_mcvsmcs/",
-						"MC Messages to Wrapper": "https://docs.cycling74.com/userguide/mc/mc_messages_to_wrapper/",
-						"MC Mixing and Panning": "https://docs.cycling74.com/userguide/mc/mc_mixing_panning/",
-						"MC Multichannel Sources": "https://docs.cycling74.com/userguide/mc/mc_multichannel_sources/",
-						"MC Patchcords": "https://docs.cycling74.com/userguide/mc/mc_patchcords/",
-						"MC Plugins": "https://docs.cycling74.com/userguide/mc/mc_plugins/",
-						"MC Multiple Patchers": "https://docs.cycling74.com/userguide/mc/mc_poly_multiple_patchers/",
-						"MC Poly New Features": "https://docs.cycling74.com/userguide/mc/mc_poly_newfeatures/",
-						"MC Poly without Polytilde": "https://docs.cycling74.com/userguide/mc/mc_poly_without_polytilde/",
-						"MC Polyphony": "https://docs.cycling74.com/userguide/mc/mc_polyphony/",
-						"MC Signals": "https://docs.cycling74.com/userguide/mc/mc_signals_newobjects/",
-						"MC Spatialization": "https://docs.cycling74.com/userguide/mc/mc_spatialization/",
-						"MC Visualization": "https://docs.cycling74.com/userguide/mc/mc_visualization/",
-						"Multichannel I/O": "https://docs.cycling74.com/userguide/audio_channels/",
-						"Non-realtime": "https://docs.cycling74.com/userguide/non_realtime/",
-						"Plugins": "https://docs.cycling74.com/userguide/plugins/",
-						"Polyphony": "https://docs.cycling74.com/userguide/polyphony/",
-						"Recording": "https://docs.cycling74.com/userguide/recording/",
-						"RNBO": "https://docs.cycling74.com/userguide/rnbo/",
-						"Sample-Accurate Messages": "https://docs.cycling74.com/userguide/sample_accurate_messages/" 						
-
-					}
-				},
-				"Colors": {
-					"description": "Guides on managing the visual appearance of your patches with palettes, themes, and styles.",
-					"pages":{
-						"Color Palette": "https://docs.cycling74.com/userguide/color_palette/",
-						"Color Themes": "https://docs.cycling74.com/userguide/color_themes/",
-						"Dynamic Colors": "https://docs.cycling74.com/userguide/dynamic_colors/",
-						"Format Palette": "https://docs.cycling74.com/userguide/format_palette/",
-						"Styles": "https://docs.cycling74.com/userguide/styles/",
-						"Syntax Coloring": "https://docs.cycling74.com/userguide/syntax_coloring/"
-					}
-				},
-				"Data": {
-					"description": "Techniques for handling and manipulating data structures like arrays, dictionaries, numbers, and strings.",
-					"pages": {
-						"Arrays": "https://docs.cycling74.com/userguide/arrays/",
-						"Dictionaries": "https://docs.cycling74.com/userguide/dictionaries/",
-						"Integers vs Floats": "https://docs.cycling74.com/userguide/integers_vs_floats/",
-						"Strings": "https://docs.cycling74.com/userguide/strings/"
-					}
-				},
-				"Debugging": {
-					"description": "Tools and strategies for troubleshooting patches, understanding error messages, and analyzing data flow.",
-					"pages": {
-						"Debugging Overview": "https://docs.cycling74.com/userguide/debugging_and_probing/",
-						"Error Messages": "https://docs.cycling74.com/userguide/error_messages/",
-						"Illustration Mode": "https://docs.cycling74.com/userguide/illustration_mode/",
-						"Max Console": "https://docs.cycling74.com/userguide/max_console/"
-					}
-				},
-				"Files": {
-					"description": "Understanding file management, supported formats, and how Max locates dependencies via the search path.",
-					"pages": {
-						"File Browser": "https://docs.cycling74.com/userguide/file_browser/",
-						"Filetypes": "https://docs.cycling74.com/userguide/filetypes/",
-						"Search Path": "https://docs.cycling74.com/userguide/search_path/"
-					}
-				},
-				"Gen": {
-					"description": "In-depth guides on using Gen for low-level audio and data processing, covering operators and expressions.",
-					"pages": {
-						"Gen Overview": "https://docs.cycling74.com/userguide/gen/_gen_overview/",
-						"Common Operators": "https://docs.cycling74.com/userguide/gen/gen_common_operators/",
-						"Gen Expr": "https://docs.cycling74.com/userguide/gen/gen_genexpr/",
-						"Gen~ Operators": "https://docs.cycling74.com/userguide/gen/gen~_operators/",
-						"Jitter Operators": "https://docs.cycling74.com/userguide/gen/gen_jitter_operators/"
-					}
-				},
-				"Jitter": {
-					"description": "Concepts for working with matrix data, video engines, graphics processing, and 3D geometry in Jitter.",
-					"pages": {
-						"Depth and Blending": "https://docs.cycling74.com/userguide/jitter/depth_layer_blend/",
-						"Geometry": "https://docs.cycling74.com/userguide/jitter/geometry/",
-						"Graphics Engine": "https://docs.cycling74.com/userguide/jitter/graphics_engine/",
-						"Graphics Processing": "https://docs.cycling74.com/userguide/jitter/graphics_processing/",
-						"Jitter Expr": "https://docs.cycling74.com/userguide/jitter/jitter_expr/",
-						"JXS File Format": "https://docs.cycling74.com/userguide/jitter/jxs_file_format/",
-						"Matrices": "https://docs.cycling74.com/userguide/jitter/matrix/",
-						"Render Passes": "https://docs.cycling74.com/userguide/jitter/render_passes/",
-						"Textures": "https://docs.cycling74.com/userguide/jitter/textures/",
-						"Video": "https://docs.cycling74.com/userguide/jitter/video/",
-						"Video Engine": "https://docs.cycling74.com/userguide/jitter/video_engine/"
-					}
-				},
-				"Max Interface": {
-					"description": "Navigating and customizing the Max authoring environment, toolbars, and inspection windows.",
-					"pages": {
-						"Action Menu": "https://docs.cycling74.com/userguide/action_menu/",
-						"Documentation Window": "https://docs.cycling74.com/userguide/documentation_window/",
-						"Extras Menu": "https://docs.cycling74.com/userguide/extras_menu/",
-						"Inspector": "https://docs.cycling74.com/userguide/inspector/",
-						"Object Reference": "https://docs.cycling74.com/userguide/object_reference/",
-						"Preferences": "https://docs.cycling74.com/userguide/preferences_and_settings/",
-						"Sidebar Search": "https://docs.cycling74.com/userguide/sidebar_search/",
-						"Toolbars": "https://docs.cycling74.com/userguide/patcher_window/"
-					}
-				},
-				"MIDI": {
-					"description": "Handling MIDI protocols, mapping, and routing within the Max environment.",
-					"pages": {
-						"Mapping": "https://docs.cycling74.com/userguide/mapping/",
-						"MIDI": "https://docs.cycling74.com/userguide/midi/"
-					}
-				} ,
-				"Parameters": {
-					"description": "Managing application state, presets, parameter interpolation, and OSC integration.",
-					"pages": {
-						"OSC": "https://docs.cycling74.com/userguide/OSC/",
-						"Parameter Connect": "https://docs.cycling74.com/userguide/param_connect/",
-						"Parameter Mode": "https://docs.cycling74.com/userguide/parameter_mode/",
-						"Presets and Interpolation": "https://docs.cycling74.com/userguide/presets_and_interpolation/",
-						"Saving and Pattr": "https://docs.cycling74.com/userguide/pattr/",
-						"Snapshots": "https://docs.cycling74.com/userguide/snapshots/"
-					}
-				},
-				"Patching": {
-					"description": "Fundamental mechanics of creating, connecting, and lifecycle management of Max objects.",
-					"pages": {
-						"Conversion Cheat Sheet": "https://docs.cycling74.com/userguide/conversion/",
-						"Messages": "https://docs.cycling74.com/userguide/messages/",
-						"Message Types": "https://docs.cycling74.com/userguide/message_types/",
-						"Objects": "https://docs.cycling74.com/userguide/objects/",
-						"Patcher Lifecycle": "https://docs.cycling74.com/userguide/patcher_lifecycle/",
-						"Patching": "https://docs.cycling74.com/userguide/patching/",
-						"Patch Cords": "https://docs.cycling74.com/userguide/patch_cords/",
-						"Patching Mechanics": "https://docs.cycling74.com/userguide/patching_mechanics/",
-						"Web Browser": "https://docs.cycling74.com/userguide/web_browser/"
-					}
-				},
-				"Reuse and Organization": {
-					"description": "Strategies for modular patching, including abstractions, bpatchers, externals, and project management.",
-					"pages": {
-						"Abstractions": "https://docs.cycling74.com/userguide/abstractions/",
-						"Bpatchers": "https://docs.cycling74.com/userguide/bpatchers/",
-						"Custom UI Objects": "https://docs.cycling74.com/userguide/custom_ui_objects/",
-						"Externals": "https://docs.cycling74.com/userguide/externals/",
-						"Packages": "https://docs.cycling74.com/userguide/packages/",
-						"Package Manager": "https://docs.cycling74.com/userguide/package_manager/",
-						"Projects": "https://docs.cycling74.com/userguide/projects/",
-						"Prototypes": "https://docs.cycling74.com/userguide/prototypes/",
-						"Snippets": "https://docs.cycling74.com/userguide/snippets/",
-						"Subpatchers": "https://docs.cycling74.com/userguide/subpatchers/",
-						"Templates": "https://docs.cycling74.com/userguide/templates/"
-					}
-				},
-				"Scripting": {
-					"description": "Utilizing external scripts (JavaScript, Lua) and textual workflows to automate and extend Max.",
-					"pages": {
-						"Scripting Overview": "https://docs.cycling74.com/userguide/scripting_overview/",
-						"External Text Editor": "https://docs.cycling74.com/userguide/external_text_editor/",
-						"JavaScript": "https://docs.cycling74.com/userguide/javascript/",
-						"Lua Overview": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_overview/",
-						"Max Define Message": "https://docs.cycling74.com/userguide/max_define/",
-						"Messages to Max": "https://docs.cycling74.com/userguide/controlling_max_with_messages/",
-						"REPL": "https://docs.cycling74.com/userguide/repl/"
-					}
-				},
-				"Sharing": {
-					"description": "Methods for distributing your work, including Max Projects, Standalones, and Collectives.",
-					"pages": {
-						"Sharing Overview": "https://docs.cycling74.com/userguide/sharing/",
-						"Projects": "https://docs.cycling74.com/userguide/projects/",
-						"Standalones and Collectives": "https://docs.cycling74.com/userguide/standalones_and_collectives/"
-					}
-				},
-				"Timing": {
-					"description": "Managing scheduling, transport controls, and time value syntax across your patches.",
-					"pages": {
-						"Scheduler": "https://docs.cycling74.com/userguide/scheduler/",
-						"Time Value Syntax": "https://docs.cycling74.com/userguide/time_value_syntax/",
-						"Transport": "https://docs.cycling74.com/userguide/transport/"
-					}
-				},
-				"Max For Live": {
-					"description": "Integrating Max within Ableton Live, creating devices, and managing automation and the Live API.",
-					"pages": {
-						"Overview": "https://docs.cycling74.com/userguide/m4l/_m4l_overview/",
-						"Live API Overview": "https://docs.cycling74.com/userguide/m4l/live_api_overview/",
-						"Creating Devices": "https://docs.cycling74.com/userguide/m4l/live_creatingdevices/",
-						"User Interfaces": "https://docs.cycling74.com/userguide/m4l/live_userinterfaces/",
-						"Automation": "https://docs.cycling74.com/userguide/m4l/live_automation/",
-						"Sharing Devices": "https://docs.cycling74.com/userguide/m4l/live_sharing/",
-						"Timing": "https://docs.cycling74.com/userguide/m4l/live_timing/",
-						"Audio Devices": "https://docs.cycling74.com/userguide/m4l/live_audiodevices/",
-						"Live API": "https://docs.cycling74.com/userguide/m4l/live_api/",
-						"MIDI Effects": "https://docs.cycling74.com/userguide/m4l/live_midieffects/",
-						"Parameters": "https://docs.cycling74.com/userguide/m4l/live_parameters/",
-						"Freezing": "https://docs.cycling74.com/userguide/m4l/live_freezing/",
-						"Limitations": "https://docs.cycling74.com/userguide/m4l/live_limitations/",
-						"MIDI Tools": "https://docs.cycling74.com/userguide/m4l/live_miditools/",
-						"Presets": "https://docs.cycling74.com/userguide/m4l/live_presets/",
-						"Preview": "https://docs.cycling74.com/userguide/m4l/live_preview/",
-						"Resolving Conflicts": "https://docs.cycling74.com/userguide/m4l/live_resolveconflicts/",
-						"Parameters Window": "https://docs.cycling74.com/userguide/m4l/live_parameterswindow/",
-						"Unfreezing": "https://docs.cycling74.com/userguide/m4l/live_unfreezing/",
-						"Pattr in Live": "https://docs.cycling74.com/userguide/m4l/live_pattr/",
-						"Symbols in Live": "https://docs.cycling74.com/userguide/m4l/live_symbols/"
-					}
-				}
-			},
-			"API Reference": {
-				"Live Object Model": {
-					"description": "Use Max objects like live.object and live.path to read and modify the state of Ableton Live from within a Max for Live device. Also accessible from the JavaScript API.",
-					"index": "https://docs.cycling74.com/apiref/lom/",
-					"pages": [
-						"https://docs.cycling74.com/apiref/lom/application/",
-						"https://docs.cycling74.com/apiref/lom/application_view/",
-						"https://docs.cycling74.com/apiref/lom/chain/",
-						"https://docs.cycling74.com/apiref/lom/chainmixerdevice/",
-						"https://docs.cycling74.com/apiref/lom/clip/",
-						"https://docs.cycling74.com/apiref/lom/clip_view/",
-						"https://docs.cycling74.com/apiref/lom/clipslot/",
-						"https://docs.cycling74.com/apiref/lom/compressordevice/",
-						"https://docs.cycling74.com/apiref/lom/controlsurface/",
-						"https://docs.cycling74.com/apiref/lom/cuepoint/",
-						"https://docs.cycling74.com/apiref/lom/device/",
-						"https://docs.cycling74.com/apiref/lom/device_view/",
-						"https://docs.cycling74.com/apiref/lom/deviceio/",
-						"https://docs.cycling74.com/apiref/lom/deviceparameter/",
-						"https://docs.cycling74.com/apiref/lom/driftdevice/",
-						"https://docs.cycling74.com/apiref/lom/drumcelldevice/",
-						"https://docs.cycling74.com/apiref/lom/drumchain/",
-						"https://docs.cycling74.com/apiref/lom/drumpad/",
-						"https://docs.cycling74.com/apiref/lom/groove/",
-						"https://docs.cycling74.com/apiref/lom/groovepool/",
-						"https://docs.cycling74.com/apiref/lom/hybridreverbdevice/",
-						"https://docs.cycling74.com/apiref/lom/eq8device/",
-						"https://docs.cycling74.com/apiref/lom/eq8device_view/",
-						"https://docs.cycling74.com/apiref/lom/looperdevice/",
-						"https://docs.cycling74.com/apiref/lom/maxdevice/",
-						"https://docs.cycling74.com/apiref/lom/melddevice/",
-						"https://docs.cycling74.com/apiref/lom/mixerdevice/",
-						"https://docs.cycling74.com/apiref/lom/plugindevice/",
-						"https://docs.cycling74.com/apiref/lom/rackdevice/",
-						"https://docs.cycling74.com/apiref/lom/rackdevice_view/",
-						"https://docs.cycling74.com/apiref/lom/roardevice/",
-						"https://docs.cycling74.com/apiref/lom/sample/",
-						"https://docs.cycling74.com/apiref/lom/scene/",
-						"https://docs.cycling74.com/apiref/lom/shifterdevice/",
-						"https://docs.cycling74.com/apiref/lom/simplerdevice/",
-						"https://docs.cycling74.com/apiref/lom/simplerdevice_view/",
-						"https://docs.cycling74.com/apiref/lom/song/",
-						"https://docs.cycling74.com/apiref/lom/song_view/",
-						"https://docs.cycling74.com/apiref/lom/spectralresonatordevice/",
-						"https://docs.cycling74.com/apiref/lom/takelane/",
-						"https://docs.cycling74.com/apiref/lom/this_device/",
-						"https://docs.cycling74.com/apiref/lom/track/",
-						"https://docs.cycling74.com/apiref/lom/track_view/",
-						"https://docs.cycling74.com/apiref/lom/tuningsystem/",
-						"https://docs.cycling74.com/apiref/lom/wavetabledevice/"
-					]
-				},
-				"Javascript API": {
-					"description": "Use the v8, v8ui and v8.codebox to embed JavaScript in a Max patch. Define custom objects, programmatically create objects and patch cords, and operate the Max application.",
-					"index": "https://docs.cycling74.com/apiref/js/",
-					"pages": [
-						"https://docs.cycling74.com/apiref/js/basic2dstrokestyleparameternames/",
-						"https://docs.cycling74.com/apiref/js/buffer/",
-						"https://docs.cycling74.com/apiref/js/cpost/",
-						"https://docs.cycling74.com/apiref/js/dict/",
-						"https://docs.cycling74.com/apiref/js/drawingprimitives/",
-						"https://docs.cycling74.com/apiref/js/error/",
-						"https://docs.cycling74.com/apiref/js/file/",
-						"https://docs.cycling74.com/apiref/js/filetypes/",
-						"https://docs.cycling74.com/apiref/js/folder/",
-						"https://docs.cycling74.com/apiref/js/global/",
-						"https://docs.cycling74.com/apiref/js/image/",
-						"https://docs.cycling74.com/apiref/js/jitter3dutilsinterface/",
-						"https://docs.cycling74.com/apiref/js/jitter3dutilstypes/",
-						"https://docs.cycling74.com/apiref/js/jitterevent/",
-						"https://docs.cycling74.com/apiref/js/jittereventtypes/",
-						"https://docs.cycling74.com/apiref/js/jitterlistener/",
-						"https://docs.cycling74.com/apiref/js/jittermatrix/",
-						"https://docs.cycling74.com/apiref/js/jitterobject/",
-						"https://docs.cycling74.com/apiref/js/jsthis/",
-						"https://docs.cycling74.com/apiref/js/linestrokestyleparameternames/",
-						"https://docs.cycling74.com/apiref/js/liveapi/",
-						"https://docs.cycling74.com/apiref/js/max/",
-						"https://docs.cycling74.com/apiref/js/maxobj/",
-						"https://docs.cycling74.com/apiref/js/maxobjconnection/",
-						"https://docs.cycling74.com/apiref/js/maxobjlistener/",
-						"https://docs.cycling74.com/apiref/js/maxobjlistenerdata/",
-						"https://docs.cycling74.com/apiref/js/maxstring/",
-						"https://docs.cycling74.com/apiref/js/messnamed/",
-						"https://docs.cycling74.com/apiref/js/mgraphics/",
-						"https://docs.cycling74.com/apiref/js/mgraphicsmatrixhandle/",
-						"https://docs.cycling74.com/apiref/js/mgraphicspathhandle/",
-						"https://docs.cycling74.com/apiref/js/mgraphicssvg/",
-						"https://docs.cycling74.com/apiref/js/parameterinfoprovider/",
-						"https://docs.cycling74.com/apiref/js/parameterinfoproviderdata/",
-						"https://docs.cycling74.com/apiref/js/parameterlistener/",
-						"https://docs.cycling74.com/apiref/js/parameterlistenerdata/",
-						"https://docs.cycling74.com/apiref/js/patcher/",
-						"https://docs.cycling74.com/apiref/js/pattern/",
-						"https://docs.cycling74.com/apiref/js/pointerevent/",
-						"https://docs.cycling74.com/apiref/js/polybuffer/",
-						"https://docs.cycling74.com/apiref/js/post/",
-						"https://docs.cycling74.com/apiref/js/progressevent/",
-						"https://docs.cycling74.com/apiref/js/sketch/",
-						"https://docs.cycling74.com/apiref/js/snapshotapi/",
-						"https://docs.cycling74.com/apiref/js/sqlite/",
-						"https://docs.cycling74.com/apiref/js/sqlresult/",
-						"https://docs.cycling74.com/apiref/js/task/",
-						"https://docs.cycling74.com/apiref/js/wind/",
-						"https://docs.cycling74.com/apiref/js/xmlhttprequest/"
-					]
-				},
-				"Node for Max API": {
-					"description": "Use the node.script and node.debug objects to launch custom Node.js scripts from Max. Send Max messages to a running Node process and fetch a result.",
-					"index": "https://docs.cycling74.com/apiref/nodeformax/",
-					"pages": [
-						"https://docs.cycling74.com/apiref/nodeformax/addhandler/",
-						"https://docs.cycling74.com/apiref/nodeformax/addhandlers/",
-						"https://docs.cycling74.com/apiref/nodeformax/anything/",
-						"https://docs.cycling74.com/apiref/nodeformax/getdict/",
-						"https://docs.cycling74.com/apiref/nodeformax/jsonarray/",
-						"https://docs.cycling74.com/apiref/nodeformax/jsonobject/",
-						"https://docs.cycling74.com/apiref/nodeformax/jsonprimitive/",
-						"https://docs.cycling74.com/apiref/nodeformax/jsonvalue/",
-						"https://docs.cycling74.com/apiref/nodeformax/max_env/",
-						"https://docs.cycling74.com/apiref/nodeformax/maxfunctionhandler/",
-						"https://docs.cycling74.com/apiref/nodeformax/maxfunctionselector/",
-						"https://docs.cycling74.com/apiref/nodeformax/message_types/",
-						"https://docs.cycling74.com/apiref/nodeformax/outlet/",
-						"https://docs.cycling74.com/apiref/nodeformax/outletbang/",
-						"https://docs.cycling74.com/apiref/nodeformax/post/",
-						"https://docs.cycling74.com/apiref/nodeformax/post_levels/",
-						"https://docs.cycling74.com/apiref/nodeformax/removehandler/",
-						"https://docs.cycling74.com/apiref/nodeformax/removehandlers/",
-						"https://docs.cycling74.com/apiref/nodeformax/setdict/",
-						"https://docs.cycling74.com/apiref/nodeformax/updatedict/"
-					]
-				}
-			},
-			"Learn": {
-				"index": "https://docs.cycling74.com/learn/",
-				"series": [
-					"https://docs.cycling74.com/learn/series/javascript-custom-drawing/",
-					"https://docs.cycling74.com/learn/series/jitter-tutorials/",
-					"https://docs.cycling74.com/learn/series/jitter_geometry/",
-					"https://docs.cycling74.com/learn/series/max-tutorials/",
-					"https://docs.cycling74.com/learn/series/msp-tutorials/",
-					"https://docs.cycling74.com/learn/series/polish-your-pixels/"
-				],
-				"articles": [
-					"https://docs.cycling74.com/learn/articles/01-quickstart/",
-					"https://docs.cycling74.com/learn/articles/02-working-with-transforms/",
-					"https://docs.cycling74.com/learn/articles/03-hit-testing/",
-					"https://docs.cycling74.com/learn/articles/04-working-with-patterns/",
-					"https://docs.cycling74.com/learn/articles/01-color-management/",
-					"https://docs.cycling74.com/learn/articles/02-antialiasing/",
-					"https://docs.cycling74.com/learn/articles/03-light-rendering/",
-					"https://docs.cycling74.com/learn/articles/04-scale-and-distance/",
-					"https://docs.cycling74.com/learn/articles/05-object-motion/",
-					"https://docs.cycling74.com/learn/articles/06-pass-effects/",
-					"https://docs.cycling74.com/learn/articles/geom-01/",
-					"https://docs.cycling74.com/learn/articles/geom-02/",
-					"https://docs.cycling74.com/learn/articles/geom-03/",
-					"https://docs.cycling74.com/learn/articles/geom-04/",
-					"https://docs.cycling74.com/learn/articles/geom-contours/",
-					"https://docs.cycling74.com/learn/articles/geom-differential.growth/",
-					"https://docs.cycling74.com/learn/articles/geom-fractals/",
-					"https://docs.cycling74.com/learn/articles/geom-open.mesh/",
-					"https://docs.cycling74.com/learn/articles/geom-point-cloud/",
-					"https://docs.cycling74.com/learn/articles/geom-thickness/",
-					"https://docs.cycling74.com/learn/articles/geom-twisting/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00a_whatisamatrix/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00b_whatareattributes/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00c_display-a-video/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00d_live-capture/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00e_control-jitter-with-messages/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00f_adding-3d-objects/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00g_jitter-matrix-1/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00h_jitter-matrix-2/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00i_generating-geometry/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00j_audio-into-a-matrix/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00k_building-live-video-effects/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter00l_composing-the-screen/",
-					"https://docs.cycling74.com/learn/articles/01_mspintro/",
-					"https://docs.cycling74.com/learn/articles/02_mspdigitalaudio/",
-					"https://docs.cycling74.com/learn/articles/03_msphowmspworks/",
-					"https://docs.cycling74.com/learn/articles/04_mspaudioio/",
-					"https://docs.cycling74.com/learn/articles/05_mspbasicchapter01/",
-					"https://docs.cycling74.com/learn/articles/05_mspbasicchapter02/",
-					"https://docs.cycling74.com/learn/articles/05_mspbasicchapter03/",
-					"https://docs.cycling74.com/learn/articles/05_mspbasicchapter04/",
-					"https://docs.cycling74.com/learn/articles/05_mspbasicchapter05/",
-					"https://docs.cycling74.com/learn/articles/06_synthesischapter01/",
-					"https://docs.cycling74.com/learn/articles/06_synthesischapter02/",
-					"https://docs.cycling74.com/learn/articles/06_synthesischapter03/",
-					"https://docs.cycling74.com/learn/articles/06_synthesischapter04/",
-					"https://docs.cycling74.com/learn/articles/06_synthesischapter05/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter01/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter02/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter03/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter04/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter05/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter06/",
-					"https://docs.cycling74.com/learn/articles/07_samplingchapter07/",
-					"https://docs.cycling74.com/learn/articles/08_filterchapter01/",
-					"https://docs.cycling74.com/learn/articles/08_filterchapter02/",
-					"https://docs.cycling74.com/learn/articles/08_filterchapter03/",
-					"https://docs.cycling74.com/learn/articles/08_filterchapter04/",
-					"https://docs.cycling74.com/learn/articles/08_filterchapter05/",
-					"https://docs.cycling74.com/learn/articles/09_dynamicschapter01/",
-					"https://docs.cycling74.com/learn/articles/09_dynamicschapter02/",
-					"https://docs.cycling74.com/learn/articles/09_dynamicschapter03/",
-					"https://docs.cycling74.com/learn/articles/10_midichapter01/",
-					"https://docs.cycling74.com/learn/articles/10_midichapter02/",
-					"https://docs.cycling74.com/learn/articles/10_midichapter03/",
-					"https://docs.cycling74.com/learn/articles/11_polychapter01/",
-					"https://docs.cycling74.com/learn/articles/11_polychapter02/",
-					"https://docs.cycling74.com/learn/articles/11_polychapter03/",
-					"https://docs.cycling74.com/learn/articles/12_sequencingchapter01/",
-					"https://docs.cycling74.com/learn/articles/13_panningchapter01/",
-					"https://docs.cycling74.com/learn/articles/13_panningchapter02/",
-					"https://docs.cycling74.com/learn/articles/13_panningchapter03/",
-					"https://docs.cycling74.com/learn/articles/14_analysischapter01/",
-					"https://docs.cycling74.com/learn/articles/14_analysischapter02/",
-					"https://docs.cycling74.com/learn/articles/14_analysischapter03/",
-					"https://docs.cycling74.com/learn/articles/14_analysischapter04/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter01/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter02/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter03/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter04/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter05/",
-					"https://docs.cycling74.com/learn/articles/15_delaychapter06/",
-					"https://docs.cycling74.com/learn/articles/16_pluginchapter01/",
-					"https://docs.cycling74.com/learn/articles/16_pluginchapter02/",
-					"https://docs.cycling74.com/learn/articles/16_pluginchapter03/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_00/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_01/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_02/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_03/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_04/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_05/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_06/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_07/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_08/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_09/",
-					"https://docs.cycling74.com/learn/articles/17_msp_compress_10/",
-					"https://docs.cycling74.com/learn/articles/basicchapter01/",
-					"https://docs.cycling74.com/learn/articles/basicchapter02/",
-					"https://docs.cycling74.com/learn/articles/basicchapter03/",
-					"https://docs.cycling74.com/learn/articles/basicchapter04/",
-					"https://docs.cycling74.com/learn/articles/basicchapter05/",
-					"https://docs.cycling74.com/learn/articles/basicchapter06/",
-					"https://docs.cycling74.com/learn/articles/basicchapter07/",
-					"https://docs.cycling74.com/learn/articles/basicchapter08/",
-					"https://docs.cycling74.com/learn/articles/basicchapter09/",
-					"https://docs.cycling74.com/learn/articles/basicchapter10/",
-					"https://docs.cycling74.com/learn/articles/basicchapter11/",
-					"https://docs.cycling74.com/learn/articles/basicchapter12/",
-					"https://docs.cycling74.com/learn/articles/basicchapter13/",
-					"https://docs.cycling74.com/learn/articles/basicchapter14/",
-					"https://docs.cycling74.com/learn/articles/basicchapter15/",
-					"https://docs.cycling74.com/learn/articles/basicchapter16/",
-					"https://docs.cycling74.com/learn/articles/basicchapter17/",
-					"https://docs.cycling74.com/learn/articles/basicchapter18/",
-					"https://docs.cycling74.com/learn/articles/basicchapter19/",
-					"https://docs.cycling74.com/learn/articles/basicchapter20/",
-					"https://docs.cycling74.com/learn/articles/basicchapter21/",
-					"https://docs.cycling74.com/learn/articles/basicchapter22/",
-					"https://docs.cycling74.com/learn/articles/communicationschapter01/",
-					"https://docs.cycling74.com/learn/articles/communicationschapter02/",
-					"https://docs.cycling74.com/learn/articles/communicationschapter03/",
-					"https://docs.cycling74.com/learn/articles/datachapter01/",
-					"https://docs.cycling74.com/learn/articles/datachapter02/",
-					"https://docs.cycling74.com/learn/articles/datachapter03/",
-					"https://docs.cycling74.com/learn/articles/datachapter04/",
-					"https://docs.cycling74.com/learn/articles/datachapter05/",
-					"https://docs.cycling74.com/learn/articles/interfacechapter01/",
-					"https://docs.cycling74.com/learn/articles/interfacechapter02/",
-					"https://docs.cycling74.com/learn/articles/javascriptchapter01/",
-					"https://docs.cycling74.com/learn/articles/javascriptchapter02/",
-					"https://docs.cycling74.com/learn/articles/javascriptchapter03/",
-					"https://docs.cycling74.com/learn/articles/javascriptchapter04/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter01/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter02/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter03/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter04/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter05/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter06/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter07/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter08/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter09/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter10/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter11/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter12/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter13/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter14/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter15/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter16/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter17/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter18/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter19/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter20/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter21/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter22/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter23/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter24/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter25/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter26/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter27/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter28/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter29/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter30/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter31/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter32/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter33/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter34/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter35/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter36/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter37/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter38/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter39/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter40/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter41/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter42/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter43/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter44/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter45/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter46/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter47/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter48/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter49/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter50/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter51/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter52/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter99_appendixa/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter99_appendixb/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter99_appendixc/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter99_appendixd/",
-					"https://docs.cycling74.com/learn/articles/jitterchapter99_bibliography/",
-					"https://docs.cycling74.com/learn/articles/midichapter01/",
-					"https://docs.cycling74.com/learn/articles/midichapter02/",
-					"https://docs.cycling74.com/learn/articles/midichapter03/",
-					"https://docs.cycling74.com/learn/articles/midichapter04/",
-					"https://docs.cycling74.com/learn/articles/midichapter05/",
-					"https://docs.cycling74.com/learn/articles/pattrchapter01/",
-					"https://docs.cycling74.com/learn/articles/pattrchapter02/"
-				]
-			}
-		}
-	}
+    "urlset": {
+        "sections": {
+            "User Guide": {
+                "Audio": {
+                    "description": "Concepts and workflows for digital audio processing, including multi-channel setups, frequency domain tools, and plugin integration.",
+                    "pages": {
+                        "Ableton DSP": "https://docs.cycling74.com/userguide/abl/",
+                        "Frequency Domain": "https://docs.cycling74.com/userguide/frequency_domain/",
+                        "MC Overview": "https://docs.cycling74.com/userguide/mc/",
+                        "MC and Gen": "https://docs.cycling74.com/userguide/mc/mc_gen/",
+                        "MC Wrapper": "https://docs.cycling74.com/userguide/mc/mc_wrapper/",
+                        "MC Audio Delays": "https://docs.cycling74.com/userguide/mc/mc_audio_delays/",
+                        "MC Channel Topology": "https://docs.cycling74.com/userguide/mc/mc_channel_topology/",
+                        "MC Dynamic Routing": "https://docs.cycling74.com/userguide/mc/mc_dynamic_routing/",
+                        "MC Events New Functions": "https://docs.cycling74.com/userguide/mc/mc_events_newfunctions/",
+                        "MC Events New Objects": "https://docs.cycling74.com/userguide/mc/mc_events_newobjects/",
+                        "MC Function Generators": "https://docs.cycling74.com/userguide/mc/mc_function_generators/",
+                        "MC Gen Event Wrapper": "https://docs.cycling74.com/userguide/mc/mc_gen_event_wrapper/",
+                        "MC Gen Instances": "https://docs.cycling74.com/userguide/mc/mc_gen_instances/",
+                        "MC Gen New Features": "https://docs.cycling74.com/userguide/mc/mc_gen_newfeatures/",
+                        "MC Gen New Objects": "https://docs.cycling74.com/userguide/mc/mc_gen_newobjects/",
+                        "MC Generated Messages": "https://docs.cycling74.com/userguide/mc/mc_generated_messages/",
+                        "MC Max for Live Interface": "https://docs.cycling74.com/userguide/mc/mc_maxforlive_interface/",
+                        "MC MC vs MCS": "https://docs.cycling74.com/userguide/mc/mc_mcvsmcs/",
+                        "MC Messages to Wrapper": "https://docs.cycling74.com/userguide/mc/mc_messages_to_wrapper/",
+                        "MC Mixing and Panning": "https://docs.cycling74.com/userguide/mc/mc_mixing_panning/",
+                        "MC Multichannel Sources": "https://docs.cycling74.com/userguide/mc/mc_multichannel_sources/",
+                        "MC Patchcords": "https://docs.cycling74.com/userguide/mc/mc_patchcords/",
+                        "MC Plugins": "https://docs.cycling74.com/userguide/mc/mc_plugins/",
+                        "MC Multiple Patchers": "https://docs.cycling74.com/userguide/mc/mc_poly_multiple_patchers/",
+                        "MC Poly New Features": "https://docs.cycling74.com/userguide/mc/mc_poly_newfeatures/",
+                        "MC Poly without Polytilde": "https://docs.cycling74.com/userguide/mc/mc_poly_without_polytilde/",
+                        "MC Polyphony": "https://docs.cycling74.com/userguide/mc/mc_polyphony/",
+                        "MC Signals": "https://docs.cycling74.com/userguide/mc/mc_signals_newobjects/",
+                        "MC Spatialization": "https://docs.cycling74.com/userguide/mc/mc_spatialization/",
+                        "MC Visualization": "https://docs.cycling74.com/userguide/mc/mc_visualization/",
+                        "Multichannel I/O": "https://docs.cycling74.com/userguide/audio_channels/",
+                        "Non-realtime": "https://docs.cycling74.com/userguide/non_realtime/",
+                        "Plugins": "https://docs.cycling74.com/userguide/plugins/",
+                        "Polyphony": "https://docs.cycling74.com/userguide/polyphony/",
+                        "Recording": "https://docs.cycling74.com/userguide/recording/",
+                        "RNBO": "https://docs.cycling74.com/userguide/rnbo/",
+                        "Sample-Accurate Messages": "https://docs.cycling74.com/userguide/sample_accurate_messages/"
+                    }
+                },
+                "Colors": {
+                    "description": "Guides on managing the visual appearance of your patches with palettes, themes, and styles.",
+                    "pages": {
+                        "Color Palette": "https://docs.cycling74.com/userguide/color_palette/",
+                        "Color Themes": "https://docs.cycling74.com/userguide/color_themes/",
+                        "Dynamic Colors": "https://docs.cycling74.com/userguide/dynamic_colors/",
+                        "Format Palette": "https://docs.cycling74.com/userguide/format_palette/",
+                        "Styles": "https://docs.cycling74.com/userguide/styles/",
+                        "Syntax Coloring": "https://docs.cycling74.com/userguide/syntax_coloring/"
+                    }
+                },
+                "Data": {
+                    "description": "Techniques for handling and manipulating data structures like arrays, dictionaries, numbers, and strings.",
+                    "pages": {
+                        "Arrays": "https://docs.cycling74.com/userguide/arrays/",
+                        "Dictionaries": "https://docs.cycling74.com/userguide/dictionaries/",
+                        "Integers vs Floats": "https://docs.cycling74.com/userguide/integers_vs_floats/",
+                        "Strings": "https://docs.cycling74.com/userguide/strings/"
+                    }
+                },
+                "Debugging": {
+                    "description": "Tools and strategies for troubleshooting patches, understanding error messages, and analyzing data flow.",
+                    "pages": {
+                        "Debugging Overview": "https://docs.cycling74.com/userguide/debugging_and_probing/",
+                        "Error Messages": "https://docs.cycling74.com/userguide/error_messages/",
+                        "Illustration Mode": "https://docs.cycling74.com/userguide/illustration_mode/",
+                        "Max Console": "https://docs.cycling74.com/userguide/max_console/"
+                    }
+                },
+                "Files": {
+                    "description": "Understanding file management, supported formats, and how Max locates dependencies via the search path.",
+                    "pages": {
+                        "File Browser": "https://docs.cycling74.com/userguide/file_browser/",
+                        "Filetypes": "https://docs.cycling74.com/userguide/filetypes/",
+                        "Search Path": "https://docs.cycling74.com/userguide/search_path/"
+                    }
+                },
+                "Gen": {
+                    "description": "In-depth guides on using Gen for low-level audio and data processing, covering operators and expressions.",
+                    "pages": {
+                        "Gen Overview": "https://docs.cycling74.com/userguide/gen/_gen_overview/",
+                        "Common Operators": "https://docs.cycling74.com/userguide/gen/gen_common_operators/",
+                        "Gen Expr": "https://docs.cycling74.com/userguide/gen/gen_genexpr/",
+                        "Gen~ Operators": "https://docs.cycling74.com/userguide/gen/gen~_operators/",
+                        "Jitter Operators": "https://docs.cycling74.com/userguide/gen/gen_jitter_operators/"
+                    }
+                },
+                "Jitter": {
+                    "description": "Concepts for working with matrix data, video engines, graphics processing, and 3D geometry in Jitter.",
+                    "pages": {
+                        "Depth and Blending": "https://docs.cycling74.com/userguide/jitter/depth_layer_blend/",
+                        "Geometry": "https://docs.cycling74.com/userguide/jitter/geometry/",
+                        "Graphics Engine": "https://docs.cycling74.com/userguide/jitter/graphics_engine/",
+                        "Graphics Processing": "https://docs.cycling74.com/userguide/jitter/graphics_processing/",
+                        "Jitter Expr": "https://docs.cycling74.com/userguide/jitter/jitter_expr/",
+                        "JXS File Format": "https://docs.cycling74.com/userguide/jitter/jxs_file_format/",
+                        "Matrices": "https://docs.cycling74.com/userguide/jitter/matrix/",
+                        "Render Passes": "https://docs.cycling74.com/userguide/jitter/render_passes/",
+                        "Textures": "https://docs.cycling74.com/userguide/jitter/textures/",
+                        "Video": "https://docs.cycling74.com/userguide/jitter/video/",
+                        "Video Engine": "https://docs.cycling74.com/userguide/jitter/video_engine/"
+                    }
+                },
+                "Max Interface": {
+                    "description": "Navigating and customizing the Max authoring environment, toolbars, and inspection windows.",
+                    "pages": {
+                        "Action Menu": "https://docs.cycling74.com/userguide/action_menu/",
+                        "Documentation Window": "https://docs.cycling74.com/userguide/documentation_window/",
+                        "Extras Menu": "https://docs.cycling74.com/userguide/extras_menu/",
+                        "Inspector": "https://docs.cycling74.com/userguide/inspector/",
+                        "Object Reference": "https://docs.cycling74.com/userguide/object_reference/",
+                        "Preferences": "https://docs.cycling74.com/userguide/preferences_and_settings/",
+                        "Sidebar Search": "https://docs.cycling74.com/userguide/sidebar_search/",
+                        "Toolbars": "https://docs.cycling74.com/userguide/patcher_window/"
+                    }
+                },
+                "MIDI": {
+                    "description": "Handling MIDI protocols, mapping, and routing within the Max environment.",
+                    "pages": {
+                        "Mapping": "https://docs.cycling74.com/userguide/mapping/",
+                        "MIDI": "https://docs.cycling74.com/userguide/midi/"
+                    }
+                },
+                "Parameters": {
+                    "description": "Managing application state, presets, parameter interpolation, and OSC integration.",
+                    "pages": {
+                        "OSC": "https://docs.cycling74.com/userguide/OSC/",
+                        "Parameter Connect": "https://docs.cycling74.com/userguide/param_connect/",
+                        "Parameter Mode": "https://docs.cycling74.com/userguide/parameter_mode/",
+                        "Presets and Interpolation": "https://docs.cycling74.com/userguide/presets_and_interpolation/",
+                        "Saving and Pattr": "https://docs.cycling74.com/userguide/pattr/",
+                        "Snapshots": "https://docs.cycling74.com/userguide/snapshots/"
+                    }
+                },
+                "Patching": {
+                    "description": "Fundamental mechanics of creating, connecting, and lifecycle management of Max objects.",
+                    "pages": {
+                        "Conversion Cheat Sheet": "https://docs.cycling74.com/userguide/conversion/",
+                        "Messages": "https://docs.cycling74.com/userguide/messages/",
+                        "Message Types": "https://docs.cycling74.com/userguide/message_types/",
+                        "Objects": "https://docs.cycling74.com/userguide/objects/",
+                        "Patcher Lifecycle": "https://docs.cycling74.com/userguide/patcher_lifecycle/",
+                        "Patching": "https://docs.cycling74.com/userguide/patching/",
+                        "Patch Cords": "https://docs.cycling74.com/userguide/patch_cords/",
+                        "Patching Mechanics": "https://docs.cycling74.com/userguide/patching_mechanics/",
+                        "Web Browser": "https://docs.cycling74.com/userguide/web_browser/"
+                    }
+                },
+                "Reuse and Organization": {
+                    "description": "Strategies for modular patching, including abstractions, bpatchers, externals, and project management.",
+                    "pages": {
+                        "Abstractions": "https://docs.cycling74.com/userguide/abstractions/",
+                        "Bpatchers": "https://docs.cycling74.com/userguide/bpatchers/",
+                        "Custom UI Objects": "https://docs.cycling74.com/userguide/custom_ui_objects/",
+                        "Externals": "https://docs.cycling74.com/userguide/externals/",
+                        "Packages": "https://docs.cycling74.com/userguide/packages/",
+                        "Package Manager": "https://docs.cycling74.com/userguide/package_manager/",
+                        "Projects": "https://docs.cycling74.com/userguide/projects/",
+                        "Prototypes": "https://docs.cycling74.com/userguide/prototypes/",
+                        "Snippets": "https://docs.cycling74.com/userguide/snippets/",
+                        "Subpatchers": "https://docs.cycling74.com/userguide/subpatchers/",
+                        "Templates": "https://docs.cycling74.com/userguide/templates/"
+                    }
+                },
+                "Scripting": {
+                    "description": "Utilizing external scripts (JavaScript, Lua) and textual workflows to automate and extend Max.",
+                    "pages": {
+                        "Scripting Overview": "https://docs.cycling74.com/userguide/scripting_overview/",
+                        "External Text Editor": "https://docs.cycling74.com/userguide/external_text_editor/",
+                        "JavaScript": "https://docs.cycling74.com/userguide/javascript/",
+                        "Lua Overview": "https://docs.cycling74.com/userguide/lua/jit_gl_lua_overview/",
+                        "Max Define Message": "https://docs.cycling74.com/userguide/max_define/",
+                        "Messages to Max": "https://docs.cycling74.com/userguide/controlling_max_with_messages/",
+                        "REPL": "https://docs.cycling74.com/userguide/repl/"
+                    }
+                },
+                "Sharing": {
+                    "description": "Methods for distributing your work, including Max Projects, Standalones, and Collectives.",
+                    "pages": {
+                        "Sharing Overview": "https://docs.cycling74.com/userguide/sharing/",
+                        "Projects": "https://docs.cycling74.com/userguide/projects/",
+                        "Standalones and Collectives": "https://docs.cycling74.com/userguide/standalones_and_collectives/"
+                    }
+                },
+                "Timing": {
+                    "description": "Managing scheduling, transport controls, and time value syntax across your patches.",
+                    "pages": {
+                        "Scheduler": "https://docs.cycling74.com/userguide/scheduler/",
+                        "Time Value Syntax": "https://docs.cycling74.com/userguide/time_value_syntax/",
+                        "Transport": "https://docs.cycling74.com/userguide/transport/"
+                    }
+                },
+                "Max For Live": {
+                    "description": "Integrating Max within Ableton Live, creating devices, and managing automation and the Live API.",
+                    "pages": {
+                        "Overview": "https://docs.cycling74.com/userguide/m4l/_m4l_overview/",
+                        "Live API Overview": "https://docs.cycling74.com/userguide/m4l/live_api_overview/",
+                        "Creating Devices": "https://docs.cycling74.com/userguide/m4l/live_creatingdevices/",
+                        "User Interfaces": "https://docs.cycling74.com/userguide/m4l/live_userinterfaces/",
+                        "Automation": "https://docs.cycling74.com/userguide/m4l/live_automation/",
+                        "Sharing Devices": "https://docs.cycling74.com/userguide/m4l/live_sharing/",
+                        "Timing": "https://docs.cycling74.com/userguide/m4l/live_timing/",
+                        "Audio Devices": "https://docs.cycling74.com/userguide/m4l/live_audiodevices/",
+                        "Live API": "https://docs.cycling74.com/userguide/m4l/live_api/",
+                        "MIDI Effects": "https://docs.cycling74.com/userguide/m4l/live_midieffects/",
+                        "Parameters": "https://docs.cycling74.com/userguide/m4l/live_parameters/",
+                        "Freezing": "https://docs.cycling74.com/userguide/m4l/live_freezing/",
+                        "Limitations": "https://docs.cycling74.com/userguide/m4l/live_limitations/",
+                        "MIDI Tools": "https://docs.cycling74.com/userguide/m4l/live_miditools/",
+                        "Presets": "https://docs.cycling74.com/userguide/m4l/live_presets/",
+                        "Preview": "https://docs.cycling74.com/userguide/m4l/live_preview/",
+                        "Resolving Conflicts": "https://docs.cycling74.com/userguide/m4l/live_resolveconflicts/",
+                        "Parameters Window": "https://docs.cycling74.com/userguide/m4l/live_parameterswindow/",
+                        "Unfreezing": "https://docs.cycling74.com/userguide/m4l/live_unfreezing/",
+                        "Pattr in Live": "https://docs.cycling74.com/userguide/m4l/live_pattr/",
+                        "Symbols in Live": "https://docs.cycling74.com/userguide/m4l/live_symbols/"
+                    }
+                }
+            },
+            "API Reference": {
+                "Live Object Model": {
+                    "description": "Use Max objects like live.object and live.path to read and modify the state of Ableton Live from within a Max for Live device. Also accessible from the JavaScript API.",
+                    "index": "https://docs.cycling74.com/apiref/lom/",
+                    "pages": [
+                        {
+                            "group": "API Objects",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/application/",
+                                    "description": "This class represents the Live application. It is reachable by the root path live_app ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/application_view/",
+                                    "description": "This class represents the aspects of the Live application related to viewing the application...."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/chain/",
+                                    "description": "This class represents a group device chain in Live."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/chainmixerdevice/",
+                                    "description": "This class represents a chain's mixer device in Live."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/clip/",
+                                    "description": "This class represents a clip in Live. It can be either an audio clip or a MIDI clip in the Arr..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/clip_view/",
+                                    "description": "Representing the view aspects of a Clip."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/clipslot/",
+                                    "description": "This class represents an entry in Live's Session View matrix.   The properties ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/compressordevice/",
+                                    "description": "This class represents a Compressor device in Live.  A CompressorDevice shares all of the ch..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/controlsurface/",
+                                    "description": "A ControlSurface can be reached either directly by the root path control_surfaces  N  or by g..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/cuepoint/",
+                                    "description": "Represents a locator in the Arrangement View."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/device/",
+                                    "description": "This class represents a MIDI or audio device in Live."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/device_view/",
+                                    "description": "Representing the view aspects of a Device."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/deviceio/",
+                                    "description": "This class represents an input or output bus of a Live device."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/deviceparameter/",
+                                    "description": "This class represents an (automatable) parameter within a MIDI or audio device. To modify a de..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/driftdevice/",
+                                    "description": "This class represents an instance of a Drift device in Live.  A DriftDevice has all the..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/drumcelldevice/",
+                                    "description": "This class represents an instance of a Drum Sampler device in Live.  A DrumCell has all..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/drumchain/",
+                                    "description": "This class represents a Drum Rack device chain in Live.   A DrumChain is a type ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/drumpad/",
+                                    "description": "This class represents a Drum Rack pad in Live."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/eq8device/",
+                                    "description": "This class represents an instance of an EQ Eight device in Live.  An Eq8Device has all ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/eq8device_view/",
+                                    "description": "Represents the view aspects of an Eq8Device.  An Eq8Device.View has all the children, p..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/groove/",
+                                    "description": "This class represents a groove in Live.   Available since Live 11.0.  ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/groovepool/",
+                                    "description": "This class represents the groove pool in Live. It provides access to the current set's list of groov..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/hybridreverbdevice/",
+                                    "description": "This class represents an instance of a Hybrid Reverb device in Live.  A HybridReverbDev..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/looperdevice/",
+                                    "description": "This class represents an instance of a Looper device in Live.  An LooperDevice has all ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/maxdevice/",
+                                    "description": "This class represents a Max for Live device in Live.   A MaxDevice is a type of Device..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/melddevice/",
+                                    "description": "This class represents an instance of a Meld device in Live.  A MeldDevice has all the p..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/mixerdevice/",
+                                    "description": "This class represents a mixer device in Live. It provides access to volume, panning and other ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/plugindevice/",
+                                    "description": "This class represents a plug-in device.   A PluginDevice is a type of Device, meaning ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/rackdevice/",
+                                    "description": "This class represents a Live Rack Device.  A RackDevice is a type of Device, meaning th..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/rackdevice_view/",
+                                    "description": "Represents the view aspects of a Rack Device.  A RackDevice.View is a type of Device.Vi..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/roardevice/",
+                                    "description": "This class represents an instance of a Roar device in Live.  A RoarDevice has all the p..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/sample/",
+                                    "description": "This class represents a sample file loaded into Simpler."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/scene/",
+                                    "description": "This class represents a series of clip slots in Live's Session View matrix...."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/shifterdevice/",
+                                    "description": "This class represents an instance of the Shifter audio effect.  A ShifterDevice is a ty..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/simplerdevice/",
+                                    "description": "This class represents an instance of Simpler.  A SimplerDevice is a type of device, mea..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/simplerdevice_view/",
+                                    "description": "Represents the view aspects of a SimplerDevice.  A SimplerDevice.View is a type of Device.V..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/song/",
+                                    "description": "This class represents a Live Set. The current Live Set is reachable by the root path li..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/song_view/",
+                                    "description": "This class represents the view aspects of a Live document: the Session and Arrangement Views...."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/spectralresonatordevice/",
+                                    "description": "This class represents an instance of a Spectral Resonator device in Live.  An SpectralR..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/takelane/",
+                                    "description": "This class represents a take lane in Live. Tracks in Live can have take lanes in Arrangement View, w..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/this_device/",
+                                    "description": "This root path represents the device containing the live.path object to which the ..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/track/",
+                                    "description": "This class represents a track in Live. It can either be an audio track, a MIDI track, a return..."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/track_view/",
+                                    "description": "Representing the view aspects of a track."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/tuningsystem/",
+                                    "description": "This class represents a tuning system in Live."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/lom/wavetabledevice/",
+                                    "description": "This class represents a Wavetable instrument.   A WavetableDevice shares all of the ch..."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Javascript API": {
+                    "description": "Use the v8, v8ui and v8.codebox to embed JavaScript in a Max patch. Define custom objects, programmatically create objects and patch cords, and operate the Max application.",
+                    "index": "https://docs.cycling74.com/apiref/js/",
+                    "pages": [
+                        {
+                            "group": "Classes",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/buffer/",
+                                    "description": "Bind to a Maxbuffer~object."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/dict/",
+                                    "description": "Bind to a Maxdictobject."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/file/",
+                                    "description": "The File object provides a means of reading and writing files from JavaScript."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/folder/",
+                                    "description": "Iterate through the files in a folder."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/global/",
+                                    "description": "Global object for sharing data between Max JavaScript instances."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/image/",
+                                    "description": "Bitmap image object handle"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jitter3dutilsinterface/",
+                                    "description": "Utilities for Jitter 3D manipulations"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jitterevent/",
+                                    "description": "The argument passed to aJitterListenercallback function."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jitterlistener/",
+                                    "description": "A listener for changes in aJitterObject."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jittermatrix/",
+                                    "description": "A named matrix which may be used for data storage and retrieval, resampling, and matrix type and planecount conversion operations."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jitterobject/",
+                                    "description": "A JavaScript representation of a Jitter object in a patcher."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jsthis/",
+                                    "description": "The \"this\" object in the context of JavaScript in Max"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/liveapi/",
+                                    "description": "A means of communicating with the Live API from JavaScript."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/max/",
+                                    "description": "Singleton Max object, controlling the Max environment."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/maxobj/",
+                                    "description": "A JavaScript representation of a Max object in a patcher."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/maxobjconnection/",
+                                    "description": "A JavaScript representation of a patchcord connection."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/maxobjlistener/",
+                                    "description": "A listener for changes in aMaxobjobject."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/maxobjlistenerdata/",
+                                    "description": "The argument provided to aMaxobjListenercallback function."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/maxstring/",
+                                    "description": "Bind a Maxstringobject"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/mgraphics/",
+                                    "description": "Drawing context for rendering shapes and images."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/mgraphicssvg/",
+                                    "description": "SVG object handle"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/parameterinfoprovider/",
+                                    "description": "Provides a list of named parameter objects within a patcher hierarchy as well as information about specific parameter objects. It can also notify when parameter objects are added or removed from a patcher hierarchy."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/parameterinfoproviderdata/",
+                                    "description": "The argument to theParameterInfoProvider's callback function"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/parameterlistener/",
+                                    "description": "A listener for changes in named parameters."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/parameterlistenerdata/",
+                                    "description": "The argument provided to aParameterListenercallback function."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/patcher/",
+                                    "description": "A JavaScript representation of a Max patcher."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/pattern/",
+                                    "description": "Pattern object for drawing gradients and patterns."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/polybuffer/",
+                                    "description": "Bind to a Maxpolybuffer~object."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/progressevent/",
+                                    "description": "ProgressEvent provides information about the progress of a network request."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/sketch/",
+                                    "description": "Interface to an OpenGL-backed drawing context"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/snapshotapi/",
+                                    "description": "Provides access to patcher snapshots."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/sqlite/",
+                                    "description": "Provides access to the SQLite database system."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/sqlresult/",
+                                    "description": "A container for results obtained in anSQLite.exec()call."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/task/",
+                                    "description": "A function that can be scheduled or repeated."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/wind/",
+                                    "description": "A property of thePatcherwhich represents its window."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/xmlhttprequest/",
+                                    "description": "XMLHttpRequest provides HTTP client functionality for making network requests from JavaScript in Max."
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Enums",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/basic2dstrokestyleparameternames/",
+                                    "description": "Stroke parameters for use withSketch.beginstroke()in the \"basic2d\" drawing style"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/linestrokestyleparameternames/",
+                                    "description": "Stroke parameters for use withSketch.beginstroke()in the \"line\" drawing style"
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Functions",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/cpost/",
+                                    "description": "Prints a message to the system console window. Seepost()for more details about arguments and formatting."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/error/",
+                                    "description": "Prints a message to the Max console with a red tint. Seepost()for more details about arguments and formatting."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/messnamed/",
+                                    "description": "Sends a message to the named Max object."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/post/",
+                                    "description": "Prints a representation of the arguments in the Max window."
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Interfaces",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/pointerevent/",
+                                    "description": "Pointer event object passed to onpointer* event handlers"
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Namespaces",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/filetypes/",
+                                    "description": "Types used with"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jitter3dutilstypes/",
+                                    "description": "Types used withJitter3dUtilsInterface"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/jittereventtypes/",
+                                    "description": "Possible event types for aJitterEvent"
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Type Aliases",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/drawingprimitivetype/",
+                                    "description": "Primitive type to use for drawing shapes. SeeSketch.shapeprim()."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/mgraphicsmatrixhandle/",
+                                    "description": "Opaque handle for an MGraphics transformation matrix."
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/js/mgraphicspathhandle/",
+                                    "description": "Opaque handle for an MGraphics path."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "Node for Max API": {
+                    "description": "Use the node.script and node.debug objects to launch custom Node.js scripts from Max. Send Max messages to a running Node process and fetch a result.",
+                    "index": "https://docs.cycling74.com/apiref/nodeformax/",
+                    "pages": [
+                        {
+                            "group": "Enums",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/max_env/",
+                                    "description": "Enum options for the value Node For Max will set on process.env.MAX_ENV"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/message_types/",
+                                    "description": "Predefined generic MaxFunctionSelector types"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/post_levels/",
+                                    "description": "Log Levels used in maxAPI.post"
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Functions",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/addhandler/",
+                                    "description": "Register a single handler"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/addhandlers/",
+                                    "description": "Register handlers"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/getdict/",
+                                    "description": "Get the value of a dict object"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/outlet/",
+                                    "description": "Outlet any values"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/outletbang/",
+                                    "description": "Outlet a Bang"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/post/",
+                                    "description": "Post to the Max console. Setting the last argument to a value of maxAPI.POST_LEVELS allows control of the log level"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/removehandler/",
+                                    "description": "Remove a single handler"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/removehandlers/",
+                                    "description": "Remove handlers"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/setdict/",
+                                    "description": "Set the value of a dict object"
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/updatedict/",
+                                    "description": "Partially update the value of a dict object at a given path"
+                                }
+                            ]
+                        },
+                        {
+                            "group": "Type Aliases",
+                            "pages": [
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/anything/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonarray/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonobject/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonprimitive/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonvalue/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/maxfunctionhandler/",
+                                    "description": ""
+                                },
+                                {
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/maxfunctionselector/",
+                                    "description": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "Learn": {
+                "index": "https://docs.cycling74.com/learn/",
+                "series": [
+                    {
+                        "title": "Custom Drawing with JavaScript",
+                        "url": "https://docs.cycling74.com/learn/series/javascript-custom-drawing/",
+                        "description": "You can do custom drawing with JavaScript, using thev8uiandjsuiobject, or byoverriding UI drawing with JSPainter. This tutorial series demonstrates how to use the tools availble through the JavaScript API to implement various drawing effects.",
+                        "groups": [
+                            {
+                                "name": "JavaScript Drawing Tutorials",
+                                "articles": [
+                                    {
+                                        "title": "Quickstart",
+                                        "url": "https://docs.cycling74.com/learn/articles/01-quickstart/",
+                                        "description": "Introduction to drawing with MGraphics"
+                                    },
+                                    {
+                                        "title": "Working with Transforms",
+                                        "url": "https://docs.cycling74.com/learn/articles/02-working-with-transforms/",
+                                        "description": "Using matrix transforms with MGraphics"
+                                    },
+                                    {
+                                        "title": "Hit Testing",
+                                        "url": "https://docs.cycling74.com/learn/articles/03-hit-testing/",
+                                        "description": "Checking for intersections with paths"
+                                    },
+                                    {
+                                        "title": "Working with Patterns",
+                                        "url": "https://docs.cycling74.com/learn/articles/04-working-with-patterns/",
+                                        "description": "Drawing with repeating patterns"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Jitter Tutorials",
+                        "url": "https://docs.cycling74.com/learn/series/jitter-tutorials/",
+                        "description": "",
+                        "groups": [
+                            {
+                                "name": "Topics",
+                                "articles": [
+                                    {
+                                        "title": "Jitter",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00a_whatisamatrix/",
+                                        "description": "What is a Matrix?"
+                                    },
+                                    {
+                                        "title": "Attributes",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00b_whatareattributes/",
+                                        "description": "Editing Jitter object parameters"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Video and Graphics Tutorials",
+                                "articles": [
+                                    {
+                                        "title": "Display a Video",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00c_display-a-video/",
+                                        "description": "Play your first video"
+                                    },
+                                    {
+                                        "title": "Live Capture",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00d_live-capture/",
+                                        "description": "Grab live video"
+                                    },
+                                    {
+                                        "title": "Control Jitter with Messages",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00e_control-jitter-with-messages/",
+                                        "description": "Controlling Jitter Objects"
+                                    },
+                                    {
+                                        "title": "Adding 3D Objects",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00f_adding-3d-objects/",
+                                        "description": "3 dimensional programming"
+                                    },
+                                    {
+                                        "title": "Jitter Matrix Exploration - Part 1",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00g_jitter-matrix-1/",
+                                        "description": "The Jitter Matrix, Part 1"
+                                    },
+                                    {
+                                        "title": "Jitter Matrix Exploration - Part 2",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00h_jitter-matrix-2/",
+                                        "description": "The Jitter Matrix, Part 2"
+                                    },
+                                    {
+                                        "title": "Generating Geometry",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00i_generating-geometry/",
+                                        "description": "Create 3d geometry using the matrix"
+                                    },
+                                    {
+                                        "title": "Audio into a matrix",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00j_audio-into-a-matrix/",
+                                        "description": "Trigger visuals from audio input"
+                                    },
+                                    {
+                                        "title": "Building live video effects",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00k_building-live-video-effects/",
+                                        "description": "transform video in real time"
+                                    },
+                                    {
+                                        "title": "Composing the screen",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter00l_composing-the-screen/",
+                                        "description": "your screen is a canvas"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Legacy Tutorials",
+                                "articles": [
+                                    {
+                                        "title": "Jitter Tutorial 1",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter01/",
+                                        "description": "Playing a QuickTime Movie"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 2",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter02/",
+                                        "description": "Create a Matrix"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 3",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter03/",
+                                        "description": "Math Operations on a Matrix"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 4",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter04/",
+                                        "description": "Controlling Movie Playback"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 5",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter05/",
+                                        "description": "ARGB Color"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 6",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter06/",
+                                        "description": "Adjust Color Levels"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 7",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter07/",
+                                        "description": "Image Level Adjustment"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 8",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter08/",
+                                        "description": "Simple Mixing"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 9",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter09/",
+                                        "description": "More Mixing"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 10",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter10/",
+                                        "description": "Chromakeying"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 11",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter11/",
+                                        "description": "Lists and Matrices"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 12",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter12/",
+                                        "description": "Color Lookup Tables"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 13",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter13/",
+                                        "description": "Scissors and Glue"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 14",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter14/",
+                                        "description": "Matrix Positioning"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 15",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter15/",
+                                        "description": "Image Rotation"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 16",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter16/",
+                                        "description": "Using Named Jitter Matrices"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 17",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter17/",
+                                        "description": "Feedback Using Named Matrices"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 18",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter18/",
+                                        "description": "Iterative Processes and Matrix Re-Sampling"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 19",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter19/",
+                                        "description": "Recording QuickTime movies"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 20",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter20/",
+                                        "description": "Importing and Exporting Single Matrices"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 21",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter21/",
+                                        "description": "Working With Live Video Input"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 22",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter22/",
+                                        "description": "Working With Video Output Components"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 23",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter23/",
+                                        "description": "Controlling Your FireWire Camera"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 24",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter24/",
+                                        "description": "QuickTime Effects"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 25",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter25/",
+                                        "description": "Tracking the Position of a Color in a Movie"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 26",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter26/",
+                                        "description": "MIDI Control of Video"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 27",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter27/",
+                                        "description": "Using MSP Audio in a Jitter Matrix"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 28",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter28/",
+                                        "description": "Audio Control of Video"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 29",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter29/",
+                                        "description": "Using the Alpha Channel"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 30",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter30/",
+                                        "description": "Drawing 3D text"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 31",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter31/",
+                                        "description": "Rendering Destinations"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 32",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter32/",
+                                        "description": "Camera View"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 33",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter33/",
+                                        "description": "Polygon Modes, Colors and Blending"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 34",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter34/",
+                                        "description": "Using Textures"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 35",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter35/",
+                                        "description": "Lighting and Fog"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 36",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter36/",
+                                        "description": "3D Models"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 37",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter37/",
+                                        "description": "Geometry Under the Hood"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 38",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter38/",
+                                        "description": "Basic Performance Setup"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 39",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter39/",
+                                        "description": "Spatial Mapping"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 40",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter40/",
+                                        "description": "Drawing in OpenGL using jit.gl.sketch"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 41",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter41/",
+                                        "description": "Shaders"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 42",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter42/",
+                                        "description": "Slabs and Data Processing on the GPU"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 43",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter43/",
+                                        "description": "A Slab of Your Very Own"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 44",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter44/",
+                                        "description": "Flash Interactivity"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 45",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter45/",
+                                        "description": "Introduction to using Jitter within JavaScript"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 46",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter46/",
+                                        "description": "Manipulating Matrix Data using JavaScript"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 47",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter47/",
+                                        "description": "Using Jitter Object Callbacks in JavaScript"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 48",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter48/",
+                                        "description": "Frames of MSP signals"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 49",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter49/",
+                                        "description": "Colorspaces"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 50",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter50/",
+                                        "description": "Procedural Texturing & Modeling"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 51",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter51/",
+                                        "description": "Jitter Java"
+                                    },
+                                    {
+                                        "title": "Jitter Tutorial 52",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter52/",
+                                        "description": "Jitter Networking"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Appendices",
+                                "articles": [
+                                    {
+                                        "title": "Appendix A",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixa/",
+                                        "description": "QuickTime Confidential"
+                                    },
+                                    {
+                                        "title": "Appendix B",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixb/",
+                                        "description": "The OpenGL Matrix Format"
+                                    },
+                                    {
+                                        "title": "Appendix C",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixc/",
+                                        "description": "The JXS File Format"
+                                    },
+                                    {
+                                        "title": "Appendix D",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter99_appendixd/",
+                                        "description": "Building Standalone Applications with Jitter"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Bibliography",
+                                "articles": [
+                                    {
+                                        "title": "Jitter Bibliography",
+                                        "url": "https://docs.cycling74.com/learn/articles/jitterchapter99_bibliography/",
+                                        "description": "For Your Further Reading Pleasure"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Jitter Geometry",
+                        "url": "https://docs.cycling74.com/learn/series/jitter_geometry/",
+                        "description": "Thejit.geomfamily of objects, likejit.geom.shape, are a specialized group of Jitter objects designed to work withHalf-edge Geometry Structures. These make certain transformations and operations much easier and more efficient.",
+                        "groups": [
+                            {
+                                "name": "Jitter Geometry Tutorials",
+                                "articles": [
+                                    {
+                                        "title": "Geometry Basics",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-01/",
+                                        "description": "Introduction to Jitter Geometry objects"
+                                    },
+                                    {
+                                        "title": "Transforming Geometries",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-02/",
+                                        "description": "Transforming half-edge geometries with Jitter geometry objects"
+                                    },
+                                    {
+                                        "title": "Instancing and Multiplying",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-03/",
+                                        "description": "Using jit.geom.points in conjunction with jit.gl.multiple to instance multiple shapes"
+                                    },
+                                    {
+                                        "title": "Javascript and Geometries",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "description": "Looking deeper at the half-edge structure, and using JavaScript with Jitter Geometry"
+                                    },
+                                    {
+                                        "title": "Contours",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-01/",
+                                        "description": "Example of how to make a Jitter geometry look hand-drawn"
+                                    },
+                                    {
+                                        "title": "Differential Growth",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-02/",
+                                        "description": "Using Jitter geometry and JavaScript to implement a differential growth algorithm"
+                                    },
+                                    {
+                                        "title": "Fractals",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-03/",
+                                        "description": "Examples of how to create fractal geometries using jit.geom + JavaScript"
+                                    },
+                                    {
+                                        "title": "Open Mesh",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "description": "How to find the edges at the borders of an open mesh"
+                                    },
+                                    {
+                                        "title": "Point Cloud",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "description": "Examples of how to generate a point cloud using jit.geom"
+                                    },
+                                    {
+                                        "title": "Thickness",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "description": "Example of how to extrude triangles to create volumes"
+                                    },
+                                    {
+                                        "title": "Twisting",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "description": "Examples of what you can do with a Jitter geometry when you twist it"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Max Tutorials",
+                        "url": "https://docs.cycling74.com/learn/series/max-tutorials/",
+                        "description": "",
+                        "groups": [
+                            {
+                                "name": "Basics",
+                                "articles": [
+                                    {
+                                        "title": "Hello",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter01/",
+                                        "description": "Creating objects and connections"
+                                    },
+                                    {
+                                        "title": "Bang!",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter02/",
+                                        "description": "Thebangmessage"
+                                    },
+                                    {
+                                        "title": "Numbers and Lists",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter03/",
+                                        "description": "Types of data in Max"
+                                    },
+                                    {
+                                        "title": "Metro and Toggle",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter04/",
+                                        "description": "Creating automatic actions"
+                                    },
+                                    {
+                                        "title": "Message Ordering",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter05/",
+                                        "description": "Debugging program flow"
+                                    },
+                                    {
+                                        "title": "Simple Math",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter06/",
+                                        "description": "Performing calculations"
+                                    },
+                                    {
+                                        "title": "Numerical User Interfaces",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter07/",
+                                        "description": "Sliders and dials"
+                                    },
+                                    {
+                                        "title": "Keyboard and Mouse Input",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter08/",
+                                        "description": "Working with standard input interfaces"
+                                    },
+                                    {
+                                        "title": "Mouse Drawing",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter09/",
+                                        "description": "Introduction to drawing"
+                                    },
+                                    {
+                                        "title": "Random Drawing",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter10/",
+                                        "description": "Working with random numbers"
+                                    },
+                                    {
+                                        "title": "Procedural Drawing",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter11/",
+                                        "description": "Creating procedural code"
+                                    },
+                                    {
+                                        "title": "Movie Playback",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter12/",
+                                        "description": "Introduction to video playback"
+                                    },
+                                    {
+                                        "title": "Movie Sequencing",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter13/",
+                                        "description": "Working with multiple media files"
+                                    },
+                                    {
+                                        "title": "Encapsulation",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter14/",
+                                        "description": "Patchers inside of patchers"
+                                    },
+                                    {
+                                        "title": "Abstractions",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter15/",
+                                        "description": "Creating libraries of re-usable code"
+                                    },
+                                    {
+                                        "title": "Remote Messaging",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter16/",
+                                        "description": "Sending messages without patchcords"
+                                    },
+                                    {
+                                        "title": "Data Structures and Probability",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter17/",
+                                        "description": "Working with histograms and lookup tables"
+                                    },
+                                    {
+                                        "title": "Data Collections",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter18/",
+                                        "description": "Using databases"
+                                    },
+                                    {
+                                        "title": "Timing",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter19/",
+                                        "description": "Scheduling events"
+                                    },
+                                    {
+                                        "title": "Presentation Mode",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter20/",
+                                        "description": "Creating a presentation interface for a patcher"
+                                    },
+                                    {
+                                        "title": "Controlling Data Flow",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter21/",
+                                        "description": "Routing messages"
+                                    },
+                                    {
+                                        "title": "Designing Equations",
+                                        "url": "https://docs.cycling74.com/learn/articles/basicchapter22/",
+                                        "description": "Creating complex mathematical statements"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "MIDI",
+                                "articles": [
+                                    {
+                                        "title": "Basics",
+                                        "url": "https://docs.cycling74.com/learn/articles/midichapter01/",
+                                        "description": "Getting MIDI input and output"
+                                    },
+                                    {
+                                        "title": "Note Management",
+                                        "url": "https://docs.cycling74.com/learn/articles/midichapter02/",
+                                        "description": "Generating and managing note events"
+                                    },
+                                    {
+                                        "title": "Parsing",
+                                        "url": "https://docs.cycling74.com/learn/articles/midichapter03/",
+                                        "description": "Decoding and encoding MIDI streams"
+                                    },
+                                    {
+                                        "title": "Basic Sequencing",
+                                        "url": "https://docs.cycling74.com/learn/articles/midichapter04/",
+                                        "description": "Playing back MIDI sequence data"
+                                    },
+                                    {
+                                        "title": "Advanced Sequencing",
+                                        "url": "https://docs.cycling74.com/learn/articles/midichapter05/",
+                                        "description": "Recording and manipulating MIDI sequences"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Data",
+                                "articles": [
+                                    {
+                                        "title": "Data Viewing",
+                                        "url": "https://docs.cycling74.com/learn/articles/datachapter01/",
+                                        "description": "Visualizing data streams"
+                                    },
+                                    {
+                                        "title": "Data Scaling",
+                                        "url": "https://docs.cycling74.com/learn/articles/datachapter02/",
+                                        "description": "Mapping and scaling numerical information"
+                                    },
+                                    {
+                                        "title": "Gesture Capture",
+                                        "url": "https://docs.cycling74.com/learn/articles/datachapter03/",
+                                        "description": "Recording and playing back captured input"
+                                    },
+                                    {
+                                        "title": "Cellblock",
+                                        "url": "https://docs.cycling74.com/learn/articles/datachapter04/",
+                                        "description": "Working with a visual spreadsheet interface"
+                                    },
+                                    {
+                                        "title": "List Processing",
+                                        "url": "https://docs.cycling74.com/learn/articles/datachapter05/",
+                                        "description": "Manipulation of lists of data"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Communications",
+                                "articles": [
+                                    {
+                                        "title": "Human-Interface Devices",
+                                        "url": "https://docs.cycling74.com/learn/articles/communicationschapter01/",
+                                        "description": "Working with game controllers"
+                                    },
+                                    {
+                                        "title": "Serial Communication",
+                                        "url": "https://docs.cycling74.com/learn/articles/communicationschapter02/",
+                                        "description": "Using standard serial devices"
+                                    },
+                                    {
+                                        "title": "UDP Networking",
+                                        "url": "https://docs.cycling74.com/learn/articles/communicationschapter03/",
+                                        "description": "Passing messages over a network"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "User Interface",
+                                "articles": [
+                                    {
+                                        "title": "Bpatchers",
+                                        "url": "https://docs.cycling74.com/learn/articles/interfacechapter01/",
+                                        "description": "Working with inlined patchers"
+                                    },
+                                    {
+                                        "title": "Picture UI Elements",
+                                        "url": "https://docs.cycling74.com/learn/articles/interfacechapter02/",
+                                        "description": "Designing user interfaces with custom image elements"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Patcher Storage",
+                                "articles": [
+                                    {
+                                        "title": "Pattr Basics",
+                                        "url": "https://docs.cycling74.com/learn/articles/pattrchapter01/",
+                                        "description": "Introduction to state management"
+                                    },
+                                    {
+                                        "title": "Autopattr Bindings",
+                                        "url": "https://docs.cycling74.com/learn/articles/pattrchapter02/",
+                                        "description": "Advanced patcher storage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "JavaScript",
+                                "articles": [
+                                    {
+                                        "title": "Basic JavaScripting",
+                                        "url": "https://docs.cycling74.com/learn/articles/javascriptchapter01/",
+                                        "description": "Using JavaScript in a patcher"
+                                    },
+                                    {
+                                        "title": "JavaScript Scripting",
+                                        "url": "https://docs.cycling74.com/learn/articles/javascriptchapter02/",
+                                        "description": "Using JavaScript to create patcher elements"
+                                    },
+                                    {
+                                        "title": "Tasks, Arguments, and Globals",
+                                        "url": "https://docs.cycling74.com/learn/articles/javascriptchapter03/",
+                                        "description": "Scheduling events and sharing data in JavaScript"
+                                    },
+                                    {
+                                        "title": "Designing User Interfaces",
+                                        "url": "https://docs.cycling74.com/learn/articles/javascriptchapter04/",
+                                        "description": "Designing graphical user interfaces with JavaScript"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "MSP Tutorials",
+                        "url": "https://docs.cycling74.com/learn/series/msp-tutorials/",
+                        "description": "",
+                        "groups": [
+                            {
+                                "name": "Topics",
+                                "articles": [
+                                    {
+                                        "title": "Introduction",
+                                        "url": "https://docs.cycling74.com/learn/articles/01_mspintro/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "How Digital Audio Works",
+                                        "url": "https://docs.cycling74.com/learn/articles/02_mspdigitalaudio/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "How MSP Works - Max Patches and the MSP Signal Network",
+                                        "url": "https://docs.cycling74.com/learn/articles/03_msphowmspworks/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Audio I/O - Audio input and output with MSP",
+                                        "url": "https://docs.cycling74.com/learn/articles/04_mspaudioio/",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Basics",
+                                "articles": [
+                                    {
+                                        "title": "Test Tone",
+                                        "url": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter01/",
+                                        "description": "Making sound"
+                                    },
+                                    {
+                                        "title": "Adjustable Oscillator",
+                                        "url": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter02/",
+                                        "description": "Adjusting parameters of MSP objects"
+                                    },
+                                    {
+                                        "title": "Wavetable Oscillator",
+                                        "url": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter03/",
+                                        "description": "Using sample data to generate sound"
+                                    },
+                                    {
+                                        "title": "Routing Signals",
+                                        "url": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter04/",
+                                        "description": "Switching and moving audio around the patcher"
+                                    },
+                                    {
+                                        "title": "Basics Review",
+                                        "url": "https://docs.cycling74.com/learn/articles/05_mspbasicchapter05/",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Additive and Modulation Synthesis",
+                                "articles": [
+                                    {
+                                        "title": "Additive Synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/06_synthesischapter01/",
+                                        "description": "Adding sine waves to make a complex tone"
+                                    },
+                                    {
+                                        "title": "Tremolo and Ring Modulation",
+                                        "url": "https://docs.cycling74.com/learn/articles/06_synthesischapter02/",
+                                        "description": "Multiplying sine waves to generate sideband effects"
+                                    },
+                                    {
+                                        "title": "AM Synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/06_synthesischapter03/",
+                                        "description": "Using amplitude modulation"
+                                    },
+                                    {
+                                        "title": "Vibrato and Frequency Modulation",
+                                        "url": "https://docs.cycling74.com/learn/articles/06_synthesischapter04/",
+                                        "description": "Using sine waves to modulate other sine waves"
+                                    },
+                                    {
+                                        "title": "FM Synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/06_synthesischapter05/",
+                                        "description": "Using FM modulation to create time-varying timbres"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Sampling and Recording",
+                                "articles": [
+                                    {
+                                        "title": "Record and Play Samples",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter01/",
+                                        "description": "Using sample memory to play back audio files"
+                                    },
+                                    {
+                                        "title": "Playing From Multiple Sample Points",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter02/",
+                                        "description": "Playing back from multiple points in sample memory simultaneously"
+                                    },
+                                    {
+                                        "title": "Sample Playback with Loops",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter03/",
+                                        "description": "Using looping sample memory"
+                                    },
+                                    {
+                                        "title": "Variable Length Wavetables",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter04/",
+                                        "description": "Creating complex oscillators from sample data"
+                                    },
+                                    {
+                                        "title": "Waveshaping Synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter05/",
+                                        "description": "Using sample data as a lookup table"
+                                    },
+                                    {
+                                        "title": "Recording and Playing Soundfiles",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter06/",
+                                        "description": "Playing and recording audio files from disk"
+                                    },
+                                    {
+                                        "title": "Sampling Review",
+                                        "url": "https://docs.cycling74.com/learn/articles/07_samplingchapter07/",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Filters and Subtractive Synthesis",
+                                "articles": [
+                                    {
+                                        "title": "Simple Filters",
+                                        "url": "https://docs.cycling74.com/learn/articles/08_filterchapter01/",
+                                        "description": "Basic filter objects in MSP"
+                                    },
+                                    {
+                                        "title": "Variable-type filters",
+                                        "url": "https://docs.cycling74.com/learn/articles/08_filterchapter02/",
+                                        "description": "Using variable-type filters"
+                                    },
+                                    {
+                                        "title": "Analog-style synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/08_filterchapter03/",
+                                        "description": "Using complex waveform generators in MSP"
+                                    },
+                                    {
+                                        "title": "Subtractive synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/08_filterchapter04/",
+                                        "description": "Using noise generators with filters"
+                                    },
+                                    {
+                                        "title": "Parallel and serial filters",
+                                        "url": "https://docs.cycling74.com/learn/articles/08_filterchapter05/",
+                                        "description": "Creating networks of filters"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Dynamics Processing",
+                                "articles": [
+                                    {
+                                        "title": "Envelope Following",
+                                        "url": "https://docs.cycling74.com/learn/articles/09_dynamicschapter01/",
+                                        "description": "Generating a control curve from a complex signal"
+                                    },
+                                    {
+                                        "title": "Dynamics Processing",
+                                        "url": "https://docs.cycling74.com/learn/articles/09_dynamicschapter02/",
+                                        "description": "Creating dynamic compressors, limiters, and gates in MSP"
+                                    },
+                                    {
+                                        "title": "Distortion",
+                                        "url": "https://docs.cycling74.com/learn/articles/09_dynamicschapter03/",
+                                        "description": "Using audio waveshaping for signal distortion"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "MIDI and MSP",
+                                "articles": [
+                                    {
+                                        "title": "Mapping MIDI to MSP",
+                                        "url": "https://docs.cycling74.com/learn/articles/10_midichapter01/",
+                                        "description": "Scaling values for MIDI control of audio patchers"
+                                    },
+                                    {
+                                        "title": "MIDI Synthesizer",
+                                        "url": "https://docs.cycling74.com/learn/articles/10_midichapter02/",
+                                        "description": "Mapping standard MIDI parameters for synthesizer control"
+                                    },
+                                    {
+                                        "title": "MIDI Sampler",
+                                        "url": "https://docs.cycling74.com/learn/articles/10_midichapter03/",
+                                        "description": "Creating simple MIDI-compatible samplers in MSP"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Polyphony and Resource Management",
+                                "articles": [
+                                    {
+                                        "title": "Creating Polyphonic Abstractions",
+                                        "url": "https://docs.cycling74.com/learn/articles/11_polychapter01/",
+                                        "description": "Using thepoly~object to manage multiple copies of an MSP patcher"
+                                    },
+                                    {
+                                        "title": "Granular synthesis",
+                                        "url": "https://docs.cycling74.com/learn/articles/11_polychapter02/",
+                                        "description": "Scheduled polyphonic synthesis and parallel thread allocation"
+                                    },
+                                    {
+                                        "title": "Audio-rate Control Data",
+                                        "url": "https://docs.cycling74.com/learn/articles/11_polychapter03/",
+                                        "description": "Using downsampled signal chains to generate Max data"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Sequencing",
+                                "articles": [
+                                    {
+                                        "title": "Audio-rate sequencing",
+                                        "url": "https://docs.cycling74.com/learn/articles/12_sequencingchapter01/",
+                                        "description": "Using ramp generators for sample-accurate event triggering"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Panning",
+                                "articles": [
+                                    {
+                                        "title": "Simple panning",
+                                        "url": "https://docs.cycling74.com/learn/articles/13_panningchapter01/",
+                                        "description": "Controlling multiple sound outputs in MSP"
+                                    },
+                                    {
+                                        "title": "Stereo panning",
+                                        "url": "https://docs.cycling74.com/learn/articles/13_panningchapter02/",
+                                        "description": "Mixing multiple sources in a stereo context"
+                                    },
+                                    {
+                                        "title": "Multi-channel panning",
+                                        "url": "https://docs.cycling74.com/learn/articles/13_panningchapter03/",
+                                        "description": "Working with more than two audio outputs in MSP"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Analysis",
+                                "articles": [
+                                    {
+                                        "title": "Signals and Meters",
+                                        "url": "https://docs.cycling74.com/learn/articles/14_analysischapter01/",
+                                        "description": "Metering MSP audio within the patcher"
+                                    },
+                                    {
+                                        "title": "Oscilloscopes and Spectroscopes",
+                                        "url": "https://docs.cycling74.com/learn/articles/14_analysischapter02/",
+                                        "description": "Looking at MSP signal data within the patcher"
+                                    },
+                                    {
+                                        "title": "Simple Fourier Analysis",
+                                        "url": "https://docs.cycling74.com/learn/articles/14_analysischapter03/",
+                                        "description": "Using the FFT to work with MSP audio in the frequency domain"
+                                    },
+                                    {
+                                        "title": "Advanced Fourier Analysis",
+                                        "url": "https://docs.cycling74.com/learn/articles/14_analysischapter04/",
+                                        "description": "Using thepfft~object to create frequency-domain signal processors"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Delays",
+                                "articles": [
+                                    {
+                                        "title": "Simple Delay Lines",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter01/",
+                                        "description": "Managing simple delays withtapin~andtapout~"
+                                    },
+                                    {
+                                        "title": "Delay Lines with Feedback",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter02/",
+                                        "description": "Using feedback in MSP delay networks"
+                                    },
+                                    {
+                                        "title": "Automatic gain control with Feedback",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter03/",
+                                        "description": "Managing feedback using dynamics processing"
+                                    },
+                                    {
+                                        "title": "Flanger",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter04/",
+                                        "description": "Using variable-length delays to create a flanger effect"
+                                    },
+                                    {
+                                        "title": "Chorus",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter05/",
+                                        "description": "Using variable-length delays to create a chorus effect"
+                                    },
+                                    {
+                                        "title": "Comb Filtering",
+                                        "url": "https://docs.cycling74.com/learn/articles/15_delaychapter06/",
+                                        "description": "Using comb filters to create resonation effects"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Plug-ins",
+                                "articles": [
+                                    {
+                                        "title": "Plugin Effects",
+                                        "url": "https://docs.cycling74.com/learn/articles/16_pluginchapter01/",
+                                        "description": "Using Plugin Processors within MSP"
+                                    },
+                                    {
+                                        "title": "Plugin Instruments",
+                                        "url": "https://docs.cycling74.com/learn/articles/16_pluginchapter02/",
+                                        "description": "Using  within MSP"
+                                    },
+                                    {
+                                        "title": "AMXD devices",
+                                        "url": "https://docs.cycling74.com/learn/articles/16_pluginchapter03/",
+                                        "description": "Using Max for live patches within MSP"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Compression",
+                                "articles": [
+                                    {
+                                        "title": "What is Compression?",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_00/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Peak Limiting",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_01/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Basic Compression",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_02/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Tweaking Compression",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_03/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Compression on Real Instruments",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_04/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Multiband Compression 1",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_05/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Multiband Compression 2",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_06/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Keying",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_07/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Microsounds",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_08/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Ducking",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_09/",
+                                        "description": ""
+                                    },
+                                    {
+                                        "title": "Controlling Feedback",
+                                        "url": "https://docs.cycling74.com/learn/articles/17_msp_compress_10/",
+                                        "description": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Polish Your Pixels",
+                        "url": "https://docs.cycling74.com/learn/series/polish-your-pixels/",
+                        "description": "In the world of digital rendering, attention to detail can make all the difference between a decent image and a breathtaking one. This guide is designed to help you bridge that gap and elevate your visual output. In the following paragraphs we will explore a range of strategies, tools, and techniques to fine-tune every aspect of your render, from realistic lighting and advanced material setups to subtle post-processing enhancements. Whether you're a beginner looking to improve or an experienced user aiming to perfect your craft, this article will equip you with the insights needed to achieve high-quality renders in Jitter.",
+                        "groups": [
+                            {
+                                "name": "Polish Your Pixels Contents",
+                                "articles": [
+                                    {
+                                        "title": "Color Management",
+                                        "url": "https://docs.cycling74.com/learn/articles/01-color-management/",
+                                        "description": "Color essentials: bit depth, gamma correction, and tonemapping"
+                                    },
+                                    {
+                                        "title": "Antialiasing",
+                                        "url": "https://docs.cycling74.com/learn/articles/02-antialiasing/",
+                                        "description": "How to get rid of aliasing artifacts in Jitter"
+                                    },
+                                    {
+                                        "title": "Light Rendering",
+                                        "url": "https://docs.cycling74.com/learn/articles/03-light-rendering/",
+                                        "description": "Global illumination, image-based lighting, and shadow rendering"
+                                    },
+                                    {
+                                        "title": "Scale and Distance",
+                                        "url": "https://docs.cycling74.com/learn/articles/04-scale-and-distance/",
+                                        "description": "How to give the sense of scale and distance"
+                                    },
+                                    {
+                                        "title": "Object Motion",
+                                        "url": "https://docs.cycling74.com/learn/articles/05-object-motion/",
+                                        "description": "Tips and tricks to give objects a convincing sense of motion"
+                                    },
+                                    {
+                                        "title": "Pass Effects",
+                                        "url": "https://docs.cycling74.com/learn/articles/06-pass-effects/",
+                                        "description": "Post processing effects, or the extra 2% spiciness"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "unmatched_articles": []
+            }
+        }
+    }
 }
