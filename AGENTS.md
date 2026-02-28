@@ -9,14 +9,16 @@ prevent future agents from having the same issue.
 
 ## 4. Strict Enforcement Rules (MANDATORY)
 
-### I. Tool Usage & Token Economy
+### Tool Usage & Token Economy
 *   **NO RECURSIVE LS:** Use `tree -L 2` or `ls -F`.
 *   **NO RECURSIVE GREP:** Always use `rg`.
 
-### II. Cognitive Safety
+### Cognitive Safety
 *   **USER CONFIRMATION:** Operations > 10 files require permission.
 
-### IV. Version Control Hygiene (CRITICAL TOKEN SAFETY)
+### Version Control Hygiene (CRITICAL TOKEN SAFETY)
 * **SILENCE IS GOLDEN:** For any `git add` or `git commit` involving >5 files, YOU MUST use the quiet flag (`-q` or `--quiet`)
 * **VERIFY COMPACTLY:** Do not rely on `git commit` output to verify success.
     * After a quiet commit, verify with: `git log -1 --oneline` or `git status --short`.
+
+## Do not blindly create files at the root directory of the project. Identify the appropriate folder given the current context.

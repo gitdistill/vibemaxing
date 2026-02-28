@@ -655,15 +655,15 @@
                             "group": "Enums",
                             "pages": [
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/max_env/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/max_env/",
                                     "description": "Enum options for the value Node For Max will set on process.env.MAX_ENV"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/message_types/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/message_types/",
                                     "description": "Predefined generic MaxFunctionSelector types"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/post_levels/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/post_levels/",
                                     "description": "Log Levels used in maxAPI.post"
                                 }
                             ]
@@ -672,43 +672,43 @@
                             "group": "Functions",
                             "pages": [
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/addhandler/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/addhandler/",
                                     "description": "Register a single handler"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/addhandlers/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/addhandlers/",
                                     "description": "Register handlers"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/getdict/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/getdict/",
                                     "description": "Get the value of a dict object"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/outlet/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/outlet/",
                                     "description": "Outlet any values"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/outletbang/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/outletbang/",
                                     "description": "Outlet a Bang"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/post/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/post/",
                                     "description": "Post to the Max console. Setting the last argument to a value of maxAPI.POST_LEVELS allows control of the log level"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/removehandler/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/removehandler/",
                                     "description": "Remove a single handler"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/removehandlers/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/removehandlers/",
                                     "description": "Remove handlers"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/setdict/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/setdict/",
                                     "description": "Set the value of a dict object"
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/updatedict/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/updatedict/",
                                     "description": "Partially update the value of a dict object at a given path"
                                 }
                             ]
@@ -717,31 +717,31 @@
                             "group": "Type Aliases",
                             "pages": [
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/anything/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/anything/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonarray/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/jsonarray/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonobject/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/jsonobject/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonprimitive/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/jsonprimitive/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/jsonvalue/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/jsonvalue/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/maxfunctionhandler/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionhandler/",
                                     "description": ""
                                 },
                                 {
-                                    "url": "https://docs.cycling74.com/apiref/nodeformax/?source=post_page---------------------------%2Fanything%2Fjsonobject%2Fjsonvalue%2Fsetdict%2Fmessage_types%2Fjsonarray%2Faddhandlers%2Fmaxfunctionhandler%2Fjsonvalue%2Fjsonprimitive%2Fgetdict%2Fremovehandler%2Faddhandler%2Fremovehandlers%2Fmax_env%2Fgetdict%2Fjsonprimitive%2F%2Faddhandlers%2F%2Faddhandler%2Fsetdict%2Fmaxfunctionhandler%2Fjsonvalue%2Faddhandlers%2F/maxfunctionselector/",
+                                    "url": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionselector/",
                                     "description": ""
                                 }
                             ]

@@ -21,7 +21,7 @@ def get_browser_config() -> BrowserConfig:
 def get_base_config() -> CrawlerRunConfig:
     """Standard configuration for most Cycling '74 documentation pages."""
     return CrawlerRunConfig(
-        css_selector="article",
+        css_selector="article.c74-article-content",
         excluded_tags=EXCLUDED_TAGS,
         markdown_generator=DefaultMarkdownGenerator(
             options={
@@ -31,7 +31,7 @@ def get_base_config() -> CrawlerRunConfig:
         ),
         cache_mode=CacheMode.BYPASS,
         verbose=False, # SILENCE IS GOLDEN
-        wait_for="css:article", # Wait for the main content to be present
+        wait_for="css:article.c74-article-content", # Wait for the main content to be present
         # Increase timeout for complex pages
         page_timeout=60000 
     )

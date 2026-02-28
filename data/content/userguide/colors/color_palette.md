@@ -1,5 +1,9 @@
 ---
-description: ''
+description: How to select and edit colors in Max, and the difference between fixed
+  and dynamic colors
+group: Colors
+kind: guide
+section: User Guide
 sourceUrl: https://docs.cycling74.com/userguide/color_palette/
 title: Color Palette
 ---

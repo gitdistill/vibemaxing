@@ -1,5 +1,6 @@
 import os
 import json
+import aiohttp
 from pathlib import Path
 from typing import Dict, Any, List
 from urllib.parse import urlparse
@@ -9,7 +10,17 @@ from crawl4ai import AsyncWebCrawler, CrawlerRunConfig
 from apps.cyclescraper.utils.crawler import get_base_config
 from apps.cyclescraper.utils.files import write_markdown
 from apps.cyclescraper.utils.markdown import clean_markdown
-from apps.cyclescraper.models import KnowledgeNode
+
+async def fetch_html_manually(url: str) -> str:
+    """Fetches HTML using aiohttp for BeautifulSoup parsing."""
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url, timeout=10) as response:
+                if response.status == 200:
+                    return await response.text()
+    except Exception as e:
+        print(f"Error fetching manual HTML for {url}: {e}")
+    return ""
 
 def extract_metadata_from_html(html: str, url: str) -> Dict[str, str]:
     """Extracts metadata from the Crawl4AI HTML result."""
@@ -62,16 +73,19 @@ def get_slug_and_category(url: str):
         
     return slug, category
 
-async def process_user_guide(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List[KnowledgeNode]:
+async def process_user_guide(crawler: AsyncWebCrawler, seeds: Dict[str, Any], sub_section: str = None) -> None:
     """Logic for User Guide section."""
-    print("Processing User Guide...")
+    print(f"Processing User Guide (Filtering for: {sub_section})..." if sub_section else "Processing User Guide...")
     
     user_guide_data = seeds["urlset"]["sections"]["User Guide"]
-    nodes = []
     
     # Prepare list of tasks
     tasks = []
     for group_name, group_data in user_guide_data.items():
+        # Filtering logic
+        if sub_section and sub_section.lower() not in group_name.lower():
+            continue
+            
         pages = group_data.get("pages", {})
         for page_name, url in pages.items():
             tasks.append((group_name, page_name, url))
@@ -86,29 +100,26 @@ async def process_user_guide(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) ->
     # ---------------------------
 
     if not tasks:
-        print("No User Guide pages to process.")
-        return []
+        print("No User Guide pages found for the specified parameters.")
+        return
 
-    section_node = KnowledgeNode(
-        title="User Guide",
-        type="section",
-        slug="userguide",
-        sourceUrl="https://docs.cycling74.com/userguide/",
-        description="Conceptual guides and overviews",
-        children=[]
-    )
-    
-    # Process in batches using arun_many
     config = get_base_config()
-    urls = [t[2] for t in tasks]
     
-    print(f"Batch crawling {len(urls)} User Guide pages...")
-    results = await crawler.arun_many(urls, config=config, max_concurrent=5)
+    print(f"Processing {len(tasks)} User Guide pages sequentially...")
     
-    # Combine results
-    combined_results = []
-    for i, (group_name, page_name, url) in enumerate(tasks):
-        result = results[i]
+    for group_name, page_name, url in tasks:
+        print(f"Scraping: {url}")
+        
+        # Fetch raw HTML manually to extract standard meta tags from <head>
+        raw_html = await fetch_html_manually(url)
+        meta = extract_metadata_from_html(raw_html, url)
+        description = meta.get("description")
+        title = meta.get("title") or page_name
+        if title and " | Cycling '74 Documentation" in title:
+            title = title.replace(" | Cycling '74 Documentation", "")
+            
+        # Run crawl4ai specifically targeted at the article content
+        result = await crawler.arun(url, config=config)
         
         if not result.success:
             print(f"Failed to crawl {url}: {result.error_message}")
@@ -116,61 +127,23 @@ async def process_user_guide(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) ->
             
         slug, category = get_slug_and_category(url)
         
-        # Metadata cleanup from HTML
-        meta = extract_metadata_from_html(result.html, url)
-        description = meta.get("description")
-        title = meta.get("title") or page_name
-        if title and " | Cycling '74 Documentation" in title:
-            title = title.replace(" | Cycling '74 Documentation", "")
-        
         # Define file path
         group_slug = group_name.lower().replace(" ", "_").replace("/", "_")
         file_path = Path(f"data/content/userguide/{group_slug}/{slug}.md")
         
-        # Prepare frontmatter
+        # Prepare frontmatter (Enriched for decoupled build_map.py)
         frontmatter = {
             "title": title,
             "description": description or "",
-            "sourceUrl": url
+            "sourceUrl": url,
+            "section": "User Guide",
+            "group": group_name,
+            "kind": "guide"
         }
         
         # Clean and write
         cleaned_md = clean_markdown(result.markdown)
         write_markdown(file_path, cleaned_md, frontmatter)
-        
-        combined_results.append({
-            "group_name": group_name,
-            "node": KnowledgeNode(
-                title=title,
-                type="page",
-                kind="guide",
-                slug=slug,
-                filePath=str(file_path),
-                sourceUrl=url,
-                description=description or ""
-            )
-        })
 
-    # Group results
-    groups = {}
-    for r in combined_results:
-        if r:
-            gname = r["group_name"]
-            if gname not in groups:
-                group_data = user_guide_data.get(gname, {})
-                group_slug = gname.lower().replace(" ", "_").replace("/", "_")
-                groups[gname] = KnowledgeNode(
-                    title=gname,
-                    type="group",
-                    slug=group_slug,
-                    sourceUrl="", # Typically groups don't have a specific URL in userguide unless defined
-                    description=group_data.get("description", ""),
-                    children=[]
-                )
-            groups[gname].children.append(r["node"])
-            
-    section_node.children = list(groups.values())
-    if not section_node.children:
-        section_node.children = None
-        
-    return [section_node]
+    print(f"User Guide processing complete.")
+

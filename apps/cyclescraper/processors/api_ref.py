@@ -10,7 +10,6 @@ from crawl4ai import AsyncWebCrawler
 from apps.cyclescraper.utils.crawler import get_base_config
 from apps.cyclescraper.utils.files import write_markdown
 from apps.cyclescraper.utils.markdown import clean_markdown
-from apps.cyclescraper.models import KnowledgeNode
 
 async def fetch_html_manually(url: str) -> str:
     """Fetches HTML using aiohttp for BeautifulSoup parsing."""
@@ -26,17 +25,20 @@ async def fetch_html_manually(url: str) -> str:
 def extract_metadata_from_api_page(html: str, section: str) -> Dict[str, Any]:
     """Applies specialized selectors from api-ref-page-spec.md"""
     soup = BeautifulSoup(html, 'lxml')
+    # Target only the main content to avoid picking up H1s from nav/sidebars
+    content = soup.find('article', class_='c74-article-content') or soup
+    
     meta = {}
     
-    # Title from h1
-    h1 = soup.find('h1')
+    # Title from h1 in content
+    h1 = content.find('h1')
     meta["title"] = h1.get_text(strip=True) if h1 else None
     
     if section == "lom":
         # LOM specialized logic
         paths = []
         # Find h2 with "Canonical Paths"
-        paths_h2 = soup.find('h2', string=lambda t: t and 'Canonical Paths' in t)
+        paths_h2 = content.find('h2', string=lambda t: t and 'Canonical Paths' in t)
         if paths_h2:
             nxt = paths_h2.find_next_sibling()
             while nxt and nxt.name not in ['h2']:
@@ -47,17 +49,16 @@ def extract_metadata_from_api_page(html: str, section: str) -> Dict[str, Any]:
     else:
         # JS and Node for Max specialized logic
         # First pre block usually contains the definition/signature
-        first_pre = soup.find('pre')
+        first_pre = content.find('pre')
         meta["signature"] = first_pre.get_text(strip=True) if first_pre else None
         
     return meta
 
-async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List[KnowledgeNode]:
+async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any], sub_section: str = None) -> None:
     """Logic for API Reference section."""
-    print("Processing API Reference...")
+    print(f"Processing API Reference (Filtering for: {sub_section})..." if sub_section else "Processing API Reference...")
     
     api_ref_data = seeds.get("urlset", {}).get("sections", {}).get("API Reference", {})
-    nodes = []
     
     config = get_base_config()
 
@@ -71,34 +72,6 @@ async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> Li
     # ---------------------------
     
     for section_name, section_data in api_ref_data.items():
-        groups_data = section_data.get("pages", [])
-
-        if calibration_mode:
-            # Filter the groups_data to only include groups that contain a calibration URL
-            filtered_groups_data = []
-            for group_info in groups_data:
-                # Filter pages within this group
-                # Fix: Check if page is dict or string
-                group_pages = group_info.get("pages", [])
-                filtered_pages = []
-                for p in group_pages:
-                    p_url = p["url"] if isinstance(p, dict) else p
-                    if p_url in calibration_urls:
-                        filtered_pages.append(p)
-                
-                if filtered_pages:
-                    # If pages are found, create a new group object with only those pages
-                    new_group_info = group_info.copy()
-                    new_group_info["pages"] = filtered_pages
-                    filtered_groups_data.append(new_group_info)
-            groups_data = filtered_groups_data # Overwrite with the filtered list
-        
-        if not groups_data:
-            continue # Skip this section if no pages are left after filtering
-
-        print(f"Processing section: {section_name}")
-        index_url = section_data.get("index")
-        
         # Determine short section identifier
         if "LOM" in section_name or "Live Object Model" in section_name:
             section_id = "lom"
@@ -108,21 +81,36 @@ async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> Li
             section_id = "nodeformax"
         else:
             section_id = section_name.lower().replace(" ", "")
-            
-        section_node = KnowledgeNode(
-            title=section_name,
-            type="section",
-            kind="api-index",
-            slug=section_id,
-            filePath=f"apiref/{section_id}/index.md",
-            sourceUrl=index_url,
-            description=section_data.get("description", "")
-        )
-        nodes.append(section_node)
+
+        # Filtering logic
+        if sub_section and sub_section.lower() != section_id:
+            continue
+
+        groups_data = section_data.get("pages", [])
+
+        if calibration_mode:
+            # Filter the groups_data to only include groups that contain a calibration URL
+            filtered_groups_data = []
+            for group_info in groups_data:
+                group_pages = group_info.get("pages", [])
+                filtered_pages = []
+                for p in group_pages:
+                    p_url = p["url"] if isinstance(p, dict) else p
+                    if p_url in calibration_urls:
+                        filtered_pages.append(p)
+                
+                if filtered_pages:
+                    new_group_info = group_info.copy()
+                    new_group_info["pages"] = filtered_pages
+                    filtered_groups_data.append(new_group_info)
+            groups_data = filtered_groups_data 
         
-        group_nodes = {}
+        if not groups_data:
+            continue
+
+        print(f"Processing API Section: {section_name} ({section_id})")
         
-        # Flatten all pages in this section for batch processing
+        # Flatten all pages in this section for processing
         section_tasks = []
         for group_info in groups_data:
             grp_name = group_info.get("group", "General")
@@ -136,15 +124,15 @@ async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> Li
                 })
         
         if section_tasks:
-            print(f"Batch crawling {len(section_tasks)} pages for API {section_id}...")
-            urls = [t["url"] for t in section_tasks]
-            results = await crawler.arun_many(urls, config=config, max_concurrent=5)
+            print(f"Processing {len(section_tasks)} pages sequentially for {section_id}...")
             
-            for i, task in enumerate(section_tasks):
+            for task in section_tasks:
                 url = task["url"]
                 description = task["description"]
                 grp_name = task["group"]
-                result = results[i]
+                
+                print(f"Scraping: {url}")
+                result = await crawler.arun(url, config=config)
                 
                 if not result.success:
                     print(f"Failed to crawl {url}: {result.error_message}")
@@ -160,38 +148,18 @@ async def process_api_ref(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> Li
                 # File path
                 file_path = Path(f"data/content/apiref/{section_id}/{slug}.md")
                 
-                # Frontmatter
+                # Prepare frontmatter (Enriched)
                 frontmatter = {
                     "title": title,
                     "description": description or "",
-                    "sourceUrl": url
+                    "sourceUrl": url,
+                    "section": "API Reference",
+                    "group": section_id,  # For API, section_id (lom, js, etc) is the most useful group
+                    "kind": "api-page"
                 }
                 
                 # Write
                 cleaned_md = clean_markdown(result.markdown)
                 write_markdown(file_path, cleaned_md, frontmatter)
-                
-                if grp_name not in group_nodes:
-                    group_nodes[grp_name] = KnowledgeNode(
-                        title=grp_name,
-                        type="group",
-                        slug=grp_name.lower().replace(" ", "_"),
-                        sourceUrl="",
-                        description=f"{grp_name} for {section_name}",
-                        children=[]
-                    )
-                
-                group_nodes[grp_name].children.append(KnowledgeNode(
-                    title=title,
-                    type="page",
-                    kind="api-page",
-                    slug=slug,
-                    filePath=str(file_path),
-                    sourceUrl=url,
-                    description=description or ""
-                ))
             
-            valid_groups = [g for g in group_nodes.values() if g.children]
-            section_node.children = valid_groups if valid_groups else None
-            
-    return nodes
+    print("API Reference processing complete.")

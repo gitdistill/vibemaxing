@@ -120,10 +120,31 @@ async def discover_api_ref(index_url: str, section_name: str) -> List[Dict[str, 
                     link_tag = cols[0].find('a')
                     if link_tag and link_tag.has_attr('href'):
                         href = link_tag['href']
+                        
+                        # Determine slug from the href.
+                        # For Node for Max, real slug is often the last part of the path, 
+                        # even if nested inside a query param like /apiref/nodeformax/?source=.../max_env/
+                        if '/' in href:
+                            # Split by '/' and ignore empty strings and query param garbage
+                            parts = [p for p in href.split('/') if p and not p.startswith('?source=')]
+                            if parts:
+                                slug = parts[-1]
+                                # Ensure we don't accidentally keep the '?' if it was attached to the last part
+                                if '?' in slug:
+                                    slug = slug.split('?')[0]
+                            else:
+                                slug = ""
+                        else:
+                            slug = href.strip('/')
+
+                        if slug:
+                            full_url = urljoin(index_url, slug)
+                            if not full_url.endswith('/'):
+                                full_url += '/'
+                        else:
+                            full_url = index_url
+                        
                         desc = cols[1].get_text(strip=True)
-                        full_url = urljoin(index_url, href)
-                        if not full_url.endswith('/'):
-                            full_url += '/'
                         
                         articles_in_group.append({
                             "url": full_url,

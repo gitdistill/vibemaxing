@@ -11,31 +11,17 @@ from crawl4ai import AsyncWebCrawler
 from apps.cyclescraper.utils.crawler import get_base_config
 from apps.cyclescraper.utils.files import write_markdown
 from apps.cyclescraper.utils.markdown import clean_markdown
-from apps.cyclescraper.models import KnowledgeNode
 
-async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List[KnowledgeNode]:
+async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any], sub_section: str = None) -> None:
     """Logic for Learn section."""
     learn_data = seeds.get("urlset", {}).get("sections", {}).get("Learn", {})
-    index_url = learn_data.get("index")
     series_list = learn_data.get("series", [])
 
     if not series_list:
         print("No Learn articles to process.")
-        return []
+        return
 
-    print("Processing Learn section...")
-    
-    # Create the root section node
-    section_node = KnowledgeNode(
-        title="Learn",
-        type="section",
-        kind="index",
-        slug="learn",
-        filePath="learn/index.md",
-        sourceUrl=index_url,
-        description="Tutorial series and articles for learning Max, MSP, Jitter, and more.",
-        children=[]
-    )
+    print(f"Processing Learn section (Filtering for: {sub_section})..." if sub_section else "Processing Learn section...")
     
     # --- CALIBRATION OVERRIDE ---
     calibration_urls_str = os.getenv("CALIBRATION_URLS")
@@ -46,11 +32,16 @@ async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List
         print(f"--- Calibration Mode: Filtering for Learn articles. ---")
     # ---------------------------
 
-    # Count total articles and filter if in calibration mode
-    total_articles = 0
+    # Count total articles and filter if in calibration mode or sub-section
     filtered_series_list = []
     
     for s_info in series_list:
+        series_slug = s_info["url"].rstrip('/').split('/')[-1]
+        
+        # Filtering logic
+        if sub_section and sub_section.lower() not in series_slug.lower() and sub_section.lower() not in s_info["title"].lower():
+            continue
+
         series_groups = []
         for g_info in s_info.get("groups", []):
             articles = g_info.get("articles", [])
@@ -62,30 +53,29 @@ async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List
                     "name": g_info["name"],
                     "articles": articles
                 })
-                total_articles += len(articles)
         
         if series_groups:
             new_s = s_info.copy()
             new_s["groups"] = series_groups
+            new_s["slug"] = series_slug
             filtered_series_list.append(new_s)
 
     series_list = filtered_series_list
-    completed_articles = 0
+    
+    if not series_list:
+        print("No Learn series found for the specified parameters.")
+        return
+
+    # Base config for Learn articles
+    article_config = get_base_config()
     
     # Process each series
     for series_info in series_list:
-        series_slug = series_info["url"].split('/')[-2] if series_info["url"].endswith('/') else series_info["url"].split('/')[-1]
-        
-        series_node = KnowledgeNode(
-            title=series_info["title"],
-            type="series",
-            slug=series_slug,
-            sourceUrl=series_info["url"],
-            description=series_info["description"],
-            children=[]
-        )
-        
+        series_title = series_info["title"]
+        series_slug = series_info["slug"]
         groups = series_info.get("groups", [])
+
+        print(f"Processing Series: {series_title} ({series_slug})")
 
         for group in groups:
             group_name = group["name"]
@@ -94,25 +84,13 @@ async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List
             if not articles:
                 continue
                 
-            article_urls = [a["url"] for a in articles]
-            print(f"Batch crawling {len(article_urls)} articles for series: {series_info['title']} - Group: {group_name}")
+            print(f"Processing {len(articles)} articles sequentially for Group: {group_name}")
             
-            # Base config for Learn articles
-            article_config = get_base_config()
-            results = await crawler.arun_many(article_urls, config=article_config, max_concurrent=5)
-            
-            group_node = KnowledgeNode(
-                title=group_name,
-                type="group",
-                slug=group_name.lower().replace(" ", "_"),
-                sourceUrl="",
-                description=f"{group_name} in {series_info['title']}",
-                children=[]
-            )
-
-            for i, article_meta in enumerate(articles):
+            for article_meta in articles:
                 url = article_meta["url"]
-                result = results[i]
+                
+                print(f"Scraping: {url}")
+                result = await crawler.arun(url, config=article_config)
                 
                 if not result.success:
                     print(f"Failed to crawl {url}: {result.error_message}")
@@ -129,38 +107,19 @@ async def process_learn(crawler: AsyncWebCrawler, seeds: Dict[str, Any]) -> List
                 # File path
                 file_path = Path(f"data/content/learn/articles/{slug}.md")
                 
-                # Prepare frontmatter
+                # Prepare frontmatter (Enriched)
                 frontmatter = {
                     "title": title,
                     "description": description,
-                    "sourceUrl": url
+                    "sourceUrl": url,
+                    "section": "Learn",
+                    "group": series_title,
+                    "kind": "tutorial"
                 }
                 
                 # Write markdown
                 cleaned_md = clean_markdown(result.markdown)
                 write_markdown(file_path, cleaned_md, frontmatter)
                 
-                completed_articles += 1
-                if completed_articles % 10 == 0 or completed_articles == total_articles:
-                    print(f"Learn Progress: {completed_articles}/{total_articles} articles")
+    print("Learn processing complete.")
 
-                group_node.children.append(KnowledgeNode(
-                    title=title,
-                    type="page",
-                    kind="article",
-                    slug=slug,
-                    filePath=str(file_path),
-                    sourceUrl=url,
-                    description=description
-                ))
-            
-            if group_node.children:
-                series_node.children.append(group_node)
-            
-        if series_node.children:
-            section_node.children.append(series_node)
-
-    if not section_node.children:
-        section_node.children = None
-
-    return [section_node]

@@ -1,0 +1,329 @@
+{
+  "version": "1.0.0",
+  "nodes": [
+    {
+      "title": "API Reference",
+      "type": "section",
+      "slug": "apireference",
+      "sourceUrl": "",
+      "description": "Documentation section: API Reference",
+      "children": [
+        {
+          "title": "nodeformax",
+          "type": "group",
+          "slug": "nodeformax",
+          "sourceUrl": "",
+          "description": "nodeformax in API Reference",
+          "children": [
+            {
+              "title": "enum MAX_ENV",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "max_env",
+              "filePath": "data/content/apiref/nodeformax/max_env.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/max_env/",
+              "description": "Enum options for the value Node For Max will set on process.env.MAX_ENV"
+            },
+            {
+              "title": "enum MESSAGE_TYPES",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "message_types",
+              "filePath": "data/content/apiref/nodeformax/message_types.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/message_types/",
+              "description": "Predefined generic MaxFunctionSelector types"
+            },
+            {
+              "title": "enum POST_LEVELS",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "post_levels",
+              "filePath": "data/content/apiref/nodeformax/post_levels.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/post_levels/",
+              "description": "Log Levels used in maxAPI.post"
+            },
+            {
+              "title": "function addHandler",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "addhandler",
+              "filePath": "data/content/apiref/nodeformax/addhandler.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/addhandler/",
+              "description": "Register a single handler"
+            },
+            {
+              "title": "function addHandlers",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "addhandlers",
+              "filePath": "data/content/apiref/nodeformax/addhandlers.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/addhandlers/",
+              "description": "Register handlers"
+            },
+            {
+              "title": "function getDict",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "getdict",
+              "filePath": "data/content/apiref/nodeformax/getdict.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/getdict/",
+              "description": "Get the value of a dict object"
+            },
+            {
+              "title": "function outlet",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "outlet",
+              "filePath": "data/content/apiref/nodeformax/outlet.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/outlet/",
+              "description": "Outlet any values"
+            },
+            {
+              "title": "function outletBang",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "outletbang",
+              "filePath": "data/content/apiref/nodeformax/outletbang.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/outletbang/",
+              "description": "Outlet a Bang"
+            },
+            {
+              "title": "function post",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "post",
+              "filePath": "data/content/apiref/nodeformax/post.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/post/",
+              "description": "Post to the Max console. Setting the last argument to a value of maxAPI.POST_LEVELS allows control of the log level"
+            },
+            {
+              "title": "function removeHandler",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "removehandler",
+              "filePath": "data/content/apiref/nodeformax/removehandler.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/removehandler/",
+              "description": "Remove a single handler"
+            },
+            {
+              "title": "function removeHandlers",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "removehandlers",
+              "filePath": "data/content/apiref/nodeformax/removehandlers.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/removehandlers/",
+              "description": "Remove handlers"
+            },
+            {
+              "title": "function setDict",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "setdict",
+              "filePath": "data/content/apiref/nodeformax/setdict.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/setdict/",
+              "description": "Set the value of a dict object"
+            },
+            {
+              "title": "function updateDict",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "updatedict",
+              "filePath": "data/content/apiref/nodeformax/updatedict.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/updatedict/",
+              "description": "Partially update the value of a dict object at a given path"
+            },
+            {
+              "title": "type Anything",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "anything",
+              "filePath": "data/content/apiref/nodeformax/anything.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/anything/",
+              "description": ""
+            },
+            {
+              "title": "type JSONArray",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "jsonarray",
+              "filePath": "data/content/apiref/nodeformax/jsonarray.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/jsonarray/",
+              "description": ""
+            },
+            {
+              "title": "type JSONObject",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "jsonobject",
+              "filePath": "data/content/apiref/nodeformax/jsonobject.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/jsonobject/",
+              "description": ""
+            },
+            {
+              "title": "type JSONPrimitive",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "jsonprimitive",
+              "filePath": "data/content/apiref/nodeformax/jsonprimitive.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/jsonprimitive/",
+              "description": ""
+            },
+            {
+              "title": "type JSONValue",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "jsonvalue",
+              "filePath": "data/content/apiref/nodeformax/jsonvalue.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/jsonvalue/",
+              "description": ""
+            },
+            {
+              "title": "type MaxFunctionHandler",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "maxfunctionhandler",
+              "filePath": "data/content/apiref/nodeformax/maxfunctionhandler.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionhandler/",
+              "description": ""
+            },
+            {
+              "title": "type MaxFunctionSelector",
+              "type": "page",
+              "kind": "api-page",
+              "slug": "maxfunctionselector",
+              "filePath": "data/content/apiref/nodeformax/maxfunctionselector.md",
+              "sourceUrl": "https://docs.cycling74.com/apiref/nodeformax/maxfunctionselector/",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Learn",
+      "type": "section",
+      "slug": "learn",
+      "sourceUrl": "",
+      "description": "Documentation section: Learn",
+      "children": [
+        {
+          "title": "Custom Drawing with JavaScript",
+          "type": "group",
+          "slug": "custom_drawing_with_javascript",
+          "sourceUrl": "",
+          "description": "Custom Drawing with JavaScript in Learn",
+          "children": [
+            {
+              "title": "Hit Testing",
+              "type": "page",
+              "kind": "tutorial",
+              "slug": "03-hit-testing",
+              "filePath": "data/content/learn/articles/03-hit-testing.md",
+              "sourceUrl": "https://docs.cycling74.com/learn/articles/03-hit-testing/",
+              "description": "Checking for intersections with paths"
+            },
+            {
+              "title": "Quickstart",
+              "type": "page",
+              "kind": "tutorial",
+              "slug": "01-quickstart",
+              "filePath": "data/content/learn/articles/01-quickstart.md",
+              "sourceUrl": "https://docs.cycling74.com/learn/articles/01-quickstart/",
+              "description": "Introduction to drawing with MGraphics"
+            },
+            {
+              "title": "Working with Patterns",
+              "type": "page",
+              "kind": "tutorial",
+              "slug": "04-working-with-patterns",
+              "filePath": "data/content/learn/articles/04-working-with-patterns.md",
+              "sourceUrl": "https://docs.cycling74.com/learn/articles/04-working-with-patterns/",
+              "description": "Drawing with repeating patterns"
+            },
+            {
+              "title": "Working with Transforms",
+              "type": "page",
+              "kind": "tutorial",
+              "slug": "02-working-with-transforms",
+              "filePath": "data/content/learn/articles/02-working-with-transforms.md",
+              "sourceUrl": "https://docs.cycling74.com/learn/articles/02-working-with-transforms/",
+              "description": "Using matrix transforms with MGraphics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "User Guide",
+      "type": "section",
+      "slug": "userguide",
+      "sourceUrl": "",
+      "description": "Documentation section: User Guide",
+      "children": [
+        {
+          "title": "Colors",
+          "type": "group",
+          "slug": "colors",
+          "sourceUrl": "",
+          "description": "Colors in User Guide",
+          "children": [
+            {
+              "title": "Color Palette",
+              "type": "page",
+              "kind": "guide",
+              "slug": "color_palette",
+              "filePath": "data/content/userguide/colors/color_palette.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/color_palette/",
+              "description": ""
+            },
+            {
+              "title": "Color Themes",
+              "type": "page",
+              "kind": "guide",
+              "slug": "color_themes",
+              "filePath": "data/content/userguide/colors/color_themes.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/color_themes/",
+              "description": ""
+            },
+            {
+              "title": "Dynamic Colors",
+              "type": "page",
+              "kind": "guide",
+              "slug": "dynamic_colors",
+              "filePath": "data/content/userguide/colors/dynamic_colors.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/dynamic_colors/",
+              "description": ""
+            },
+            {
+              "title": "Format Palette",
+              "type": "page",
+              "kind": "guide",
+              "slug": "format_palette",
+              "filePath": "data/content/userguide/colors/format_palette.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/format_palette/",
+              "description": ""
+            },
+            {
+              "title": "Styles",
+              "type": "page",
+              "kind": "guide",
+              "slug": "styles",
+              "filePath": "data/content/userguide/colors/styles.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/styles/",
+              "description": ""
+            },
+            {
+              "title": "Syntax Coloring",
+              "type": "page",
+              "kind": "guide",
+              "slug": "syntax_coloring",
+              "filePath": "data/content/userguide/colors/syntax_coloring.md",
+              "sourceUrl": "https://docs.cycling74.com/userguide/syntax_coloring/",
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

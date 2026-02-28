@@ -1,95 +1,54 @@
-# Plan: CycleScraper Implementation
-
-Implement a specialized web scraper to transform Cycling '74 documentation into an agent-friendly Markdown knowledge base.
+# Plan: CycleScraper Sequential Refactor & Staged Execution
 
 ## Context
-The `CycleScraper` tool is required to populate the `vibemax-intelligence` Pi extension with technical documentation, API references, and tutorials from `docs.cycling74.com`. It must produce a structured `knowledge-map.json` and a collection of Markdown files with YAML frontmatter.
+The initial concurrent scraping architecture (`crawler.arun_many()`) caused data corruption due to Next.js SPA state leakage across shared browser tabs. To fix this, we must process URLs sequentially. As verified by testing, using `await crawler.arun()` in a standard `for` loop guarantees strict isolation and completely eliminates the Next.js router collisions, which is the most robust approach for this specific SPA without introducing complex session management overhead.
+
+Because sequential scraping takes much longer (~10-15 minutes for a full run), we need to support staged, modular execution (by section and sub-section) so developers can spot-check and debug without running the full suite. 
+
+Furthermore, we need to decouple Knowledge Map generation from the scraping process. The sole purpose of the Knowledge Map is to provide a hierarchical Table of Contents that an expert agent can read to deterministically locate relevant documentation. (Note: For ~450 files, passing a structured JSON map to the agent is a highly effective, deterministic alternative to vector search/RAG, and is absolutely the right approach here).
 
 ## Approach
-- **Core Engine**: Use `crawl4ai` for asynchronous crawling and high-quality HTML-to-Markdown conversion.
-- **Source of Truth**: All scraping is driven by `docs/seeds.json`.
-- **Concurrency**: Process URLs in batches to respect rate limits and manage resources.
-- **Output**:
-  - `data/content/`: Organized hierarchy of `.md` files.
-  - `knowledge-map.json`: Hierarchical index for the agent.
+1. **Sequential Refactor**: Replace all instances of `arun_many()` with a standard `for` loop using `await crawler.arun()` in the processors to guarantee data integrity.
+2. **CLI Staged Execution**: Implement `argparse` in `main.py` to allow running the scraper by section and sub-section.
+3. **Sub-section Filtering**: Update each processor to optionally filter its task list based on the requested sub-section.
+4. **Enhanced Frontmatter**: Processors will inject structural metadata (`section`, `group`, `kind`) directly into each Markdown file's frontmatter.
+5. **Decouple Knowledge Map**: 
+   - Scraping processors will *only* be responsible for fetching URLs, cleaning markdown, and saving files (with enriched frontmatter). 
+   - A standalone `apps/cyclescraper/build_map.py` script will simply glob all `.md` files in `data/content/`, read their frontmatter to reconstruct the hierarchy, and output the final `knowledge-map.json`. This makes the map generation 100% independent of the scraping execution order.
 
-## Files to Create
-- `apps/cyclescraper/requirements.txt`: Dependencies (`crawl4ai`, `beautifulsoup4`, `pyyaml`, `pydantic`).
-- `apps/cyclescraper/main.py`: Main orchestration script.
-- `apps/cyclescraper/models.py`: Pydantic models for the knowledge map and configuration.
-- `apps/cyclescraper/processors/`:
-    - `user_guide.py`: Logic for User Guide section.
-    - `api_ref.py`: Logic for API Reference (LOM, JS, Node).
-    - `learn.py`: Logic for Learn section (Series and Articles).
-- `apps/cyclescraper/utils/`:
-    - `markdown.py`: Custom post-processing for math and images.
-    - `crawler.py`: Crawl4AI configuration and wrapper (using `AsyncWebCrawler` and `CrawlerRunConfig`).
-    - `files.py`: Directory and file management.
-
-## Reuse
-- `docs/seeds.json`: Entry points and static descriptions.
-- `docs/*-spec.md`: Detailed selector logic and extraction patterns.
+## Files to Modify/Create
+- `apps/cyclescraper/main.py`: Add `argparse` for `--section` and `--sub-section` flags. Remove knowledge map saving logic.
+- `apps/cyclescraper/processors/user_guide.py`: Remove `arun_many()`, implement sequential processing, add filtering by group (e.g., `audio`). Update frontmatter to include `section: User Guide`, `group: <group_name>`, and `kind: guide`.
+- `apps/cyclescraper/processors/api_ref.py`: Remove `arun_many()`, implement sequential processing, add filtering by API index (e.g., `lom`). Update frontmatter to include `section: API Reference`, `group: <api_id>`, and `kind: api-page`.
+- `apps/cyclescraper/processors/learn.py`: Remove `arun_many()`, implement sequential processing, add filtering by series slug. Update frontmatter to include `section: Learn`, `group: <series_title>`, and `kind: tutorial`.
+- **[New]** `apps/cyclescraper/build_map.py`: Standalone script to glob `data/content/**/*.md`, read frontmatter, and dynamically compile `knowledge-map.json`.
 
 ## Steps
+- [x] **Step 1: CLI Configuration in `main.py`**
+  - Add `argparse` with `--section` (choices: `userguide`, `apiref`, `learn`, `all`) and `--sub-section` (string).
+  - Remove the global `knowledge_map` dictionary and `save_partial` logic.
+- [x] **Step 2: Refactor `user_guide.py`**
+  - Add `sub_section` filtering (match against group name).
+  - Replace `arun_many` with sequential `for url in tasks: await crawler.arun(url)`.
+  - Enrich frontmatter dictionary with `section`, `group`, and `kind`.
+  - Remove `KnowledgeNode` creation.
+- [x] **Step 3: Refactor `api_ref.py`**
+  - Add `sub_section` filtering (match against `lom`, `js`, `nodeformax`).
+  - Replace `arun_many` with sequential `for task in section_tasks: await crawler.arun(url)`.
+  - Enrich frontmatter dictionary with `section`, `group`, and `kind`.
+  - Remove `KnowledgeNode` creation.
+- [x] **Step 4: Refactor `learn.py`**
+  - Add `sub_section` filtering (match against series slug or title).
+  - Enforce sequential `await crawler.arun()` for all article fetches.
+  - Enrich frontmatter dictionary with `section`, `group`, and `kind`.
+  - Remove `KnowledgeNode` creation.
+- [x] **Step 5: Create `build_map.py`**
+  - Write a script that uses `pathlib.Path.rglob('*.md')` to find all scraped documents.
+  - Read YAML frontmatter from each file.
+  - Group the files hierarchically by `section` -> `group` -> `file` and output to `knowledge-map.json`.
 
-### 1. Project Initialization
-- [x] Create `apps/cyclescraper/` directory structure.
-- [x] Create `requirements.txt` and install dependencies.
-- [x] Initialize `crawl4ai` (e.g., `playwright install chromium`).
-
-### 2. Core Infrastructure
-- [x] Define data models in `models.py` (e.g., `KnowledgeNode`, `KnowledgeMap`).
-- [x] Implement `utils/crawler.py` with standard `CrawlerRunConfig`:
-    - `excluded_tags`: `header`, `nav`, `footer`, `aside`, `.sidebar`, `.cookie-banner`, `script`, `style`, `iframe`, `.blocks_anchorLink__kJCjR`, `.article_metaWrapper__ARyDO`.
-    - `css_selector`: `.c74-article-content`.
-    - `markdown_generator`: `DefaultMarkdownGenerator(options={"absolute_urls": True})`.
-- [x] Implement `main.py` with `asyncio` and `seeds.json` loading.
-
-### 3. Build & Unit Test Processors (No full scraping yet)
-- [x] Implement `processors/user_guide.py`.
-- [x] Implement `processors/api_ref.py` (including specialized selectors from `api-ref-page-spec.md` for signatures and parameter tables).
-- [x] Implement `processors/learn.py`:
-    - [x] Handle "See Also" and metadata extraction via `JsonCssExtractionStrategy`.
-    - [x] Index parsing (`parse_learn_index`).
-    - [x] Integrate `parse_series_page` into `discovery.py` to build actual `series` nodes in `seeds.json`.
-    - [x] Map the articles discovered in `parse_series_page` to the list of URLs in `seeds.json` to organize the `page` nodes correctly under their respective `series` nodes.
-    - [x] Run an integration test on a single series (e.g. `javascript-custom-drawing/`) and 1 of its articles to verify the proper nested structure (`section` -> `series` -> `page`) is serialized correctly without mock nodes.
-- [x] Implement `processors/api_ref.py`:
-    - [x] Move index parsing to `discovery.py` to pre-group API pages by their `apiGroup`.
-    - [x] Update processor to use the structured hierarchy from `seeds.json`.
-- [x] Implement `utils/markdown.py` to:
-    - Ensure all math blocks (`<annotation encoding="application/x-tex">`) are converted to `$$ ... $$`.
-    - Final check on absolute image URLs.
-- [x] Implement Strategy & Concurrency logic: Use `arun_many` with a `Semaphore` or `max_concurrent=10`, configure `RetryConfig` (e.g., exponential backoff), and periodic saves to `knowledge-map.partial.json`.
-
-### 4. Verification & Testing
-- [x] **Dry Run**: Print the URLs that would be visited and the expected output paths.
-- [x] **Unit Tests**: Test the metadata and content extraction on local HTML snapshots.
-- [x] **Integration Test (User Guide)**: Run the scraper on a small subset (e.g., "Colors" group in User Guide) and verify output. Enable Crawl4AI caching (`cache_mode=CacheMode.ENABLED`) during tests.
-- [x] **Integration Test (API Ref & Learn)**: Run a small subset of the API Reference (e.g. 1 LOM object) and Learn section (e.g. 1 article) to verify their distinct structures, specialized selectors, and knowledge map integration.
-- [x] **Quality Check**: Manually inspect 5 random Markdown files for formatting and frontmatter.
-
-### 5. Full Production Scrape
-- [ ] **Discovery Update (Learn Section)**:
-    - [ ] Refactor `apps/cyclescraper/discovery.py` to scrape the 6 Series landing pages.
-    - [ ] Extract hierarchy: `Series -> Group (H2) -> Article (Title, URL, Blurb)`.
-    - [ ] **Safety Mechanism**: Compare discovered URLs against the original flat `articles` list in `seeds.json`; any missing URLs go into `unmatched_articles`.
-    - [ ] Update `docs/seeds.json` with the new nested structure.
-- [ ] **Processor Update (Learn Section)**:
-    - [ ] Refactor `apps/cyclescraper/processors/learn.py` to handle the 4-level hierarchy.
-    - [ ] Ensure `KnowledgeNode` objects are created for Series and Groups.
-    - [ ] Use pre-scraped titles and blurbs from `seeds.json` for article nodes.
-- [X] **Calibration Pass**: Manually inspect 1 page of each type (User Guide, API Ref, Learn) to verify content extraction.
-    - [X] Confirm "See Also" sections are kept (handled by default markdown generation).
-- [X] **Infrastructure Upgrade**:
-    - [x] Implement `BrowserConfig` with stealth/user-agent settings.
-    - [x] Implement `wait_for` logic in `CrawlerRunConfig` to handle dynamic content.
-    - [X] Refactor `process_api_ref` and `process_user_guide` to use `arun_many` for optimized batch processing (concurrency limits added).
-- [ ] Remove final test limits/guards from all processors.
-- [ ] **Execution**:
-    - [ ] **Section 1: User Guide**: Scrape all pages grouped by the `seeds.json` structure. Generate Markdown files in `data/content/userguide/[group]/[slug].md`.
-    - [ ] **Section 2: API Reference**: Scrape all pages for LOM, JS, and Node using the structured groups and descriptions from `seeds.json`.
-    - [ ] **Section 3: Learn**: Scrape all articles nested within their respective series as defined in `seeds.json`. (No specific extraction strategy applied, using default markdown).
-- [X] **Knowledge Map Consolidation**: Aggregate all results into the final `knowledge-map.json` ensuring no empty `children` fields.
-- [ ] **Validation**: Verify that all `filePath` entries in `knowledge-map.json` exist on disk.
-- [ ] **Completeness Check**: Final inspection of representative Markdown files from each section for formatting and metadata.
+## Verification
+- Run a subset: `python apps/cyclescraper/main.py --section apiref --sub-section nodeformax`.
+- Verify 20 files are created correctly, sequentially, and contain the new structural frontmatter keys.
+- Run `python apps/cyclescraper/build_map.py`.
+- Check that `knowledge-map.json` contains ONLY the `nodeformax` nodes since those are the only files present on disk, successfully proving the decoupled architecture works.
