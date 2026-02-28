@@ -1,0 +1,44 @@
+---
+description: Creating libraries of re-usable code
+group: Max Tutorials
+kind: tutorial
+section: Learn
+sourceUrl: https://docs.cycling74.com/learn/articles/basicchapter15/
+title: Abstractions
+---
+
+Download Series Content and Patchers
+# Tutorial 15: Abstractions
+## Introduction
+In this tutorial, we will extend the concept of encapsulation to include _abstraction_ – the ability to have subpatcher logic live in a separate, reusable file that you can then use inside of any patcher you like. Once saved outside as a separate file, abstractions can be modified to use arguments to make a generic Max patch useful to your specific application. By using abstractions for your most-used programming tasks, you will be able to reuse that logic in future projects without any duplication of work.
+Abstractions are key to supporting your accumulated Max knowledge and experience. The abstraction mechanism can make your subpatches look and act like built-in Max objects, and can also accept arguments to further tune its functionality.
+## An overview
+In our tutorial patcher, you will see that there are three different patches. In this case, each of them do the exact same thing, but at different levels of abstraction. The first section (labeled **1**) is the fully visible patch. If you turn on the [metro](https://docs.cycling74.com/reference/metro/ "metro") with the [toggle](https://docs.cycling74.com/reference/toggle/ "toggle"), we see that the patch tracks your cursor around the screen and draws a scaled version of your mouse movements in the [lcd](https://docs.cycling74.com/reference/lcd/ "lcd") display. We make use of the [bucket](https://docs.cycling74.com/reference/bucket/ "bucket") object in this patch; a simple example of the object is shown on the left next to the [lcd](https://docs.cycling74.com/reference/lcd/ "lcd"). In its most simple form, upon receiving a value, [bucket](https://docs.cycling74.com/reference/bucket/ "bucket") always puts out the last value it received. This makes it useful as a single-event delay object, which we use in the main patcher to construct `linesegment` messages that link the current position of the mouse to its previous position.
+In the case of section **1** , we have a lot of logic on the screen, and it might be useful to encapsulate it into a subpatcher (as we did in the previous tutorial). However, the patcher logic that polls the mouse and scales it based on the size of our screen looks like something that could be useful elsewhere; it would be interesting to have it available for other patches without having to copy and paste from one patch to the next.
+This is where abstractions come into play. An abstraction is a subpatcher that is saved as an external file, and can be used just like a standard Max object. As long as your abstraction can be found in the Max file path, you can type its name into a new object box and it will be loaded directly into your patch. The abstractions used in this tutorial are in the same folder as the patcher accessing them; a library of abstractions can easily be created by placing them in a folder (or a bunch of folders) inside the "patches" folder of your Max installation, or anywhere else Max looks for files.
+## Using a simple abstraction
+The second section of our patch (labeled **2**) shows an abstraction at work. Turn off the [metro](https://docs.cycling74.com/reference/metro/ "metro") for section **1** , hit the space bar (which will `clear` the [lcd](https://docs.cycling74.com/reference/lcd/ "lcd")) and turn on the [metro](https://docs.cycling74.com/reference/metro/ "metro") for section **2**. You will see that the program works exactly as it did before. The “object” called **WTHITM** (for "Where The Heck Is The Mouse?") is actually an _abstraction_ of the scaling logic from section **1**. If you double-click on the **WTHITM** abstraction, a new patcher window will display the contents of this abstraction. Notice that this looks very much like an encapsulation with one exception – you cannot unlock the window to edit the contents. This is because **WTHITM** exists as a separate patcher _file_ living in the same folder as our tutorial patch.
+Abstractions are meant to be shared among several patches, so you would not want to edit the contents in one patcher, since this might break its functionality in other patchers. If you do want to edit an abstraction, you need to open the abstraction file itself.
+While there are several ways to open the abstraction file, we'll mention only two: We can open a **New File Browser** (from the **File** menu) and type WTHITM into to the search window and then double-click on the patcher file that appears in response to our query, or we can click the **Modify read-Only** (pencil) icon in the abstraction toolbar. However you choose to do it, open the **WTHITM** source file. You will again see the abstraction contents, but now you can edit the logic. If you change something and save the file, all patchers that use this abstraction will reflect the changes – even if the patcher is currently loaded. You can see this in action by adding a second inlet to the **WTHITM** abstraction and saving it. The instant that Max sees a new version of the abstraction, it reloads it and adds a new inlet to the **WTHITM** abstraction in your tutorial patch.
+While we have the **WTHITM** patch open, let’s look at the documentation that has been added to the [inlet](https://docs.cycling74.com/reference/inlet/ "inlet") and [outlet](https://docs.cycling74.com/reference/outlet/ "outlet") objects. If you open the inspector for the [inlet](https://docs.cycling74.com/reference/inlet/ "inlet"), you see that there are several different types of built-in documentation. The first is called _Annotation_ ; any text placed in the annotation field will show up in the **Clue** window when you hover over the object. Text placed in the second documentation field, the _Hint_ field, will display in a hint balloon when you hover over the [inlet](https://docs.cycling74.com/reference/inlet/ "inlet") object in a _locked_ patcher. Finally, text placed in the _Comment_ section doesn’t display in the patcher; rather, this text is shown as the _assistance_ text when you hover over the _inlet_ of the "object" in the higher-level patcher. It is wise to document your [inlet](https://docs.cycling74.com/reference/inlet/ "inlet") and [outlet](https://docs.cycling74.com/reference/outlet/ "outlet") objects in often-used abstractions, since it can provide simple but effective documentation for your reusable logic.
+## Using an abstraction with replaceable arguments
+In our **WTHITM** abstraction, there is no logic that needs to know about the higher level patcher. However, what if we wanted the abstraction to properly scale the output based on our [lcd](https://docs.cycling74.com/reference/lcd/ "lcd") object’s size? In this case, we would have to inform the abstraction of the [lcd](https://docs.cycling74.com/reference/lcd/ "lcd") display size, which we can do using _arguments_ to the abstraction.
+Section **3** of the tutorial patch is similar to section **2** , but the abstraction used is called **WTHITM_scaled** , and includes two _arguments_ that represent the horizontal and vertical sizes of the [lcd](https://docs.cycling74.com/reference/lcd/ "lcd") object. If we open and unlock the "WTHITM_scaled.maxpat" patch, we see something very interesting: the multiplication factors use `#1` and `#2` as placeholders for values to be provided as arguments. As you might expect, `#1` is replaced with the value of the first argument, while `#2` is replaced with the value of the second.
+The use of these replaceable values (called _pound-sign arguments_) is key to making abstractions that are flexible and reusable. If you would have “319.” and “239.” hard-coded into the abstraction, you could only use 320x240 [lcd](https://docs.cycling74.com/reference/lcd/ "lcd") objects to display the mouse movements. On the other hand, if you forced the top-level patcher to perform the final scaling (as we did in section **2**), you are forcing the top-level patch to duplicate work that could be easily abstracted into the lower-level patch. By using replaceable values in your abstractions, it makes the high-level patcher as simple as is practical.
+## Summary
+By saving your logic in an abstraction, you can create modules that can be used in future work with little or no additional programming. This allows you to parlay your Max knowledge into more efficient work in the future, and will help you create programming systems that are modular and easier to maintain.
+## See Also
+  * [bucket - An n-stage shift register](https://docs.cycling74.com/reference/bucket/)
+
+
+
+Kind
+    Tutorial 
+
+Category
+    Max 
+
+Author
+    Cycling '74
+* * *
+The content of this article and any downloadable files are available under the following [license](https://docs.cycling74.com/learn/license/).

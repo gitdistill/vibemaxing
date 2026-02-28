@@ -1,6 +1,5 @@
 ---
-description: Working with the format palette to define the appearance of the current
-  patcher, and to create new named styles
+description: Working with the format palette to define the appearance of the current patcher, and to create new named styles
 group: Colors
 kind: guide
 section: User Guide

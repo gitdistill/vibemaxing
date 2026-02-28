@@ -1,0 +1,75 @@
+---
+description: Using variable-type filters
+group: MSP Tutorials
+kind: tutorial
+section: Learn
+sourceUrl: https://docs.cycling74.com/learn/articles/08_filterchapter02/
+title: Variable-type filters
+---
+
+Download Series Content and Patchers
+# Filter Tutorial 2: Variable Type Filters
+In the last tutorial we introduced some basic filters in MSP. This tutorial looks at two new filter objects: [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~"), which can create any kind of simple filter, and [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~"), which can create and manage multiple independent filters in a single object. We'll also look at a user interface object that helps us edit these filters in an intuitive way.
+## Biquadratic filters
+  * Look at the tutorial patcher. Just as in the last tutorial, area `1` consists of a looping playback system that plays a [buffer~](https://docs.cycling74.com/reference/buffer~/ "buffer~") using the [groove~](https://docs.cycling74.com/reference/groove~/ "groove~") object. Turn on the audio, turn up the [number](https://docs.cycling74.com/reference/number/ "number") box labeled 'Dry Volume', click on a note in the [kslider](https://docs.cycling74.com/reference/kslider/ "kslider"), and make sure you can hear some sound. Note that the original has three distinct spectral areas- a deep bass and drum on the eighth notes, brass accents on the downbeat, and bright harmonics of both brass and strings.
+
+
+Take a look at area `2` of the tutorial. The sound from the [groove~](https://docs.cycling74.com/reference/groove~/ "groove~") object feeds into an object called [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~"). This is a general purpose filter that can be set up for practically any configuration just by adjusting a set of parameters called _coefficients_. (Details below.) Turn down the 'Dry Volume' and turn up the [number](https://docs.cycling74.com/reference/number/ "number") box labeled 'Biquad Volume'. Click on the different buttons in the [preset](https://docs.cycling74.com/reference/preset/ "preset") object at the top of patcher area `2` and listen to the changes in the sound. The filter type and Critical parameters are shown just below the preset object along with a graphic display of the frequency response. 
+  * The `lowpass` setting removes the highs from the percussion and takes the brightness from the brass. The bass line is now the loudest part of the sound.
+  * The `highpass` setting removes the bass entirely and leaves only a ghost of the brass. The high partials of the bass and percussion wind up sounding like maracas.
+  * The `bandpass` setting is mostly brass and middle strings.
+  * The `bandstop` (notch) setting leaves a hole in the middle. (It's tuned to G in the treble clef.)
+  * The `peaknotch` setting boosts material right at 500 Hz (treble clef C), bringing out the fundamantals of the brass and high strings. Since it does not remove anything, this is more of an _equalization_ than a filter setting. We will see the notch feature in the next section.
+  * The `lowshelf` setting is another type of equalization. Instead of rejecting the lowest frequencies entirely, as the highpass does, the range below the cutoff frequency can be either boosted or reduced, and everything in the active range is affected the same amount (with an octave or so of transition). The setting here is a typical hi-fi bass boost.
+  * Not surprisingly, the `highshelf` is the complement to the lowshelf. Both are key parts of standard equalizers.
+  * The `resonant` setting is a tight bandpass filter. Graphic equalizers are made of a dozen or more resonant filters, each assigned to cover an octave or less of the spectrum.
+  * The `allpass` setting sounds deceptively normal. The frequency response is flat, but the phase is changed, which becomes audible when you mix the allpass and dry signals. The phase change is 90° at the center frequency.
+
+
+## The [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object
+The object that shows the frequency response of the [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") object patcher is called a [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~"). It allows us to graphically set the parameters of a [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") filter with the mouse. Left-right motion sets the frequency or bandwidth of the filter and up-down motion sets the gain. In addition, you can send messages to a [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object to set its parameters, as well as change what kind of filter it shows. Whenever you make a change to the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object, it outputs a set of coefficients as a Max list which the [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") object interprets to perform the equivalent filter equation. The [message](https://docs.cycling74.com/reference/message/ "message") box below the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") in the patcher shows us these coefficients.
+  * Using the [umenu](https://docs.cycling74.com/reference/umenu/ "umenu") object, select a `lowpass` filter from the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~"). Using the mouse, click and drag in the boxed region in the middle of the filter response. You can adjust the cutoff frequency of the filter as well as its overall gain. Click on the edges of the box and drag inward and outward. This allows you to set the Q or resonance of the filter. The narrower the box, the higher ther resonance. The values you are creating (in terms of cutoff frequency, gain, and slope) can be seen in the [number box](https://docs.cycling74.com/reference/number/) objects to the right of the object.
+  * Acclimatize yourself to the user interface of the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object by selecting different filter types from the [umenu](https://docs.cycling74.com/reference/umenu/ "umenu") and dragging around to play with settings. Note that the gain affects everything on some types of filter and the stopband on others. You will also find that you can make some filters whistle or resonate with high Q settings. (Be careful here—some combinations of high gain and high Q can produce speaker shattering noise.) 
+  * One last thing to try. Set `allpass` mode, turn the dry volume up to match the biquad volume and quickly move the center frequency around. Can you hear the effect of the phase chages in the mixed signal?
+
+
+Note that the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") is connected to the second inlet of [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~"). If we unlock the patcher and open the [Inspector](https://docs.cycling74.com/userguide/inspector/) for the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object, we can edit the specific types of filters that it generates coefficients for; in addition, we could change how many filters are maintained and some features of the user interface. By the opposite token, if you'd rather work with filters without a user interface, the MSP object [filtercoeff~](https://docs.cycling74.com/reference/filtercoeff~/ "filtercoeff~") takes the same settings as the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object without a graphical component, allowing you to feed coefficients to a [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") object without having to graph the filter yourself.
+## Filters in series: [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~")
+A [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") filter is extremely versatile, but it is ultimately limited in one respect—how much filtering you get. If you look at the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") display you will see that the ultimate slope (out of the box area) is fairly gentle: 12 dB per octave for low and high pass and only 6 dB per octave on the bandpass. If we want more intense filtering, we need to run the signal through through more filters. In addition, we often want a more complex response, with independent control at several frequencies. You can easily chain [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") objects (or other filters) by hand, or you can use a single object that creates and manages up to 24 different filters arranged in series: [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~").
+  * Turn down the 'Biquad Volume' and turn your attention to area `3` of the tutorial patcher. Turn up the 'Cascade Volume' [number](https://docs.cycling74.com/reference/number/ "number") box and click on the different selections in the [preset](https://docs.cycling74.com/reference/preset/ "preset") object. Notice how the sound changes. Using the [number](https://docs.cycling74.com/reference/number/ "number") box labeled 'Select a filter', send the message `selectfilt 0` to the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") in this part of the patcher. Change the [number](https://docs.cycling74.com/reference/number/ "number") box to `1`, `2`, `3`, and `4`, and see how different component filters within the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") highlight themselves. The settings for each of these filters also comes out of the object, setting the[number box](https://docs.cycling74.com/reference/number/) objects to the right.
+
+
+As we can see, the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object is capable of maintaining the state of more than one filter and showing us what the frequency response of these filters would be if they were connected in series. The [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~") object takes a signal in its left inlet and a set of coefficients in its right, interpreting each incoming list as sets of 5 values, one set for each filter.
+  * Pick a [preset](https://docs.cycling74.com/reference/preset/ "preset") setting you like for the [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~") object. Select a filter to edit with the `selectfilt` message, and drag your mouse in the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") to edit the filter. Notice how the filters interact with one another. For example, a lowpass filter set at the same frequency as a highpass filter will cancel one another out. Similarly, a bandpass filter can sit at the 'slope' of a lowpass filter to simulate a resonation point.
+
+
+If we unlock the patcher and open the [Inspector](https://docs.cycling74.com/userguide/inspector/) for the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object, we can edit the specific types of filters that it generates coefficients for; in addition, we could change how many filters are maintained and some features of the user interface. By the opposite token, if you'd rather work with filters without a user interface, the MSP object [filtercoeff~](https://docs.cycling74.com/reference/filtercoeff~/ "filtercoeff~") takes the same settings as the [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object without a graphical component, allowing you to feed coefficients to a [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") or [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~") object without having to graph the filter yourself.
+## Under the hood of [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~")
+In the last tutorial, we discussed how filters could be expressed as equations, e.g.
+yn = 0.5xn + 0.5yn-1
+The `0.5` values in the equation above set the respective gains of the different samples used in the filter. If we wanted a more flexible filter, we could generalize this filter so that those numbers are variable, e.g.:
+yn = Axn + Byn-1
+By modifying the values of `A` and `B`, we could control the frequency response of this filter. While the math behind this operation is beyond the scope of this tutorial, it's generally true that the more energy given to the delayed output sample (the yn-1term), the smoother the output and the more the high frequencies are supressed.
+A fairly standard tactic in digital filter design is to create a filter equation that can perform any kind of standard filtering operation (lowpass, bandpass, etc.) on an input signal. The most common implementation of this is called the _biquadratic filter equation_ (or _biquad_). It consists of the following equation:
+yn = Axn + Bxn-1 + Cxn-2 - Dyn-1 - Eyn-2
+This equation uses the incoming sample (x), the _last two_ incoming samples, and the last two _outgoing_ samples (y) to generate its filter. (Another term for a biquadratic filter is a _two-pole_ , _two-zero_ filter, because it has four delay coefficients to affect its behavior.) By adjusting the five _coefficients_ (A, B, C, D, E), you can generate all manner of filters.
+## Summary
+The [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") object implements a generic filter equation that can model most types of simple filters. Because it expects coefficients for the filter equation, its often useful to use it in conjunction with another object that will compute these numbers. The [filtergraph~](https://docs.cycling74.com/reference/filtergraph~/ "filtergraph~") object is a user-interface object that lets you visually construct simple and complex filters of many types; the [filtercoeff~](https://docs.cycling74.com/reference/filtercoeff~/ "filtercoeff~") object will accomplish the same thing, without the user interface. The [cascade~](https://docs.cycling74.com/reference/cascade~/ "cascade~") object acts as a group of [biquad~](https://docs.cycling74.com/reference/biquad~/ "biquad~") objects arranged in _series_ , and allows you to easily construct compound filter curves in your patcher.
+## See Also
+  * [biquad~ - Two-pole, two-zero filter](https://docs.cycling74.com/reference/biquad~/)
+  * [filtergraph~ - Graphical filter editor](https://docs.cycling74.com/reference/filtergraph~/)
+  * [cascade~ - Cascaded series of biquad filters](https://docs.cycling74.com/reference/cascade~/)
+  * [filtercoeff~ - Signal-rate filter coefficient generator](https://docs.cycling74.com/reference/filtercoeff~/)
+
+
+
+Kind
+    Tutorial 
+
+Categories
+    Audio     Synthesis 
+
+Author
+    Cycling '74
+* * *
+The content of this article and any downloadable files are available under the following [license](https://docs.cycling74.com/learn/license/).

@@ -1,6 +1,5 @@
 ---
-description: Special coloring for different parts of an object box should make it
-  easier to identify the functionality of a patcher
+description: Special coloring for different parts of an object box should make it easier to identify the functionality of a patcher
 group: Colors
 kind: guide
 section: User Guide

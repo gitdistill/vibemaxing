@@ -1172,57 +1172,57 @@
                                     {
                                         "title": "Geometry Basics",
                                         "url": "https://docs.cycling74.com/learn/articles/geom-01/",
-                                        "description": "Introduction to Jitter Geometry objects"
+                                        "description": "Working with the new Jitter Geometry objects in Max 9"
                                     },
                                     {
-                                        "title": "Transforming Geometries",
+                                        "title": "Manipulating Jitter Geometries",
                                         "url": "https://docs.cycling74.com/learn/articles/geom-02/",
-                                        "description": "Transforming half-edge geometries with Jitter geometry objects"
+                                        "description": "Transforming half-edge geometries with Jitter geometry objects. Generating normals and texture coordinates."
                                     },
                                     {
-                                        "title": "Instancing and Multiplying",
+                                        "title": "Meshing and Multiplying",
                                         "url": "https://docs.cycling74.com/learn/articles/geom-03/",
-                                        "description": "Using jit.geom.points in conjunction with jit.gl.multiple to instance multiple shapes"
+                                        "description": "Using jit.geom.topoints in conjunction with jit.gl.multiple to instance multiple shapes."
                                     },
                                     {
-                                        "title": "Javascript and Geometries",
+                                        "title": "JavaScript and the Half-edge Structure",
                                         "url": "https://docs.cycling74.com/learn/articles/geom-04/",
-                                        "description": "Looking deeper at the half-edge structure, and using JavaScript with Jitter Geometry"
+                                        "description": "Looking deeper at the half-edge structure, and using JavaScript with Jitter Geometry."
                                     },
                                     {
                                         "title": "Contours",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-01/",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-contours/",
                                         "description": "Example of how to make a Jitter geometry look hand-drawn"
                                     },
                                     {
                                         "title": "Differential Growth",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-02/",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-differential.growth/",
                                         "description": "Using Jitter geometry and JavaScript to implement a differential growth algorithm"
                                     },
                                     {
                                         "title": "Fractals",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-03/",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-fractals/",
                                         "description": "Examples of how to create fractal geometries using jit.geom + JavaScript"
                                     },
                                     {
                                         "title": "Open Mesh",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-open.mesh/",
                                         "description": "How to find the edges at the borders of an open mesh"
                                     },
                                     {
                                         "title": "Point Cloud",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
-                                        "description": "Examples of how to generate a point cloud using jit.geom"
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-point-cloud/",
+                                        "description": "Examples of how to generate a point cloud using jit.geom."
                                     },
                                     {
                                         "title": "Thickness",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-thickness/",
                                         "description": "Example of how to extrude triangles to create volumes"
                                     },
                                     {
                                         "title": "Twisting",
-                                        "url": "https://docs.cycling74.com/learn/articles/geom-04/",
-                                        "description": "Examples of what you can do with a Jitter geometry when you twist it"
+                                        "url": "https://docs.cycling74.com/learn/articles/geom-twisting/",
+                                        "description": "Examples of what you can do with a Jitter geometry when you twist it."
                                     }
                                 ]
                             }

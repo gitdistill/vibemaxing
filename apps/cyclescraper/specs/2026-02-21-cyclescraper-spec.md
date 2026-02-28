@@ -1,3 +1,5 @@
+**!!IMPORTANT!!** Now that the scraper has been built these specs are no longer 100% accurate but contain some useful context. So leaving here for reference only.
+
 # CycleScraper Design Document
 
 ## 1. Overview

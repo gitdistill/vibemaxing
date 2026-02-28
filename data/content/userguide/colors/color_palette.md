@@ -1,6 +1,5 @@
 ---
-description: How to select and edit colors in Max, and the difference between fixed
-  and dynamic colors
+description: How to select and edit colors in Max, and the difference between fixed and dynamic colors
 group: Colors
 kind: guide
 section: User Guide

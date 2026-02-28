@@ -1,6 +1,5 @@
 ---
-description: Styling and theming the whole Max application, including the appearance
-  of the application UI
+description: Styling and theming the whole Max application, including the appearance of the application UI
 group: Colors
 kind: guide
 section: User Guide

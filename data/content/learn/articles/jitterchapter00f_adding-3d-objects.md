@@ -1,0 +1,45 @@
+---
+description: 3 dimensional programming
+group: Jitter Tutorials
+kind: tutorial
+section: Learn
+sourceUrl: https://docs.cycling74.com/learn/articles/jitterchapter00f_adding-3d-objects/
+title: Adding 3D Objects
+---
+
+Download Series Content and Patchers
+# Video and Graphics Tutorial 4: Adding 3D Objects
+## Intro
+The capabilities of Jitter go far beyond simple playback and manipulation of video - it is also a platform for 3D graphics and has a includes a full OpenGL engine (OpenGL is a cross-platform system for drawing and manipulating hardware-accelerated graphics). It’s important to note that OpenGL makes use of the GPU hardware on your computer, which is highly optimized for graphics. In this lesson, we will learn the basics of working with 3D shapes and models and learn how to adjust their surface materials.
+## Setup
+Start by adding a named [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") object to your patch (we'll name ours `jit.world 3D`) with a [toggle](https://docs.cycling74.com/reference/toggle/ "toggle") connected to it. When you click on the toggle to turn it on, any OpenGL objects we add to our patch will get drawn by [jit.world.](https://docs.cycling74.com/reference/jit.world. "jit.world.")
+![](https://docs.cycling74.com/images/e778a7d0a0d9e79b4575df8f65047a92_80.webp)
+Context Naming: It’s not absolutely necessary to use named window contexts for OpenGL drawing (just as it's not absolutely necessary to name a [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") when working with video). As you move into more advanced OpenGL usage, being able to specify and keep track of which context an object draws into becomes more important - getting into the habit of doing this now will help you later.
+## Geometry using [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape")
+There are many ways to create and display 3D geometry in Jitter. We’re going to start with a [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object. As soon as you add a [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object to your patch, you should see a flat grey circle displayed in your window. In order to adjust the size (scale) of the object so it fits on screen, let’s create an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") for the _scale_ attribute and adjust the scale of the x, y and z dimensions. Try setting them all to about .5
+Tip: connecting a [flonum](https://docs.cycling74.com/reference/flonum/ "flonum") object to the inlet of the [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") will let us adjust all three values at once.
+![](https://docs.cycling74.com/images/fdc8c6b6f1f751bc5ba5b8532cd228b5_574.webp)
+In its default state, our shape looks very grey and not very 3-dimensional. We’ll start by adding some color to the object. Create an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") for the _color_ attribute of [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape"). This will let you set the color using the color picker built into the [attrui](https://docs.cycling74.com/reference/attrui/ "attrui"). While this is very handy for quickly choosing a color, it’s also important to get familiar with the way that color values in OpenGL objects work. To do this, create a [pak](https://docs.cycling74.com/reference/pak/ "pak") object with 4 float inputs (**pak 0. 0. 0. 1.**), add 4 [flonum](https://docs.cycling74.com/reference/flonum/ "flonum") objects, and connect their outlets to the [pak](https://docs.cycling74.com/reference/pak/ "pak") object inlets. Connect the [pak](https://docs.cycling74.com/reference/pak/ "pak") object's outlet to the _color_[attrui](https://docs.cycling74.com/reference/attrui/ "attrui") and try adjusting the float values between 0 and 1. OpenGL colors are specified as four values: Red, Green, Blue, and Alpha (opacity). You’ll notice that the Alpha value has no apparent effect (this is because the _blend_enable_ attribute is not turned on by default). To add lighting, try adding [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") objects the _lighting_enable_ and _smooth_shading_ attributes and toggle those on. To further customize the look of our 3D object, add a couple of additional [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") objects to the [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object. 
+First, add an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") for the _position_ attribute. In OpenGL, we define space using Cartesian coordinates x, y and z for width, height, and depth. By the way - the center of our virtual world is (0. 0. 0.). Try moving your object object around the screen.
+Next, add an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") for the _shape_ attribute and explore the basic geometric figures. 
+Finally, let’s add an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") for one for the _rotatexyz_ attribute that will let us rotate our object. We can set the degree of rotation on each axis using values between between 0. and 360 degrees.
+A typical OpenGL scene will likely contain many objects, each with their own parameters. Try copying and pasting the [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") and the associated [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") objects you've created, and then change settings for each of them individually to make them unique. 
+![](https://docs.cycling74.com/images/09b0b75b4802aac7e5b8c04bae508340_425.webp)
+## Add a 3D Model file
+While you can do a lot with simple geometry, Jitter is also capable of handling complex 3D models created using third-party software. Create a [jit.gl.model](https://docs.cycling74.com/reference/jit.gl.model "jit.gl.model") object, create a [message](https://docs.cycling74.com/reference/message/ "message") box that contains the message `read duck.dae` and connect the outlet of the [message](https://docs.cycling74.com/reference/message/ "message") box to the inlet of the [jit.gl.model](https://docs.cycling74.com/reference/jit.gl.model "jit.gl.model") object.
+![](https://docs.cycling74.com/images/680e48dcd473230b56614ec81d2e3a5f_106.webp)
+When you click on the message, it loads the object and shows it in our window, including any texture that was made with the model. You can use the same attributes you used with the [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") to scale, rotate and position the duck within your scene. 
+![](https://docs.cycling74.com/images/eeb262a4c54b04ac0175bf9e602e58bd_415.webp)
+## Using the mouse to manipulate objects in a scene
+It's often helpful to have a way to quickly move objects around in OpenGL scenes. To do this, create a [message](https://docs.cycling74.com/reference/message/ "message") box that contains the message `auto_handle $1` and connect its outlet to the inlet of the [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") object. Add a [toggle](https://docs.cycling74.com/reference/toggle/ "toggle") running into the left inlet of your [message](https://docs.cycling74.com/reference/message/ "message") box, then lock the patch and turn click on the toggle to turn it on. 
+![](https://docs.cycling74.com/images/2b6e0896cf783aff8da3f4e934dcba86_161.webp) Enabling the _auto_handle_ attribute lets you adjust the position and orientation of an object using your mouse. Bring your OpenGL window to bring it to the front. Now, clicking on an object and dragging will now allow you to adjust the rotation; holding the Command key (Control on windows) and clicking/dragging adjusts the x/y position; holding Alt/Option and dragging up and down adjusts the z position.  ![](https://docs.cycling74.com/images/f9dedf1332ed6107abcf186139b911da_265.webp)
+## Explore Further
+As we learned in previous chapters, all Jitter attributes can be controlled with messages. Try hooking things like the scale and position of your 3D objects to other data sources - number data from MIDI controllers or the [random](https://docs.cycling74.com/reference/random/ "random") object, audio amplitude (using [peakamp~](https://docs.cycling74.com/reference/peakamp~/ "peakamp~")), etc... For more fine-tuned and high quality control of lighting and color, look at connecting a [jit.gl.material](https://docs.cycling74.com/reference/jit.gl.material "jit.gl.material") object to your OpenGL objects and a [jit.gl.light](https://docs.cycling74.com/reference/jit.gl.light "jit.gl.light") object to your scene. There are a number of other Jitter GL objects to explore, as different sorts of geometry. 
+
+Kind
+    Tutorial 
+
+Author
+    Cycling '74
+* * *
+The content of this article and any downloadable files are available under the following [license](https://docs.cycling74.com/learn/license/).

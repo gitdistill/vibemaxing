@@ -1,0 +1,56 @@
+---
+description: your screen is a canvas
+group: Jitter Tutorials
+kind: tutorial
+section: Learn
+sourceUrl: https://docs.cycling74.com/learn/articles/jitterchapter00l_composing-the-screen/
+title: Composing the screen
+---
+
+Download Series Content and Patchers
+# Video and Graphics Tutorial 10: Composing the Screen
+## Intro
+We’ll look at some new ways of working with with video and geometry together in the render world in this tutorial. From layering and compositing to layout and composition, OpenGL lets us create flexible and dynamic scenes.
+## Setup
+Open the patch. You’ll see we have the typical [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") (with the name `thescreen`, which we will use later) and a few [jit.movie](https://docs.cycling74.com/reference/jit.movie "jit.movie") objects with their _output_texture_ attributes enabled. Instead of patching these straight into [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") as we have been doing, we’ll use each of these in a different way to explore some more possbilities. Turn on [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") and let’s get started.
+## Make Some Layers
+First add a new object, **jit.gl.videoplane @depth_enable 0 @blend_enable 1**. Add [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") objects for the _scale_ , _position_ and _rotatexyz_ attributes and connect them, then patch the left-most video into it.
+![](https://docs.cycling74.com/images/7d275ece8ec1a52c0152dc832974e6eb_315.webp)
+You’ll see it appear in the GL window just as though you had patched into [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world"). The [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") actually has an embedded videoplane, but this method gives us some more flexibility. Move the plane around using the _position_ and _rotatexyz_ attributes and rescale it to get a sense of how it works in GL space. Now, duplicate your [jit.gl.videoplane](https://docs.cycling74.com/reference/jit.gl.videoplane "jit.gl.videoplane") setup and connect the second [jit.movie](https://docs.cycling74.com/reference/jit.movie "jit.movie") object to it. You will probably notice that the two images overlap, with one obscuring the other. Add a `layer $1`[message](https://docs.cycling74.com/reference/message/ "message") box/ [toggle](https://docs.cycling74.com/reference/toggle/ "toggle") pair or an [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") to each [jit.gl.videoplane](https://docs.cycling74.com/reference/jit.gl.videoplane "jit.gl.videoplane") object to control the layering behavior. Higher layers are rendered in front (on top) of lower layers. You can now control which image sits above the other. 
+![](https://docs.cycling74.com/images/af6932c0f313d7e21092ea3aca6c0957_658.webp)
+Next let’s add blending. The _blend_enable_ attribute allows blending across layers. The default blend mode will allow the alpha channel information to perform the blend. In this patch we will use a [jit.gl.pix](https://docs.cycling74.com/reference/jit.gl.pix "jit.gl.pix") object that lets us substitute any plane in our texture for the alpha channel. Add the **jit.gl.pix @gen alphy** in between the [jit.movie](https://docs.cycling74.com/reference/jit.movie "jit.movie") and the [jit.gl.videoplane](https://docs.cycling74.com/reference/jit.gl.videoplane "jit.gl.videoplane"). Using the [umenu](https://docs.cycling74.com/reference/umenu/ "umenu") / [message](https://docs.cycling74.com/reference/message/ "message") box pair to set the _plane_ parameter selects which plane will act as the alpha - red, green, blue, alpha or luminance (the average of R, G and B). Similarly, the _amt_ parameter adjusts the overall transparency of the resulting alpha layer. Add a copy of the [jit.gl.pix](https://docs.cycling74.com/reference/jit.gl.pix "jit.gl.pix") to the second [jit.gl.videoplane](https://docs.cycling74.com/reference/jit.gl.videoplane "jit.gl.videoplane") and experiment with blending the two images.
+![](https://docs.cycling74.com/images/884ef1fd82fc604f11b43fe4b3e1889e_314.webp)
+An OpenGL scene can have any number of video and geometry elements together in a scene. Add a [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object with @depth_enable 0 @blend_enable 1 and @lighting_enable 1. Now give it attruis for scale, position, rotatexyz, and layer, just like you did for the videoplanes (you can just copy/paste them). 
+Now let’s add a **jit.gl.texture @name alphy** object under the third movie, with the [jit.gl.pix](https://docs.cycling74.com/reference/jit.gl.pix "jit.gl.pix") alpha patch between them. The _@name_ attribute to `alphy` will allow us to call on the texture in a moment. 
+![](https://docs.cycling74.com/images/db5e45945216823997e6a9fafedfe495_280.webp)
+Create a [message](https://docs.cycling74.com/reference/message/ "message") box that contains the message `texture alphy` and connect it to the [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object. When you click it, the movie going into the [jit.gl.texture](https://docs.cycling74.com/reference/jit.gl.texture "jit.gl.texture") will texture the surface of our geometry. To remove the texture, send your [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") object the message `texture none`. If you know you want to keep a texture attached to your shape, simply patch the output of the texture source to the GL object you wish to texture.
+![](https://docs.cycling74.com/images/fed0184ada3a0da545a7ffffdd28b0e0_278.webp)
+Using the alpha controls and layer attributes, you can now compose and layer the screen however you want.
+  * [Depth Testing vs Layering](https://docs.cycling74.com/userguide/jitter/depth_layer_blend/)
+
+
+A common element to any 3D render space that we have not looked at yet is the camera. Add a [jit.gl.camera](https://docs.cycling74.com/reference/jit.gl.camera "jit.gl.camera") object with [attrui](https://docs.cycling74.com/reference/attrui/ "attrui") objects for the _position_ , _rotatexyz_ , _lookat_ , and _locklook_ attributes. 
+![](https://docs.cycling74.com/images/08788c080738aa6d8cdb1a525e5d7490_268.webp)
+There are a lot of ways to create sophisticated camera movement, but for now, just try exploring these parameters. The _locklook_ attribute allows you to move the camera while having it focus on a particular point in space no matter where it moves. Notice that the rotation is automatically adjusted when you change the position in this mode. The _lookat_ parameter determines where the camera is focused in virtual space. If you want to remove blending and have layers determined based on depth, set _@depth_enable_ to 1.
+Finally, add an _enable_ attribute to your objects to turn them on (1) or off (0).
+## Using [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") and [jit.gl.cornerpin](https://docs.cycling74.com/reference/jit.gl.cornerpin "jit.gl.cornerpin")
+Now that we have composed a scene, let’s look at an object called [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node"), which allows us to render the entire scene as a texture which can then be processed or reused in a number of ways. One way to think of [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") is that it’s like a small [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") inside of your [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world"), with the ability to add "child" objects and even more [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") objects.
+Make an object called **jit.gl.node @capture 1**. Now connect its center outlet to the inlets of our [jit.gl.videoplane](https://docs.cycling74.com/reference/jit.gl.videoplane "jit.gl.videoplane") and [jit.gl.gridshape](https://docs.cycling74.com/reference/jit.gl.gridshape "jit.gl.gridshape") objects. Don’t worry if your objects seem to disappear.
+![](https://docs.cycling74.com/images/2db802f33812d98db37a0af452dec44a_817.webp)
+Objects connected to the middle outlet of [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") are all rendered in the node instead of directly to the [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world"). The _@capture 1_ attribute causes [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") to output the internal render as a texture instead of displaying it in the master context. 
+Now add a **jit.gl.cornerpin thescreen** object and connect the left outlet of [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") to it. You’ll see that your scene shows up again and has 4 targets at the corners of the window. Click and drag a target to adjust the corners, in turn skewing the image to fit in the resulting map. You can hide the corners using the _drawcorners_ attribute. 
+![](https://docs.cycling74.com/images/58b1c7ca2e09f2ea42a7049051653982_237.webp)
+The [jit.gl.cornerpin](https://docs.cycling74.com/reference/jit.gl.cornerpin "jit.gl.cornerpin") object is ideal for mapping an input texture to an output screen of unconventional dimensions. 
+## Background color
+You may have noticed that the [jit.window](https://docs.cycling74.com/reference/jit.window "jit.window") has a dark grey background. In many cases you will want to adjust this. You can do so by using the [jit.world](https://docs.cycling74.com/reference/jit.world "jit.world") attribute _erase_color_. Adjusting the RGBA values will adjust the background color. Try sending the message `erase_color 0. 0. 0. 1.` to get a black background, or choose a value from 0. - 1. for each of the four values in the list to get any colored background you desire. Note that if you set your alpha value low, you will be able to get a smearing effect when you move objects around. The _erase_color_ attribute is used to determine how much of a given color is removed from the render scene each frame. 
+## Explore Further
+Try creating images (PNG) and videos (compress as Animation, ProRes 4444, etc.) with transparent backgrounds to import into Jitter and use as practice layers with blending enabled. OpenGL objects also have a “blend” attribute that gives even more control over how layers draw, besides the default alphablend mode. Try changing the value of this attribute for more image effects.
+As [jit.gl.node](https://docs.cycling74.com/reference/jit.gl.node "jit.gl.node") allows for capturing scenes to a texture, you can also process this texture like any other image. Try adding [jit.gl.slab](https://docs.cycling74.com/reference/jit.gl.slab "jit.gl.slab") and [jit.gl.pix](https://docs.cycling74.com/reference/jit.gl.pix "jit.gl.pix") effects chains after the node output. This opens up the ability to do lots of post-render effects like blurs and glows or image control. 
+
+Kind
+    Tutorial 
+
+Author
+    Cycling '74
+* * *
+The content of this article and any downloadable files are available under the following [license](https://docs.cycling74.com/learn/license/).

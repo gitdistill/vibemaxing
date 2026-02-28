@@ -1,6 +1,5 @@
 ---
-description: Post to the Max console. Setting the last argument to a value of maxAPI.POST_LEVELS
-  allows control of the log level
+description: Post to the Max console. Setting the last argument to a value of maxAPI.POST_LEVELS allows control of the log level
 group: nodeformax
 kind: api-page
 section: API Reference

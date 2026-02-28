@@ -1,6 +1,5 @@
 ---
-description: Dynamic colors automatically follow the active Max theme, so your interface
-  can update its colors in different contexts.
+description: Dynamic colors automatically follow the active Max theme, so your interface can update its colors in different contexts.
 group: Colors
 kind: guide
 section: User Guide

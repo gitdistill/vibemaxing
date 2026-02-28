@@ -1,6 +1,5 @@
 ---
-description: Define the appearance of objects, patch cords, and the patchre itself,
-  then save that configuration as a named style
+description: Define the appearance of objects, patch cords, and the patchre itself, then save that configuration as a named style
 group: Colors
 kind: guide
 section: User Guide
