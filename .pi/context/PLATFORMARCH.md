@@ -28,33 +28,42 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **Structure:** Contains `src/` (Python source) and `dist/` (Generated .maxpat). Configuration via `.vibe.json`.
 
 ## 2. Documentation Retrieval Stack
-Instead of a custom scraping stack, we utilize **Context7 MCP**:
-*   **Connection:** Bridge extension located at `.pi/extensions/context7/`.
-*   **Source:** Cycling '74 Documentation (Library ID: `/websites/cycling74`).
-*   **Tools:**
-    *   `context7_resolve_library_id`: To find library IDs.
-    *   `context7_query_docs`: For specific object/API retrieval.
+
+### Layer 1: CycleScraper (apps/cyclescraper/)
+*   **Role:** Specialized documentation extraction for Cycling '74's Next.js SPA.
+*   **Engine:** Crawl4AI with a sequential crawling strategy to prevent state leakage.
+*   **Output:** Clean Markdown with YAML frontmatter in `data/content/`.
+
+### Layer 2: Knowledge Map
+*   **Tool:** `apps/cyclescraper/build_map.py`
+*   **Role:** Aggregates scraped files into a structured `knowledge-map.json` using `docs/seeds.json` as the source of truth for hierarchy and metadata.
+*   **Purpose:** Provides a unified context for agents.
+
+### Layer 3: Context7 Pi Extension
+TBD
 
 ## 3. Tech Stack & Constraints
 
 ### Global Constraints
 *   **Local-First Development:** Development of Max patches and M4L devices happens locally.
-*   **Lazy Intelligence:** Agents must prioritize local metadata (in `apps/maxpatcher` or `projects/`) and only query Context7 when encountering "Unknown Objects" or high-risk logical operations.
-*   **Agentic Intelligence:** Rely on Context7 for high-fidelity technical specs instead of local scraping.
+*   **Lazy Intelligence:** Agents must prioritize local metadata and only query external documentation when encountering "Unknown Objects".
 
 ### Technology Decisions
 *   **Orchestration:** `Pi` (Node.js/Bun).
-*   **App Stacks:** Node.js, Python, or MaxPyLang.
-*   **Knowledge Layer:** Context7 MCP.
+*   **App Stacks:** Node.js, Python (Crawl4AI/Pydantic), or MaxPyLang.
+*   **Knowledge Layer:** Scraped Markdown + Knowledge Map JSON.
 
 ## 4. Directory Structure
 ```
 /
 ├── .pi/                # Agentic Layer (Prompts, Skills, Context, Extensions)
-│   ├── extensions/
-│   │   └── context7/   # Context7 MCP Bridge
 ├── apps/               # Application Layer
+│   ├── cyclescraper/   # Documentation Scraping Engine
 │   ├── maxpatcher/
 │   └── maxprober/
+├── data/               # Persistent Data
+│   ├── content/        # Scraped Documentation (Markdown)
+│   └── knowledge-map.json
+├── docs/               # Specifications and Seed Data
 └── AGENTS.md           # Entry point / Meta-instructions
 ```
