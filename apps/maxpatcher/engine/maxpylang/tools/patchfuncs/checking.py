@@ -16,8 +16,8 @@ def check(self, *flags):
     """
     This method checks the patch for linked abstractions, unknown objects, and linked/unlinked js objects.
 
-    :param \*flags: takes keywords ``'abstractions'``, ``'unknowns'``, ``'js'``. If no flags given, checks all three categories.
-    :type \*flags: str, optional
+    :param \\*flags: takes keywords ``'abstractions'``, ``'unknowns'``, ``'js'``. If no flags given, checks all three categories.
+    :type \\*flags: str, optional
 
     :returns: outputs a list of all the objects that fall under the specified categories, \
     identified by object id, name, text, and linked file (if applicable).
