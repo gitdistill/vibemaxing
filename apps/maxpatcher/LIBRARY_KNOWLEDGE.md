@@ -46,29 +46,14 @@ This document tracks technical findings, patterns, and constraints discovered wh
 - **Inspection:** `patch.inspect()` provides a way to read current object states, positions, and connections.
 - **Patcher Dictionary:** The full patcher dictionary is accessible via the `patch.dict` property. This dictionary mirrors the final `.maxpat` JSON structure. For example, the patcher's dimensions are at `patch.dict['patcher']['rect']`.
 
-## Intelligence Integration (Context7)
-
-To augment MaxPyLang's lack of object awareness, we use **Context7** to:
-1.  **Validate Signatures:** Query the number of inlets/outlets before generating `patch.connect` calls, especially for objects not in MaxPyLang's `known_objs`.
-2.  **Discover Attributes:** Find valid `@` attributes for specific objects to ensure generated creation strings or `extra_attribs` are valid.
-3.  **Check Types:** Verify if a connection is Signal (`~`) or Message based.
-4.  **Fill Metadata Gaps:** Automatically trigger lookups when `patch.get_unknowns()` identifies unsupported objects.
-
-## Intelligence Integration (Context7)
-
-To augment MaxPyLang's lack of object awareness, we use **Context7** to:
-1.  **Validate Signatures:** Query the number of inlets/outlets before generating `patch.connect` calls.
-2.  **Discover Attributes:** Find valid `@` attributes for specific objects to ensure generated creation strings are valid.
-3.  **Check Types:** Verify if a connection is Signal (`~`) or Message based.
-
 ## Constraints & Gaps
 
 - **Object Awareness:** The library treats Max objects as strings; no built-in validation for object existence or argument correctness.
-- **Manual Indexing:** High risk of "off-by-one" errors in complex patches without external documentation (Context7).
+- **Manual Indexing:** High risk of "off-by-one" errors in complex patches without external documentation 
 - **UI/Presentation:** Documentation on Presentation Mode and advanced UI layout is currently skeleton-only (empty docs).
 - **Advanced Topics Gap:** Key documentation for "Unknown Objects", "Linked Files" (abstractions/JS), and "External Packages" is currently empty in the source docs, though functionality exists in the code.
 - **Silent Failures:** Incompatible connections (e.g., Signal to Message) are written to the file by MaxPyLang but ignored by Max, creating a silent failure mode that requires external validation.
-- **Unreliable Defaults:** Do not assume the default inlet/outlet count for objects. `gain~` and `*~` both default to a single inlet/outlet. Some objects, like `biquad~`, require creation arguments. Always consult the `OBJ_INFO` or `OBJ_IO` data, or use the `intelligence` module when built.
+- **Unreliable Defaults:** Do not assume the default inlet/outlet count for objects. `gain~` and `*~` both default to a single inlet/outlet. Some objects, like `biquad~`, require creation arguments. Always consult the `OBJ_INFO` or `OBJ_IO` data, or load the `maxpert` skill.
 
 ## Known Workflows
 

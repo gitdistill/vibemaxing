@@ -13,7 +13,7 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 *   **Role:** Context management, workflow enforcement, and user interface.
 *   **Components:**
     *   **Pi:** The runtime environment (Coding Agent Harness).
-    *   **Context7 Extension:** MCP bridge providing the agent with the "Context7" library of Cycling '74 documentation.
+    <!-- *   **Context7 Extension:** MCP bridge providing the agent with the "Context7" library of Cycling '74 documentation. -->
     *   **Extensions/Skills/Prompts:** Project-specific logic and workflow enforcement.
 
 ### Layer 2: The Hands (apps/)

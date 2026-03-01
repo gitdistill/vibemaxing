@@ -22,3 +22,6 @@ prevent future agents from having the same issue.
     * After a quiet commit, verify with: `git log -1 --oneline` or `git status --short`.
 
 ## Do not blindly create files at the root directory of the project. Identify the appropriate folder given the current context.
+
+_notes_
+- Python 3 is installed via homebrew and is also managed by virtual environments.

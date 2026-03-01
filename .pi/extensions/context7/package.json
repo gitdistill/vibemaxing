@@ -1,8 +1,0 @@
-{
-  "name": "pi-extension-context7",
-  "version": "1.0.0",
-  "description": "Bridge for Context7 MCP",
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.1"
-  }
-}
