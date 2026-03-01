@@ -18,9 +18,8 @@ The system is designed as a Hub-and-Spoke architecture where `.pi` (The Brain) o
 
 ### Layer 2: The Hands (apps/)
 *   **Role:** Domain-specific execution for Max/MSP.
-*   **Constraint:** These apps must not depend on Pi. They are invoked *by* Pi.
 *   **Modules:**
-    1.  **`maxpatcher`** (Output): A Python-based Builder. Owns a flattened fork of the `MaxPyLang` engine and upgrades it directly with metadata synced from Context7.
+    1.  **`maxpatcher`** (Output): A Python-based Builder. Owns a flattened fork of the `MaxPyLang` engine.
     2.  **`maxprober`** (Feedback): Runtime debugging via Node for Max. (DEFERRED for future iteration)
 
 ### Layer 3: User Land (projects/)
